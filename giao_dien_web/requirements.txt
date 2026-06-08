@@ -1,0 +1,10 @@
+flask
+flask-cors
+requests
+beautifulsoup4
+selenium
+webdriver-manager
+pandas
+torch
+transformers
+underthesea

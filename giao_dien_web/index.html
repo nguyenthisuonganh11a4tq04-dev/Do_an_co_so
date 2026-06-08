@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SentraDash — Confession Sentiment Analyzer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+:root {
+  --bg0: #0a0c10;
+  --bg1: #0f1117;
+  --bg2: #161b24;
+  --bg3: #1e2533;
+  --border: rgba(255,255,255,0.07);
+  --border2: rgba(255,255,255,0.12);
+  --text1: #e8eaf0;
+  --text2: #8892a4;
+  --text3: #555f6e;
+  --accent: #4f8ef7;
+  --accent2: #7c6af5;
+  --pos: #22c97e;
+  --neg: #f05252;
+  --neu: #f0a020;
+  --pos-bg: rgba(34,201,126,0.1);
+  --neg-bg: rgba(240,82,82,0.1);
+  --neu-bg: rgba(240,160,32,0.1);
+  --radius: 10px;
+  --font: 'Space Grotesk', sans-serif;
+  --mono: 'JetBrains Mono', monospace;
+}
+[data-theme="light"] {
+  --bg0: #f0f2f7;
+  --bg1: #f8f9fc;
+  --bg2: #ffffff;
+  --bg3: #eef0f6;
+  --border: rgba(0,0,0,0.08);
+  --border2: rgba(0,0,0,0.14);
+  --text1: #1a1d2e;
+  --text2: #5a6176;
+  --text3: #9aa0b2;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--font);background:var(--bg0);color:var(--text1);min-height:100vh;font-size:14px;line-height:1.5}
+.hidden{display:none !important;}
+
+/* ── LAYOUT ── */
+.app{display:flex;flex-direction:column;height:100vh;overflow:hidden}
+
+/* ── TOPBAR ── */
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:0 20px;height:56px;background:var(--bg1);border-bottom:1px solid var(--border);flex-shrink:0;gap:12px}
+.topbar-brand{display:flex;align-items:center;gap:10px}
+.brand-icon{width:34px;height:34px;background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;color:#fff}
+.brand-name{font-size:1.1rem;font-weight:700;color:var(--text1);letter-spacing:-0.3px}
+.topbar-tabs{display:flex;gap:2px;background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:3px}
+.tab-btn{padding:5px 16px;border:none;background:transparent;color:var(--text2);cursor:pointer;border-radius:6px;font-family:var(--font);font-size:13px;font-weight:500;transition:all .2s;display:flex;align-items:center;gap:6px}
+.tab-btn.active{background:var(--bg3);color:var(--text1)}
+.tab-btn:hover:not(.active){color:var(--text1)}
+.topbar-actions{display:flex;gap:8px;align-items:center}
+.btn-icon{width:34px;height:34px;border:1px solid var(--border2);background:var(--bg2);color:var(--text2);border-radius:7px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;font-size:13px}
+.btn-icon:hover{color:var(--text1);border-color:var(--accent);background:var(--bg3)}
+.btn-primary{padding:6px 14px;background:var(--accent);color:#fff;border:none;border-radius:7px;cursor:pointer;font-family:var(--font);font-size:13px;font-weight:600;transition:all .2s}
+.btn-primary:hover{opacity:.85}
+
+/* ── MAIN VIEW ── */
+.main-view{flex:1;overflow:hidden;display:flex;flex-direction:column}
+.tab-panel{display:none;flex:1;overflow:hidden;flex-direction:column}
+.tab-panel.active{display:flex}
+
+/* ═══════════════════════════════
+   TAB 1 — CONFESSION DASHBOARD
+═══════════════════════════════ */
+.dashboard{display:grid;grid-template-columns:260px 1fr 300px;grid-template-rows:auto 1fr;gap:12px;padding:12px;height:100%;overflow:hidden}
+
+/* KPI Bar */
+.kpi-bar{grid-column:1/-1;display:flex;gap:12px}
+.kpi-card{flex:1;background:var(--bg1);border:1px solid var(--border);border-radius:var(--radius);padding:12px 16px;display:flex;align-items:center;gap:14px;position:relative;overflow:hidden}
+.kpi-card::before{content:'';position:absolute;right:-20px;top:-20px;width:80px;height:80px;border-radius:50%;opacity:.06}
+.kpi-card.total::before{background:var(--accent)}
+.kpi-card.pos::before{background:var(--pos)}
+.kpi-card.neg::before{background:var(--neg)}
+.kpi-card.neu::before{background:var(--neu)}
+.kpi-icon{width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.kpi-card.total .kpi-icon{background:rgba(79,142,247,0.15);color:var(--accent)}
+.kpi-card.pos .kpi-icon{background:var(--pos-bg);color:var(--pos)}
+.kpi-card.neg .kpi-icon{background:var(--neg-bg);color:var(--neg)}
+.kpi-card.neu .kpi-icon{background:var(--neu-bg);color:var(--neu)}
+.kpi-info{flex:1}
+.kpi-label{font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px}
+.kpi-value{font-size:1.5rem;font-weight:700;color:var(--text1);font-variant-numeric:tabular-nums;line-height:1}
+.kpi-pct{font-size:11px;color:var(--text2);margin-top:2px}
+
+/* Left Panel */
+.panel-left{background:var(--bg1);border:1px solid var(--border);border-radius:var(--radius);display:flex;flex-direction:column;overflow:hidden}
+.panel-header{padding:12px 14px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+.panel-title{font-size:12px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.6px}
+.sentiment-filter{display:flex;flex-direction:column;gap:4px;padding:10px;overflow-y:auto}
+.sent-btn{display:flex;align-items:center;gap:10px;padding:8px 10px;border:1px solid transparent;border-radius:7px;cursor:pointer;background:transparent;font-family:var(--font);font-size:13px;color:var(--text2);transition:all .2s;text-align:left;width:100%}
+.sent-btn:hover,.sent-btn.active{background:var(--bg2);border-color:var(--border2);color:var(--text1)}
+.sent-btn.active-pos{background:var(--pos-bg);border-color:rgba(34,201,126,.3);color:var(--pos)}
+.sent-btn.active-neg{background:var(--neg-bg);border-color:rgba(240,82,82,.3);color:var(--neg)}
+.sent-btn.active-neu{background:var(--neu-bg);border-color:rgba(240,160,32,.3);color:var(--neu)}
+.sent-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.dot-pos{background:var(--pos)}
+.dot-neg{background:var(--neg)}
+.dot-neu{background:var(--neu)}
+.dot-all{background:linear-gradient(135deg,var(--pos),var(--accent))}
+.sent-count{margin-left:auto;font-size:11px;font-family:var(--mono);background:var(--bg3);padding:1px 7px;border-radius:4px}
+
+/* Search bar */
+.search-wrap{padding:10px;border-bottom:1px solid var(--border);flex-shrink:0}
+.search-input-wrap{position:relative}
+.search-input-wrap i{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--text3);font-size:12px}
+#conf-search{width:100%;padding:7px 10px 7px 30px;background:var(--bg2);border:1px solid var(--border2);border-radius:7px;color:var(--text1);font-family:var(--font);font-size:13px;outline:none}
+#conf-search:focus{border-color:var(--accent)}
+
+/* Center — Chart + Table */
+.panel-center{background:var(--bg1);border:1px solid var(--border);border-radius:var(--radius);display:flex;flex-direction:column;overflow:hidden}
+.chart-wrap{padding:16px;border-bottom:1px solid var(--border);flex-shrink:0}
+.chart-wrap h3{font-size:12px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.6px;margin-bottom:12px}
+.chart-row{display:flex;gap:16px;align-items:flex-start}
+.chart-canvas-wrap{position:relative;width:180px;height:180px;flex-shrink:0}
+.chart-legend{display:flex;flex-direction:column;gap:10px;flex:1;padding-top:4px}
+.legend-item{display:flex;align-items:center;gap:10px}
+.legend-bar-wrap{flex:1;height:6px;background:var(--bg3);border-radius:3px;overflow:hidden}
+.legend-bar{height:100%;border-radius:3px;transition:width .6s ease}
+.legend-label{font-size:12px;color:var(--text2);min-width:60px}
+.legend-pct{font-size:12px;font-family:var(--mono);color:var(--text1);min-width:36px;text-align:right}
+
+/* Sentence table */
+.table-wrap{flex:1;overflow-y:auto;padding:0}
+.table-header{display:grid;grid-template-columns:1fr 90px;padding:8px 14px;border-bottom:1px solid var(--border);position:sticky;top:0;background:var(--bg1);z-index:1}
+.table-col-hd{font-size:11px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.5px}
+.sentence-row{display:grid;grid-template-columns:1fr 90px;padding:10px 14px;border-bottom:1px solid var(--border);gap:10px;align-items:center;transition:background .15s;cursor:default}
+.sentence-row:hover{background:var(--bg2)}
+.sentence-text{font-size:13px;color:var(--text1);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:20px;font-size:11px;font-weight:600}
+.badge-pos{background:var(--pos-bg);color:var(--pos)}
+.badge-neg{background:var(--neg-bg);color:var(--neg)}
+.badge-neu{background:var(--neu-bg);color:var(--neu)}
+.table-empty{padding:40px;text-align:center;color:var(--text3)}
+.pagination{display:flex;align-items:center;justify-content:space-between;padding:8px 14px;border-top:1px solid var(--border);flex-shrink:0}
+.pagination span{font-size:12px;color:var(--text2);font-family:var(--mono)}
+.page-btns{display:flex;gap:4px}
+.page-btn{width:28px;height:28px;border:1px solid var(--border2);background:var(--bg2);color:var(--text2);cursor:pointer;border-radius:6px;font-size:12px;transition:all .2s}
+.page-btn:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
+.page-btn:disabled{opacity:.35;cursor:default}
+
+/* Right — Detail */
+.panel-right{background:var(--bg1);border:1px solid var(--border);border-radius:var(--radius);display:flex;flex-direction:column;overflow:hidden}
+.detail-empty{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:80px;gap:10px;color:var(--text3);padding-left:20px;padding-right:20px;text-align:center}
+.detail-empty i{font-size:2rem;opacity:.4}
+.detail-content{flex:1;overflow-y:auto;padding:12px 14px;display:flex;flex-direction:column;gap:10px}
+.detail-stat{display:flex;flex-direction:column;gap:2px}
+.detail-stat-row{display:flex;justify-content:space-between;align-items:center;padding:4px 0;border-bottom:1px solid var(--border)}
+.detail-stat-label{font-size:12px;color:var(--text2)}
+.detail-stat-value{font-size:12px;font-family:var(--mono);color:var(--text1)}
+.mini-chart-wrap{height:80px;position:relative}
+
+/* ═══════════════════════════════
+   TAB 2 — TEENCODE DICTIONARY
+═══════════════════════════════ */
+.tc-layout{display:grid;grid-template-columns:240px 1fr;gap:12px;padding:12px;height:100%;overflow:hidden}
+.tc-sidebar{background:var(--bg1);border:1px solid var(--border);border-radius:var(--radius);display:flex;flex-direction:column;overflow:hidden}
+.tc-main{background:var(--bg1);border:1px solid var(--border);border-radius:var(--radius);display:flex;flex-direction:column;overflow:hidden}
+.tc-filter-section{padding:10px;border-bottom:1px solid var(--border);flex-shrink:0}
+.tc-search{width:100%;padding:7px 10px;background:var(--bg2);border:1px solid var(--border2);border-radius:7px;color:var(--text1);font-family:var(--font);font-size:13px;outline:none;margin-bottom:8px}
+.tc-search:focus{border-color:var(--accent)}
+.filter-group{margin-bottom:8px}
+.filter-group-label{font-size:10px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px;padding:0 2px}
+.filter-chips{display:flex;flex-wrap:wrap;gap:4px}
+.chip{padding:3px 9px;border:1px solid var(--border2);border-radius:20px;font-size:11px;color:var(--text2);cursor:pointer;transition:all .15s;background:var(--bg2)}
+.chip:hover,.chip.active{background:var(--accent);border-color:var(--accent);color:#fff}
+.chip.chip-pos:hover,.chip.chip-pos.active{background:var(--pos);border-color:var(--pos)}
+.chip.chip-neg:hover,.chip.chip-neg.active{background:var(--neg);border-color:var(--neg)}
+.chip.chip-neu:hover,.chip.chip-neu.active{background:var(--neu);border-color:var(--neu)}
+.chip.chip-fun:hover,.chip.chip-fun.active{background:#a855f7;border-color:#a855f7}
+.tc-stats-mini{padding:10px;flex:1;overflow-y:auto}
+.tc-stat-block{padding:8px;background:var(--bg2);border-radius:7px;margin-bottom:6px}
+.tc-stat-block h5{font-size:10px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+.tc-stat-row{display:flex;align-items:center;gap:6px;margin-bottom:4px}
+.tc-stat-bar-wrap{flex:1;height:4px;background:var(--bg3);border-radius:2px;overflow:hidden}
+.tc-stat-bar{height:100%;border-radius:2px}
+.tc-stat-label{font-size:11px;color:var(--text2);min-width:70px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tc-stat-val{font-size:11px;font-family:var(--mono);color:var(--text1);min-width:24px;text-align:right}
+
+/* TC Table */
+.tc-table-header{display:grid;grid-template-columns:120px 140px 1fr 80px 70px;padding:8px 14px;border-bottom:1px solid var(--border);position:sticky;top:0;background:var(--bg1);z-index:1;flex-shrink:0}
+.tc-table-body{flex:1;overflow-y:auto}
+.tc-row{display:grid;grid-template-columns:120px 140px 1fr 80px 70px;padding:10px 14px;border-bottom:1px solid var(--border);gap:8px;align-items:center;cursor:pointer;transition:background .15s}
+.tc-row:hover{background:var(--bg2)}
+.tc-row.selected{background:rgba(79,142,247,.08);border-color:rgba(79,142,247,.2)}
+.tc-word{font-family:var(--mono);font-weight:600;font-size:13px;color:var(--accent)}
+.tc-meaning{font-size:13px;color:var(--text1)}
+.tc-context{font-size:12px;color:var(--text2);display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.strength-dots{display:flex;gap:3px}
+.sdot{width:7px;height:7px;border-radius:50%;background:var(--bg3)}
+.sdot.fill{background:var(--accent)}
+.sdot.fill1{background:var(--pos)}
+.sdot.fill2{background:var(--neu)}
+.sdot.fill3{background:var(--neg)}
+.tc-toolbar{padding:8px 14px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+.tc-count{font-size:12px;color:var(--text2);font-family:var(--mono)}
+
+/* Scrollbar */
+::-webkit-scrollbar{width:5px;height:5px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--bg3);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:var(--border2)}
+
+/* Modal Highlight */
+.hl-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:1000;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .2s}
+.hl-overlay.show{opacity:1;pointer-events:auto}
+.hl-modal{background:var(--bg1);border:1px solid var(--border);border-radius:var(--radius);width:600px;max-width:90%;max-height:80vh;display:flex;flex-direction:column;box-shadow:0 10px 30px rgba(0,0,0,0.3)}
+.hl-header{padding:14px 20px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+.hl-title{font-weight:600;color:var(--text1)}
+.hl-close{background:none;border:none;color:var(--text2);cursor:pointer;font-size:16px}
+.hl-close:hover{color:var(--neg)}
+.hl-body{padding:0;overflow-y:auto;flex:1}
+.hl-row{padding:12px 20px;border-bottom:1px solid var(--border);cursor:pointer;transition:background .2s}
+.hl-row:hover{background:var(--bg2)}
+.hl-text{font-size:13px;color:var(--text1);line-height:1.5;margin-bottom:6px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.hl-meta{font-size:11px;color:var(--text3)}
+
+/* Toast */
+.toast{position:fixed;bottom:20px;right:20px;background:var(--bg2);border:1px solid var(--border2);padding:10px 16px;border-radius:8px;font-size:13px;color:var(--text1);z-index:999;transform:translateY(60px);opacity:0;transition:all .3s;pointer-events:none}
+.toast.show{transform:translateY(0);opacity:1}
+</style>
+</head>
+<body>
+<div class="app">
+
+<!-- TOPBAR -->
+<header class="topbar">
+  <div class="topbar-brand">
+    <div class="brand-icon"><i class="fa-solid fa-chart-pie"></i></div>
+    <span class="brand-name">SentraDash</span>
+  </div>
+  <div class="topbar-tabs">
+    <button class="tab-btn active" data-tab="confession">
+      <i class="fa-solid fa-comments"></i> Confession Analyzer
+    </button>
+    <button class="tab-btn" data-tab="teencode">
+      <i class="fa-solid fa-book"></i> Teencode Dictionary
+    </button>
+  </div>
+  <div class="topbar-actions">
+    <button class="btn-icon" id="export-btn" title="Xuất CSV"><i class="fa-solid fa-download"></i></button>
+    <button class="btn-icon" id="theme-toggle" title="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
+  </div>
+</header>
+
+<!-- MAIN VIEW -->
+<div class="main-view">
+
+  <!-- ═══ TAB 1: CONFESSION ═══ -->
+  <div class="tab-panel active" id="tab-confession">
+    <div class="dashboard">
+
+      <!-- KPI -->
+      <div class="kpi-bar">
+        <div class="kpi-card total">
+          <div class="kpi-icon"><i class="fa-solid fa-database"></i></div>
+          <div class="kpi-info">
+            <div class="kpi-label">Tổng câu</div>
+            <div class="kpi-value" id="kpi-total">28,091</div>
+            <div class="kpi-pct">Toàn bộ dataset</div>
+          </div>
+        </div>
+        <div class="kpi-card pos">
+          <div class="kpi-icon"><i class="fa-solid fa-face-smile"></i></div>
+          <div class="kpi-info">
+            <div class="kpi-label">Tích cực</div>
+            <div class="kpi-value" id="kpi-pos">9,778</div>
+            <div class="kpi-pct" id="kpi-pos-pct">34.8%</div>
+          </div>
+        </div>
+        <div class="kpi-card neg">
+          <div class="kpi-icon"><i class="fa-solid fa-face-frown"></i></div>
+          <div class="kpi-info">
+            <div class="kpi-label">Tiêu cực</div>
+            <div class="kpi-value" id="kpi-neg">7,720</div>
+            <div class="kpi-pct" id="kpi-neg-pct">27.5%</div>
+          </div>
+        </div>
+        <div class="kpi-card neu">
+          <div class="kpi-icon"><i class="fa-solid fa-face-meh"></i></div>
+          <div class="kpi-info">
+            <div class="kpi-label">Trung tính</div>
+            <div class="kpi-value" id="kpi-neu">10,593</div>
+            <div class="kpi-pct" id="kpi-neu-pct">37.7%</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left Panel -->
+      <div class="panel-left">
+        <div class="panel-header">
+          <span class="panel-title">Lọc cảm xúc</span>
+        </div>
+        <div class="search-wrap">
+          <div class="search-input-wrap">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="conf-search" placeholder="Nhập câu test...">
+          </div>
+        </div>
+        <div class="sentiment-filter">
+          <button class="sent-btn active" data-sent="all">
+            <span class="sent-dot dot-all"></span> Tất cả
+            <span class="sent-count">28,091</span>
+          </button>
+          <button class="sent-btn" data-sent="positive">
+            <span class="sent-dot dot-pos"></span> Tích cực
+            <span class="sent-count">9,778</span>
+          </button>
+          <button class="sent-btn" data-sent="negative">
+            <span class="sent-dot dot-neg"></span> Tiêu cực
+            <span class="sent-count">7,720</span>
+          </button>
+          <button class="sent-btn" data-sent="neutral">
+            <span class="sent-dot dot-neu"></span> Trung tính
+            <span class="sent-count">10,593</span>
+          </button>
+        </div>
+        <div style="padding:10px;border-top:1px solid var(--border);margin-top:auto;flex-shrink:0">
+          <div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px">Ghi chú dataset</div>
+          <div style="font-size:11px;color:var(--text2);line-height:1.6">
+            Hiển thị <strong style="color:var(--text1)">toàn bộ</strong> dữ liệu.<br>
+            Tổng dataset: <strong style="color:var(--text1)">28,091</strong> câu confession từ cộng đồng sinh viên.
+          </div>
+        </div>
+      </div>
+
+      <!-- Center Panel -->
+      <div class="panel-center">
+        <div class="chart-wrap">
+          <h3>Phân phối cảm xúc</h3>
+          <div class="chart-row">
+            <div class="chart-canvas-wrap">
+              <canvas id="donut-chart"></canvas>
+            </div>
+            <div class="chart-legend" id="conf-legend"></div>
+          </div>
+        </div>
+        <div class="table-header">
+          <div class="table-col-hd">Nội dung bài viết</div>
+          <div class="table-col-hd">Nhãn</div>
+        </div>
+        <div class="table-wrap" id="conf-table-body"></div>
+        <div class="pagination">
+          <span id="page-info">0 câu</span>
+          <div class="page-btns">
+            <button class="page-btn" id="prev-page"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="page-btn" id="next-page"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Panel -->
+      <div class="panel-right">
+        <div class="panel-header">
+          <span class="panel-title">Chi tiết câu</span>
+        </div>
+        <div class="detail-empty" id="detail-empty">
+          <i class="fa-regular fa-hand-pointer"></i>
+          <p>Chọn một câu để xem chi tiết</p>
+        </div>
+        <div class="detail-content hidden" id="detail-content">
+          <div class="detail-stat">
+            <div class="detail-stat-row">
+              <span class="detail-stat-label">Nhãn cảm xúc</span>
+              <span class="detail-stat-value" id="d-sentiment">—</span>
+            </div>
+            <div class="detail-stat-row">
+              <span class="detail-stat-label">Độ dài (ký tự)</span>
+              <span class="detail-stat-value" id="d-length">—</span>
+            </div>
+            <div class="detail-stat-row">
+              <span class="detail-stat-label">Số từ</span>
+              <span class="detail-stat-value" id="d-words">—</span>
+            </div>
+            <div class="detail-stat-row">
+              <span class="detail-stat-label">Teencode phát hiện</span>
+              <span class="detail-stat-value" id="d-teencode-count">—</span>
+            </div>
+          </div>
+          <div>
+            <div style="font-size:11px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px">Nội dung đầy đủ</div>
+            <div id="d-text" style="font-size:13px;color:var(--text1);line-height:1.7;padding:10px;background:var(--bg2);border-radius:7px;border:1px solid var(--border)"></div>
+          </div>
+          <div>
+            <div style="font-size:11px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px">Teencode phát hiện trong câu</div>
+            <div id="d-teencode-tags" style="display:flex;flex-wrap:wrap;gap:5px"></div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- .dashboard -->
+  </div><!-- tab-confession -->
+
+  <!-- ═══ TAB 2: TEENCODE ═══ -->
+  <div class="tab-panel" id="tab-teencode">
+    <div class="tc-layout">
+
+      <!-- Sidebar -->
+      <div class="tc-sidebar">
+        <div class="panel-header">
+          <span class="panel-title">Bộ lọc</span>
+          <span style="font-size:11px;color:var(--text3);font-family:var(--mono)" id="tc-total-count">777</span>
+        </div>
+        <div class="tc-filter-section">
+          <input type="text" class="tc-search" id="tc-search" placeholder="Tìm teencode, nghĩa...">
+          <div class="filter-group">
+            <div class="filter-group-label">Cảm xúc</div>
+            <div class="filter-chips" id="tc-filter-sentiment">
+              <span class="chip active" data-val="">Tất cả</span>
+              <span class="chip chip-pos" data-val="Tích cực">Tích cực</span>
+              <span class="chip chip-neg" data-val="Tiêu cực">Tiêu cực</span>
+              <span class="chip chip-neu" data-val="Trung tính">Trung tính</span>
+              <span class="chip chip-fun" data-val="Hài hước">Hài hước</span>
+              <span class="chip" data-val="Đa nghĩa">Đa nghĩa</span>
+            </div>
+          </div>
+          <div class="filter-group">
+            <div class="filter-group-label">Loại</div>
+            <div class="filter-chips" id="tc-filter-type">
+              <span class="chip active" data-val="">Tất cả</span>
+              <span class="chip" data-val="Viết tắt">Viết tắt</span>
+              <span class="chip" data-val="Đảo/phóng âm">Đảo âm</span>
+              <span class="chip" data-val="Vay mượn tiếng Anh">Vay mượn TA</span>
+              <span class="chip" data-val="Cụm từ sáng tạo">Sáng tạo</span>
+              <span class="chip" data-val="Số thay chữ">Số thay chữ</span>
+            </div>
+          </div>
+          <div class="filter-group">
+            <div class="filter-group-label">Độ mạnh</div>
+            <div class="filter-chips" id="tc-filter-strength">
+              <span class="chip active" data-val="">Tất cả</span>
+              <span class="chip" data-val="1">Nhẹ</span>
+              <span class="chip" data-val="2">Trung bình</span>
+              <span class="chip" data-val="3">Mạnh</span>
+            </div>
+          </div>
+        </div>
+        <div class="tc-stats-mini">
+          <div class="tc-stat-block" id="tc-type-stats"></div>
+          <div class="tc-stat-block" id="tc-sent-stats"></div>
+        </div>
+      </div>
+
+      <!-- Main Table -->
+      <div class="tc-main">
+        <div class="tc-toolbar">
+          <span class="tc-count" id="tc-showing">Hiển thị 777 / 777 từ</span>
+          <div style="display:flex;gap:6px">
+            <button class="btn-icon" id="tc-export" title="Xuất CSV teencode"><i class="fa-solid fa-download"></i></button>
+          </div>
+        </div>
+        <div class="tc-table-header">
+          <div class="table-col-hd">Teencode</div>
+          <div class="table-col-hd">Nghĩa</div>
+          <div class="table-col-hd">Ngữ cảnh</div>
+          <div class="table-col-hd">Loại</div>
+          <div class="table-col-hd">Độ mạnh</div>
+        </div>
+        <div class="tc-table-body" id="tc-table-body"></div>
+      </div>
+
+    </div>
+  </div><!-- tab-teencode -->
+
+</div><!-- .main-view -->
+</div><!-- .app -->
+
+<div class="hl-overlay" id="hl-overlay">
+  <div class="hl-modal">
+    <div class="hl-header">
+      <div class="hl-title" id="hl-title">Các bài viết nổi bật</div>
+      <button class="hl-close" id="hl-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="hl-body" id="hl-body"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="data.js"></script>
+<script>
+// ═══════════════════════════════════════
+// UTILITIES
+// ═══════════════════════════════════════
+function showToast(msg, dur=2000){
+  const t=document.getElementById('toast');
+  t.textContent=msg; t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'), dur);
+}
+function sentBadge(s){
+  const map={positive:['badge-pos','Tích cực'],negative:['badge-neg','Tiêu cực'],neutral:['badge-neu','Trung tính']};
+  const [cls,label]=map[s]||['badge-neu','?'];
+  return `<span class="badge ${cls}">${label}</span>`;
+}
+function sentColor(s){return s==='positive'?'var(--pos)':s==='negative'?'var(--neg)':'var(--neu)'}
+
+// ═══════════════════════════════════════
+// TABS
+// ═══════════════════════════════════════
+document.querySelectorAll('.tab-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-'+btn.dataset.tab).classList.add('active');
+  });
+});
+
+// ═══════════════════════════════════════
+// THEME
+// ═══════════════════════════════════════
+const themeBtn=document.getElementById('theme-toggle');
+themeBtn.addEventListener('click',()=>{
+  const html=document.documentElement;
+  const isDark=html.getAttribute('data-theme')==='dark';
+  html.setAttribute('data-theme',isDark?'light':'dark');
+  themeBtn.innerHTML=isDark?'<i class="fa-solid fa-sun"></i>':'<i class="fa-solid fa-moon"></i>';
+  if(donutChart) donutChart.update();
+});
+
+// ═══════════════════════════════════════
+// CONFESSION TAB
+// ═══════════════════════════════════════
+const STATS = typeof CONFESSION_STATS!=='undefined' ? CONFESSION_STATS : {positive:9778,negative:7720,neutral:10593};
+const TOTAL = Object.values(STATS).reduce((a,b)=>a+b,0);
+
+// KPI
+document.getElementById('kpi-total').textContent = TOTAL.toLocaleString('vi');
+document.getElementById('kpi-pos').textContent = STATS.positive.toLocaleString('vi');
+document.getElementById('kpi-neg').textContent = STATS.negative.toLocaleString('vi');
+document.getElementById('kpi-neu').textContent = STATS.neutral.toLocaleString('vi');
+document.getElementById('kpi-pos-pct').textContent = (STATS.positive/TOTAL*100).toFixed(1)+'%';
+document.getElementById('kpi-neg-pct').textContent = (STATS.negative/TOTAL*100).toFixed(1)+'%';
+document.getElementById('kpi-neu-pct').textContent = (STATS.neutral/TOTAL*100).toFixed(1)+'%';
+
+// Donut Chart
+let donutChart;
+function initDonut(){
+  const ctx=document.getElementById('donut-chart').getContext('2d');
+  donutChart=new Chart(ctx,{
+    type:'doughnut',
+    data:{
+      labels:['Tích cực','Tiêu cực','Trung tính'],
+      datasets:[{data:[STATS.positive,STATS.negative,STATS.neutral],backgroundColor:['#22c97e','#f05252','#f0a020'],borderWidth:0,hoverOffset:4}]
+    },
+    options:{
+      responsive:true,maintainAspectRatio:false,
+      cutout:'68%',
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>{
+        const pct=(ctx.parsed/TOTAL*100).toFixed(1);
+        return ` ${ctx.label}: ${ctx.parsed.toLocaleString('vi')} (${pct}%)`;
+      }}}},
+      onClick: (e, activeElements) => {
+        if(activeElements.length > 0) {
+          const idx = activeElements[0].index;
+          const sents = ['positive', 'negative', 'neutral'];
+          showHighlighted(sents[idx]);
+        }
+      }
+    }
+  });
+
+  // Legend
+  const leg=document.getElementById('conf-legend');
+  const items=[['Tích cực','positive',STATS.positive],['Tiêu cực','negative',STATS.negative],['Trung tính','neutral',STATS.neutral]];
+  leg.innerHTML=items.map(([label,key,count])=>{
+    const pct=(count/TOTAL*100).toFixed(1);
+    return `<div class="legend-item">
+      <span class="legend-label" style="color:${sentColor(key)}">${label}</span>
+      <div class="legend-bar-wrap"><div class="legend-bar" style="width:${pct}%;background:${sentColor(key)}"></div></div>
+      <span class="legend-pct">${pct}%</span>
+    </div>`;
+  }).join('');
+}
+initDonut();
+
+// Table state
+let confFilter='all', confSearch='', confPage=0;
+const PAGE_SIZE=20;
+
+function getFiltered(){
+  let data = typeof CONFESSION_SAMPLE!=='undefined' ? [...CONFESSION_SAMPLE] : [];
+  if(confFilter!=='all') data=data.filter(r=>r.sentiment===confFilter);
+  if(confSearch.trim()){
+    const q=confSearch.toLowerCase();
+    data=data.filter(r=>r.sentence.toLowerCase().includes(q));
+  }
+  
+  // Từ khóa nhận diện quảng cáo, tìm trọ, tìm bạn, nhận làm...
+  const adKeywords = ['pas ', 'pass ', 'trọ', 'ghép', 'bán ', 'nhượng', 'khóa học', 'tuyển', 'tuyễn', 'sale', 'mua ', 'giày', 'áo', 'tìm bạn', 'bạn nam', 'bạn nữ', 'nhận làm', 'mình nhận làm', 'tuyển mẫu', 'tuyễn mẫu'];
+  
+  // Đẩy các câu quảng cáo xuống cuối
+  data.sort((a, b) => {
+    const textA = a.sentence.toLowerCase();
+    const textB = b.sentence.toLowerCase();
+    const isAdA = adKeywords.some(kw => textA.includes(kw));
+    const isAdB = adKeywords.some(kw => textB.includes(kw));
+    if (isAdA && !isAdB) return 1;
+    if (!isAdA && isAdB) return -1;
+    return 0;
+  });
+  
+  return data;
+}
+
+function predictSentiment(text) {
+  const lowerText = text.toLowerCase();
+  const posWords = ['vui', 'tốt', 'hay', 'tuyệt', 'giỏi', 'thích', 'yêu', 'đẹp', 'xuất sắc', 'ok', 'ngon', 'đỉnh', 'cảm ơn', 'nhiệt tình', 'tận tâm', 'dễ hiểu'];
+  const negWords = ['buồn', 'tệ', 'dở', 'chán', 'ghét', 'xấu', 'thất vọng', 'kém', 'lỗi', 'chậm', 'khó', 'phức tạp', 'mệt', 'sai', 'phàn nàn', 'tùy hứng', 'không hiểu'];
+  let posCount = 0; let negCount = 0;
+  posWords.forEach(w => { if(lowerText.includes(w)) posCount++; });
+  negWords.forEach(w => { if(lowerText.includes(w)) negCount++; });
+  if (posCount > negCount) return 'positive';
+  if (negCount > posCount) return 'negative';
+  return 'neutral';
+}
+
+function renderConfTable(){
+  const data=getFiltered();
+  const total=data.length;
+  const pages=Math.max(1,Math.ceil(total/PAGE_SIZE));
+  confPage=Math.min(confPage,pages-1);
+  const slice=data.slice(confPage*PAGE_SIZE,(confPage+1)*PAGE_SIZE);
+  const tbody=document.getElementById('conf-table-body');
+  if(!slice.length){
+    tbody.innerHTML='<div class="table-empty"><i class="fa-solid fa-inbox" style="font-size:1.5rem;margin-bottom:8px"></i><br>Không có dữ liệu</div>';
+    if(confSearch.trim()){
+      showDetail({
+        sentence: confSearch.trim(),
+        sentiment: predictSentiment(confSearch.trim())
+      });
+    }
+  } else {
+    tbody.innerHTML=slice.map((r,i)=>`
+      <div class="sentence-row" data-idx="${confPage*PAGE_SIZE+i}" data-sent="${r.sentiment}">
+        <div class="sentence-text">${escHtml(r.sentence)}</div>
+        <div>${sentBadge(r.sentiment)}</div>
+      </div>`).join('');
+    tbody.querySelectorAll('.sentence-row').forEach(row=>{
+      row.addEventListener('click',()=>showDetail(data[+row.dataset.idx]));
+    });
+  }
+  document.getElementById('page-info').textContent=`${total.toLocaleString('vi')} câu (trang ${confPage+1}/${pages})`;
+  document.getElementById('prev-page').disabled=confPage===0;
+  document.getElementById('next-page').disabled=confPage>=pages-1;
+}
+
+function escHtml(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+
+// Sentiment filter buttons
+document.querySelectorAll('[data-sent]').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('[data-sent]').forEach(b=>{
+      b.className='sent-btn';
+    });
+    confFilter=btn.dataset.sent;
+    confPage=0;
+    if(confFilter==='all') btn.classList.add('active');
+    else if(confFilter==='positive') btn.classList.add('active','active-pos');
+    else if(confFilter==='negative') btn.classList.add('active','active-neg');
+    else if(confFilter==='neutral') btn.classList.add('active','active-neu');
+    renderConfTable();
+  });
+});
+
+document.getElementById('conf-search').addEventListener('input',e=>{
+  confSearch=e.target.value; confPage=0; renderConfTable();
+});
+document.getElementById('prev-page').addEventListener('click',()=>{confPage--;renderConfTable()});
+document.getElementById('next-page').addEventListener('click',()=>{confPage++;renderConfTable()});
+
+// Build teencode word set for detection
+const tcWords = typeof TEENCODE_DATA!=='undefined' ? new Set(TEENCODE_DATA.map(r=>r.teencode.toLowerCase())) : new Set();
+const tcMap = {};
+if(typeof TEENCODE_DATA!=='undefined') TEENCODE_DATA.forEach(r=>{ tcMap[r.teencode.toLowerCase()]=r; });
+
+function detectTeencode(sentence){
+  const words=sentence.toLowerCase().split(/\s+/);
+  return [...new Set(words.filter(w=>tcWords.has(w)))];
+}
+
+function showDetail(row){
+  document.getElementById('detail-empty').classList.add('hidden');
+  const dc=document.getElementById('detail-content');
+  dc.classList.remove('hidden');
+  const tc=detectTeencode(row.sentence);
+  const sentLabel={positive:'Tích cực',negative:'Tiêu cực',neutral:'Trung tính'}[row.sentiment]||'Chưa phân loại';
+  const sentCls={positive:'var(--pos)',negative:'var(--neg)',neutral:'var(--neu)'}[row.sentiment]||'var(--text2)';
+  document.getElementById('d-sentiment').innerHTML=`<span style="color:${sentCls}">${sentLabel}</span>`;
+  document.getElementById('d-length').textContent=row.sentence.length;
+  document.getElementById('d-words').textContent=row.sentence.split(/\s+/).length;
+  document.getElementById('d-teencode-count').textContent=tc.length;
+  document.getElementById('d-text').textContent=row.sentence;
+  const tagsEl=document.getElementById('d-teencode-tags');
+  if(tc.length===0){
+    tagsEl.innerHTML='<span style="color:var(--text3);font-size:12px">Không phát hiện teencode</span>';
+  } else {
+    tagsEl.innerHTML=tc.map(w=>{
+      const info=tcMap[w];
+      const tip=info?`${info.nghia} (${info.cam_xuc})`:'';
+      return `<span title="${tip}" style="padding:3px 9px;background:rgba(79,142,247,.12);border:1px solid rgba(79,142,247,.25);border-radius:20px;font-size:11px;font-family:var(--mono);color:var(--accent);cursor:default">${w}</span>`;
+    }).join('');
+  }
+}
+
+renderConfTable();
+
+// Export CSV confession
+document.getElementById('export-btn').addEventListener('click',()=>{
+  const data=getFiltered();
+  const csv='sentiment,sentence\n'+data.map(r=>`${r.sentiment},"${r.sentence.replace(/"/g,'""')}"`).join('\n');
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob(['\uFEFF'+csv],{type:'text/csv;charset=utf-8'}));
+  a.download='confession_data.csv'; a.click();
+  showToast('Đã xuất '+data.length+' câu');
+});
+
+// ═══════════════════════════════════════
+// TEENCODE TAB
+// ═══════════════════════════════════════
+let tcFilterSent='', tcFilterType='', tcFilterStrength='', tcSearchQ='';
+
+function getTcFiltered(){
+  let data = typeof TEENCODE_DATA!=='undefined' ? TEENCODE_DATA : [];
+  if(tcSearchQ) data=data.filter(r=>(r.teencode+r.nghia+r.ngu_canh).toLowerCase().includes(tcSearchQ));
+  if(tcFilterSent) data=data.filter(r=>r.cam_xuc===tcFilterSent);
+  if(tcFilterType) data=data.filter(r=>r.loai.includes(tcFilterType));
+  if(tcFilterStrength) data=data.filter(r=>r.do_manh===+tcFilterStrength);
+  return data;
+}
+
+function strengthDots(n){
+  const colorClass=['','fill1','fill2','fill3'];
+  return [1,2,3].map(i=>`<div class="sdot ${i<=n?colorClass[n]:''}"></div>`).join('');
+}
+
+function loaiBadge(loai){
+  const short={
+    'Viết tắt':'Viết tắt','Cụm từ sáng tạo':'Sáng tạo',
+    'Vay mượn tiếng Anh':'Vay mượn TA','Vay mượn TA':'Vay mượn TA',
+    'Đảo/phóng âm':'Đảo âm','Số thay chữ':'Số thay chữ',
+    'Ký hiệu/emoji':'Emoji','Ký hiệu':'Emoji'
+  };
+  return `<span style="font-size:10px;color:var(--text3);background:var(--bg3);padding:1px 6px;border-radius:4px;white-space:nowrap">${short[loai]||loai}</span>`;
+}
+
+function renderTcTable(){
+  const data=getTcFiltered();
+  document.getElementById('tc-showing').textContent=`Hiển thị ${data.length} / ${(typeof TEENCODE_DATA!=='undefined'?TEENCODE_DATA.length:0)} từ`;
+  document.getElementById('tc-total-count').textContent=data.length;
+  const body=document.getElementById('tc-table-body');
+  if(!data.length){
+    body.innerHTML='<div class="table-empty" style="padding:40px;text-align:center;color:var(--text3)">Không tìm thấy kết quả</div>';
+    return;
+  }
+  body.innerHTML=data.map(r=>`
+    <div class="tc-row">
+      <div class="tc-word">${escHtml(r.teencode)}</div>
+      <div class="tc-meaning">${escHtml(r.nghia)}</div>
+      <div class="tc-context" title="${escHtml(r.ngu_canh)}">${escHtml(r.ngu_canh)}</div>
+      <div>${loaiBadge(r.loai)}</div>
+      <div><div class="strength-dots">${strengthDots(r.do_manh)}</div></div>
+    </div>`).join('');
+  renderTcStats(data);
+}
+
+function renderTcStats(data){
+  // Type stats
+  const typeCounts={};
+  data.forEach(r=>{const k=r.loai||'?';typeCounts[k]=(typeCounts[k]||0)+1;});
+  const typeEl=document.getElementById('tc-type-stats');
+  const typeMax=Math.max(...Object.values(typeCounts),1);
+  typeEl.innerHTML=`<h5>Phân bố loại</h5>`+
+    Object.entries(typeCounts).sort((a,b)=>b[1]-a[1]).slice(0,6).map(([k,v])=>
+      `<div class="tc-stat-row">
+        <span class="tc-stat-label" title="${k}">${k}</span>
+        <div class="tc-stat-bar-wrap"><div class="tc-stat-bar" style="width:${v/typeMax*100}%;background:var(--accent)"></div></div>
+        <span class="tc-stat-val">${v}</span>
+      </div>`).join('');
+
+  // Sentiment stats
+  const sentCounts={};
+  data.forEach(r=>{const k=r.cam_xuc||'?';sentCounts[k]=(sentCounts[k]||0)+1;});
+  const sentEl=document.getElementById('tc-sent-stats');
+  const sentMax=Math.max(...Object.values(sentCounts),1);
+  const sentColors={'Tích cực':'var(--pos)','Tiêu cực':'var(--neg)','Trung tính':'var(--neu)','Hài hước':'#a855f7','Đa nghĩa':'var(--accent)'};
+  sentEl.innerHTML=`<h5>Phân bố cảm xúc</h5>`+
+    Object.entries(sentCounts).sort((a,b)=>b[1]-a[1]).map(([k,v])=>
+      `<div class="tc-stat-row">
+        <span class="tc-stat-label">${k}</span>
+        <div class="tc-stat-bar-wrap"><div class="tc-stat-bar" style="width:${v/sentMax*100}%;background:${sentColors[k]||'var(--accent)'}"></div></div>
+        <span class="tc-stat-val">${v}</span>
+      </div>`).join('');
+}
+
+// TC filters
+document.getElementById('tc-search').addEventListener('input',e=>{
+  tcSearchQ=e.target.value.toLowerCase(); renderTcTable();
+});
+['#tc-filter-sentiment','#tc-filter-type','#tc-filter-strength'].forEach((sel,i)=>{
+  document.querySelector(sel).addEventListener('click',e=>{
+    if(!e.target.classList.contains('chip')) return;
+    const chips=e.currentTarget.querySelectorAll('.chip');
+    chips.forEach(c=>c.classList.remove('active'));
+    e.target.classList.add('active');
+    const val=e.target.dataset.val;
+    if(i===0) tcFilterSent=val;
+    else if(i===1) tcFilterType=val;
+    else tcFilterStrength=val;
+    renderTcTable();
+  });
+});
+
+// TC export
+document.getElementById('tc-export').addEventListener('click',()=>{
+  const data=getTcFiltered();
+  const csv='teencode,nghia,dang_chuan,cam_xuc,do_manh,loai,ngu_canh\n'+
+    data.map(r=>`"${r.teencode}","${r.nghia}","${r.dang_chuan}","${r.cam_xuc}",${r.do_manh},"${r.loai}","${r.ngu_canh.replace(/"/g,'""')}"`).join('\n');
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob(['\uFEFF'+csv],{type:'text/csv;charset=utf-8'}));
+  a.download='teencode_dictionary.csv'; a.click();
+  showToast('Đã xuất '+data.length+' teencode');
+});
+
+renderTcTable();
+
+// ═══════════════════════════════════════
+// HIGHLIGHTED MODAL
+// ═══════════════════════════════════════
+function showHighlighted(sentiment){
+  let data = typeof CONFESSION_SAMPLE!=='undefined' ? CONFESSION_SAMPLE : [];
+  
+  // Từ khóa nhận diện các câu quảng cáo, mua bán, tìm trọ để loại bỏ
+  const adKeywords = ['pas ', 'pass ', 'trọ', 'ghép', 'bán ', 'nhượng', 'khóa học', 'tuyển', 'tuyễn', 'sale', 'mua ', 'giày', 'áo', 'tìm bạn', 'bạn nam', 'bạn nữ', 'nhận làm', 'mình nhận làm', 'tuyển mẫu', 'tuyễn mẫu'];
+  
+  // Lọc các câu có độ dài vừa phải (ngắn nhưng không quá cụt lủn) và không chứa từ quảng cáo
+  data = data.filter(r => {
+    const text = r.sentence.toLowerCase();
+    const isAd = adKeywords.some(kw => text.includes(kw));
+    return r.sentiment === sentiment && r.sentence.length >= 20 && r.sentence.length <= 100 && !isAd;
+  });
+  
+  // Trộn ngẫu nhiên để mỗi lần click ra một tập hợp khác nhau (tùy chọn) hoặc cứ lấy 10 câu đầu
+  data.sort(() => Math.random() - 0.5);
+  
+  const top10 = data.slice(0, 10);
+  
+  const labels = {positive:'Tích cực',negative:'Tiêu cực',neutral:'Trung tính'};
+  document.getElementById('hl-title').textContent = `Các bài viết tiêu biểu (${labels[sentiment]})`;
+  const body = document.getElementById('hl-body');
+  
+  if(!top10.length){
+    body.innerHTML = '<div style="padding:20px;text-align:center;color:var(--text3)">Không có dữ liệu</div>';
+  } else {
+    body.innerHTML = top10.map((r,i)=>`
+      <div class="hl-row" data-idx="${i}">
+        <div class="hl-text">${escHtml(r.sentence)}</div>
+        <div class="hl-meta">Độ dài: ${r.sentence.length} ký tự</div>
+      </div>
+    `).join('');
+    
+    body.querySelectorAll('.hl-row').forEach(row=>{
+      row.addEventListener('click', ()=>{
+        document.getElementById('hl-overlay').classList.remove('show');
+        // Get full data index
+        const item = top10[+row.dataset.idx];
+        const allData = typeof CONFESSION_SAMPLE!=='undefined' ? CONFESSION_SAMPLE : [];
+        const realIdx = allData.indexOf(item);
+        if(realIdx !== -1) showDetail(allData[realIdx]);
+      });
+    });
+  }
+  
+  document.getElementById('hl-overlay').classList.add('show');
+}
+document.getElementById('hl-close').addEventListener('click', ()=>{
+  document.getElementById('hl-overlay').classList.remove('show');
+});
+</script>
+</body>
+</html>

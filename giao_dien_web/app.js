@@ -1,0 +1,11400 @@
+// Mock Data (Dữ liệu ép tĩnh và hình ảnh của bạn)
+const mockData = {
+    "total": {
+        "positive": 978,
+        "neutral": 1060,
+        "negative": 772
+    },
+    "aspects": [
+        {
+            "id": "chung",
+            "name": "Đánh giá chung (Từ Test.csv)",
+            "count": 2810,
+            "sentiment": {
+                "pos": 978,
+                "neu": 1060,
+                "neg": 772
+            }
+        }
+    ],
+    "tags": {
+        "chung": [
+            "Tất cả dữ liệu"
+        ]
+    },
+    "sentences": {
+        "chung": [
+            {
+                "text": "nhiều ví dụ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "quá nhiều kiến thức phải học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "môn học hay và bổ ích giảng viên nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "khiến sinh viên cảm thấy nản",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có ai quay bài thi của đông phương học nhật bản học không ạ thấy bgk khen quá tr mà vào trễ nên không kịp coi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hỏi mã học phần cosnumber phân tích và quản trị cơ sở dữ liệu có mở trong học kỳ numberb năm number không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy vui tính giảng hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nhiệt tình dạy dễ hiểu và quan tâm đến sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "chỉ có number điểm em không hài lòng đó là đề thi cuối kỳ vô cùng dài",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mình tìm number cuốn pháp luật đại cương gấp ạa",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người cho mình xin cảm nhận tiếng anh với tiếng hàn ngôn ngữ nào dễ hơn ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chưa nắm chắc căn bản đã phải làm quen với nâng cao",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cần phải thiết kế nội dung thực hành gắn với lý thuyết nâng độ khó lên cần áp dụng các lý thuyết hiện đại thay vì các lý thuyết đã cũ từ mấy chục năm trước",
+                "sentiment": "negative"
+            },
+            {
+                "text": "topic tìm bạn ghép trọ ạ em là nữ knumber tìm number bạn / bao nhiêu ghép trọ ghép number numbertrnumber cả điện Nói chuyện ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "môn này cần làm đề tài để áp dụng lý thuyết vào thực tiễn mà trên lớp chỉ học một đống lý thuyết và hiếm ai nhớ đa số khá buồn ngủ khi lên lớp",
+                "sentiment": "negative"
+            },
+            {
+                "text": "không nên nhiệt tình quá nên xúc tích vào những nội dung cần thiết",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cần tìm number bạn nam ở ghép qua tháng chuyển vào trọ cách numberp đi xe cơ sở âu cơ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "xem mã môn học để dkdi ở đâu vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần tìn bạn nam học hộ mình khu em sàn thứ number từ number number đến number number",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "hướng dẫn cụ thế phương pháp cho từng bài thực hành",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giáo trình môn học chưa cập nhật",
+                "sentiment": "negative"
+            },
+            {
+                "text": "học bù cũng không hỏi ý kiến sinh viên có trùng với môn khác không học bù lại còn điểm danh",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nhiều khi thầy nghỉ không báo trước colonsad",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có nhiều câu hỏi hay để sinh viên cùng thảo luận nhằm tìm ra nhiều phương pháp khác nhau để tiếp cận vấn đề",
+                "sentiment": "positive"
+            },
+            {
+                "text": "rất nhiệt tình khách quan",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên hiền lành dễ trao đổi với sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "chưa ửi trường sớm vậy em",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người cho em hỏi khi nào lại có đợt hiến máu tiếp vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cách giảng dạy có hiệu quả giúp sinh viên hiểu được vấn đề về chiều sâu hơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tôi để ý mai oanh lâu rồi từ mấy lúc vô tình thấy bạn cười cho tới những lần lướt ngang qua nhau mà không dám bắt chuyện không biết bạn có nhận ra không nhưng mà chắc tôi thích bạn thiệt rồi chỉ là tôi chưa đủ dũng cảm để nói trực tiếp nếu bạn đọc được cái này hy vọng bạn hiểu là có một người vẫn âm thầm để ý bạn như vậy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "không cần phải mở lớp thực hành với môn học này",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy dạy rất nhiệt huyết và rất hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ cho mình hỏi môn mt personal trainer của cô nguyễn thị kim loan thi giữa kì mọi người thi tự luận hay trắc nghiệm vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần nâng cao công tác giảng dạy hơn nữa",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giới thiệu mục tiêu của môn học nên cụ thể hơn và cách áp dụng môn học vào thực tiễn sau khi ra trường",
+                "sentiment": "negative"
+            },
+            {
+                "text": "còn ai pas áo td cỡ / kích cỡ xin lỗi hoặc numberxl không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô dạy nhiệt tình và dành thời gian nhiều cho tụi em luyện tập",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cách giảng bài hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thực hành hình thức number giảng viên cần sử dụng thời gian của môn học có hiệu quả và ý nghĩa với học viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy rất nhiệt tình hay thầy đưa nhiều ví dụ mẫu cho sinh viên dễ hiểu và luôn có đề mẫu làm thử khi gần thi giữa kỳ và cuối kỳ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người ơi có ai dư sách qp cần pas không ạ có thì comment / bình luận với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "anh chị cho em xin tài liệu kiểm tra / kinh tế vĩ mô với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nobody còn t iền còn tết",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nhiệt tình thân thiện",
+                "sentiment": "positive"
+            },
+            {
+                "text": "bỏ quên đồ ở numberm lấy bằng cách nào ạ em quên hồi tnumber",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho mìng hỏi trường mình có ai chơi phím cơ không mình đang có aula snumberpro màu hồng đen vơi aula hero number hehe nhẹ đều ful new seal",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "xuất hiện chiếc xe lại đây nói nghe nè hot / nổi nhất bữa giờ tại trường Hutech chắc phải bị hiểu lầm dữ lắm mới có dòng chữ này",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "anh chị cho em xin đánh giá về trường được không ạ em numberknumber học trung bình khá và đang có ý định đăng kí vào trường mình ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "không chủ động giải đáp các bài tập đã giao cho sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy wzjwznumber cần giảng bài rõ ràng hơn khi giảng cần nói to hoặc dùng micro để mọi người trong lớp cùng nghe cũng như chú ý đến bài giảng",
+                "sentiment": "negative"
+            },
+            {
+                "text": "pas áo ush numberxl màu xanh ạ ai có nhu cầu comment / bình luận em ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có bạn nào pas vải áo dài không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần người kí tên dùm chiều nay ở number",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có trúng sít rịt không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người ơi ai có hình sinh viên đang uống quán cà phê hay nước Ngọt không ạ cho em xin với em cảm ơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ kỹ năng sd tiếng việt thi hình thức gì ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "pas phòng numbertrnumber xe fre ra vào vân tay có máy giặt chung đầy đủ nội thất như hình có tủ đồ trên gác gác numbermnumber lê văn lương phước kiển nhà bè cách trường Tôn Đức Thắng numberp chạy xe thôi ạ cam kết như hình",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần cho sinh viên làm hoạt động nhóm nhiều hơn và mở rộng nâng cao kiến thức cho sinh viên nhiều hơn nữa",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có dạy thêm ngôn ngữ trung rất thú vị",
+                "sentiment": "positive"
+            },
+            {
+                "text": "hay bận công việc đột xuất",
+                "sentiment": "negative"
+            },
+            {
+                "text": "điều này khiến giảng viên khó xử",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mong thầy dạy nhiều môn hơn nữa",
+                "sentiment": "negative"
+            },
+            {
+                "text": "đăng kí hè có cần phải đăng kí number lớp tiếng anh không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần trang bị thêm trang thiết bị cải tiến giáo trình",
+                "sentiment": "negative"
+            },
+            {
+                "text": "học bơi ở trường có bắt buộc phải mua đồ bơi của trường không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "hôm qua em đi thi lúc về có để quên dây đeo có cd ở trong tại phòng xnumber number ai nhặt được cho em xin lại với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "truyền đạt tốt tận tâm nhiệt tình với sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "trình độ chuyên môn đáng Ngại",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người ơi em bầu cử rồi nhưng mà quên xác nhận bầu cử trên myctu có sao không vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em xin đường dẫn azota triêt với ạ khóc em sắp thi rui",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mai là ngày đầu em đi học ở trường và em đi bus em tra thì ra number tuyến như này mà trạm ở xa trường vậy luôn hả mọi người có tip nào đi qua trường nhanh hơn không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em được nhà trường xét duyệt gia hạn học phí đến number number vậy em phải đóng number trước ngày number number hay từ bây giờ đến number number đóng đủ số tiền học phí là được ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên giảng bài chậm lại một chút",
+                "sentiment": "negative"
+            },
+            {
+                "text": "ngoài ra các bài hướng dẫn thực hành nên chú trọng vào các vấn đề của môn để sinh viên có thể vừa tiếp cận thực hành và tiếp cận với đồ án cuối kỳ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "quản trị sự kiện được cnt và t học ai dễ vậy anh chị học kỳ này không bk trường có mở lớp nhiều không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giáo viên giảng dạy rất dễ hiểu lại vui tính nên tiếp thu bài rất nhanh",
+                "sentiment": "positive"
+            },
+            {
+                "text": "anh chị em em xin đánh giá về ngành kiểm tra / kinh tế hoá học trường mình ạ ngành này trường mình ổn không ạ học phí ngành này dao động number năm bạn / bao nhiêu ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có bạn nào namnumber rồi mà trường không mở môn để đăng ký không (không dấu) mình đăng ký được number môn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mình cần tìm người học hộ mình sáng tnumber tnumber ful môn numberhnumber numberhnumber khu ab",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạy rất kỹ rất nhiệt tình thêm giờ để hoàn thành xong bài giảng hỏi han sinh viên nói chung là rất tuyệt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giải thích chi tiết",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ cho em hỏi bị trường gửi tin nhắn về cho ph cảnh cáo học vụ thì mình có cần đợi email không hay tự xuống văn phòng khoa ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho mình xin innumber bạn nữ muốn có người chở đi ăn đi chơi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "lên lớp trễ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mong cô tiếp tục dạy như vậy nữa",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy không công bằng trong đánh giá",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy rất tốt và rất tận tâm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tớ pas number đôi giày cầu lông number new numberk ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dụng cụ học tập còn thiếu không đảm bảo cho sinh viên tập luyện",
+                "sentiment": "negative"
+            },
+            {
+                "text": "viết tiểu luận như nào vậy ạ em thấy nhiều người sử dụng ai các thứ dễ bị kiểm tra ra ai rồi đạo văn các thứ vậy mình viết giống văn nghị luận giống cấp number hay sao ạ viết một tí trích dẫn một bài tài liệu tham khảo hay sao ạ có các nguyên tắc gì khi viết một bài tiểu luận nhóm cho em được phép hỏi ngu với mong anh chị khóa trên giúp đỡ em",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em không hiểu sao chương trình chất lượng cao mà lại cho bọn em học phòng kém hiệu quả như vậy",
+                "sentiment": "negative"
+            },
+            {
+                "text": "không có tinh thần giảng dạy",
+                "sentiment": "negative"
+            },
+            {
+                "text": "khi nào trường mới nổ danh sách học bổng ạ em hết tiền rồi trường ơi",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người cho em xin idea slides thuyết trình môn pd number buổi number báo cáo các vấn đề và khảo sát với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cơ sở em để xe ở đâu vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy có vẻ quá hiền",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "đưa ra nhiều phương pháp để giải bài tập",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy dạy rất nhiệt tình luôn cố gắng giảng thật chậm và giảng thật kỹ cho chúng em hiểu bài",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy giảng bài hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nhà trường nên cập nhật thêm nhiều thông tin kiến thức mới vào đề cương giảng dạy",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tuy nhiên bài giảng của thầy chưa được bài bản lắm có phần hơi tùy hứng",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên đưa ra nhiều ví dụ cụ thể",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nhiệt tình giảng dạy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "đôi khi thầy hơi lan man",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em học ngành tài chính ngân hàng thì nên chọn trường mình hay đại học ngân hàng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho bài tập hợp lý giúp tiếp cận kiến thức theo nhiều hướng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "khoa bạn ơi ý là toà nhà khoa mình mạng rất mắc ói ấy ạ mà có Bình thường nào không cần đăng / upload file đâu không có wifi đã đành đi numberg numberg cũng có vạch sóng nào đâu mà làm bài",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người ơi cho em hỏi mọi người hay kiếm đrl ở đâu vậy sao ai cũng ê hề còn em lúc nào cũng ngưỡng máu tử",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có ai gia hạn học phí rồi chỉ tôi với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng bài cực kỳ chán và không nhiệt tình",
+                "sentiment": "negative"
+            },
+            {
+                "text": "đôi lúc không đi sâu vào vấn đề dạy",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mong thầy thay đổi trong các học kỳ sau",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chán thanh niên tạo Content",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy nên cập nhật những kiến thức mới thay vì vẫn sử dụng những nội dung kiến thức cũ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "bạn nào khá thì có thể áp dụng công thức vào bài tập cả lớp chưa đến number còn thực sự hiểu môn học thì rất ít người hiểu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy giảng chi tiết hướng dẫn dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "sinh viên hoàn toàn tự học",
+                "sentiment": "positive"
+            },
+            {
+                "text": "các thiết bị giảng dạy môn học có thể không đảm bảo chất lượng nhiều thiết bị hoạt động không tốt như phần mềm DoubledDot loa máy chiếu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ anh chị cho em hỏi có ai từng học thầy cô không có record sau học trực tuyến không ạ thầy không biết gửi mà em đang rất cần ạ làm sao để có được record ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "anh chị cho em hỏi với ạ lịch học các môn của em trừ thể dục thì kết thúc muộn nhất number number thì tầm lúc nào thi cuối kì được vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ai có sách nltk chưa dùng đến pas gấp cho em với ạ khóc em lên nhà t thì hết sách mất rồi em trả tiền gấp đôi ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "phương pháp giảng dạy còn thô không sinh động",
+                "sentiment": "negative"
+            },
+            {
+                "text": "bs lâm ở nvc với nhé khoa ninh kiều cái nào ok hơn ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "quá đã từ nay sinh viên trường Hutech có thể đi học khu em rồi bằng tàu điện rồi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người cho mình hỏi nên đăng ký môn nào để đi quân sự (viết tắt) mà không bị dính lịch học ạ bôi đỏ là mình đã học",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "trường mình có được nghỉ tết dương lịch number ngày không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "hệ thống kiến thức chương number mùa thi giữa kì đến rồi nên chị hệ thống lại number số kiến thức quan trọng của từng chương các em fl để nhận thim nhé chúng tiếng Anh cố gắng anh môn này nhé tín chỉ othk",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hỏi trg mình có hỗ trợ cho sinh viên từ trg khác chuyển sang không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy giảng dạy rất nhiệt tình dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "phần pl fraction ngôn ngữ truy vấn SQL quản lý phân quyền",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy nhiệt tình rất dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy rất đúng giờ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giao tiếp đa văn hóa ôn file nào ổn ạ mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy hay đi trễ và nghỉ dạy nhiều",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên cho nhiều bài tập khó mà vẫn chưa giải cho sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy nhiệt tình tận tụy vui vẻ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "phương pháp dạy mới tích cực",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ ngày number number ca number ở p number tầng number csa em có để quên number cái túi đựng đồ makeup màu đen mỏng trong hộc bàn có anh chị nào thấy thì cho em xin lại với ạ em cảm ơn rất nhìu ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tận tâm nhiệt tình thân thiện hướng dẫn ân cần theo sát năng lực học tập của sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giáo viên nhiệt tình giúp học sinh những phần học sinh không hiểu giáo viên dạy dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em là nữ cần tìm người đã có trọ muốn tìm ng ở ghép ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ai thi plnckh chưa ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên dạy tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "anh chị cho em hỏi tín chỉ kĩ năng mình học có tạo nhóm gì không anh chị học những gì vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nhiệt tình liên hệ những vấn đề có liên quan rất tốt bài tập hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "semimar là hình thức tiếp thu kiến thức nhưng do những người seminar nói bâng quơ và thật sự có những nhóm không biết đang làm gì thì sao người ngồi dưới hiểu gì",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên chưa có khả năng truyền đạt kinh nghiệm đứng lớp chưa có",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy nhiệt tình vui vẻ có phương pháp dạy tốt và chương trình cụ thể dễ học",
+                "sentiment": "positive"
+            },
+            {
+                "text": "học bổng number toàn khóa là hết number năm hả mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người có tài liệu kinh tế chính trị cho em xin với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tìm nữ ở ghép gần cđ công thương khu vực đường tăng nhơn phú phòng có gác có máy lạnh tủ bếp kệ giày thoải mái number người tổng tiền phòng number number number tháng mỗi người chia sẻ khoảng number number number tháng hiện đang có number bạn chi phí khác điện number numberđ kilowatt giờ (điện) nước number number khối phí dịch vụ number number phòng xe number number xe phòng có ban công riêng thoáng mát sạch sẽ cổng vân tay giờ giấc tự do an ninh có máy giặc chung thang máy xung quanh nhiều quán ăn bhx chợ trường học thuận lợi di chuyển ra đỗ xuân hợp bình thạnh quận number gò vấp địa chỉ number numbera tăng nhơn phú có thể dọn vào ở liền",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "vui vẻ cởi mở",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy dạy rất hay và rất nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có bạn nào thi tin thud ơi em ca number numberhnumber number number không ạ cho mình hỏi tí ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "không có ý kiến gì ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nhẹ nhàng từ tốn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giải thích rõ nội dung của mỗi bài trước khi thực hành giải đáp các thắc mắc của sinh viên trong quá trình thực hành",
+                "sentiment": "positive"
+            },
+            {
+                "text": "lại có sinh viên trường UEH năm number lộ nữa rồi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "hết mình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "không có gì để nói",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "học sinh luôn thích những giáo viên thân thiện với học sinh để tăng được sự tương tác giữa đôi bên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tôi rất thích phương pháp giảng dạy của thầy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "chưa có điểm thi giữa kỳ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho em hỏi môn kinh tế ctri mac học kì hè học trong blau ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hỏi thi cuối kỳ number có được nghỉ cỡ number tuần ôn thi như kinumber không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy không có tâm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy rất dễ gần",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên thoải mái hòa đồng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nhiệt tình trong giảng dạy vui vẻ hòa đồng với sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cơ sở dữ liệu năm nay đã kết hợp với thiết kế cơ sở dữ liệu rồi kiến thức nhiều mà thi có phần trắc nghiệm nữa thì đánh giá kiến thức học được chưa đảm bảo cho lắm ạ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thắc mắc dạ anh chị cho em hỏi là năm nhất được xét học bổng chưa ạ hay từ năm number mới xét em cảm ơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người cho em xin Facebook của chị cosplay có đuôi cáo hôm nay vào khoảng numberh trưa với ạ thấy chị cos xinh xỉu",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tôi nói thẳng luôn cho nhanh nhé dhnumberaunumber tôi chỉ yêu mình em nhi tôi không thích kiểu quan hệ bạn bè xã giao nửa vời tôi đã quan sát em đủ lâu và nói thật là tôi phát điên khi thấy gã nào khác lởn vởn quanh em tôi muốn em là của tôi một mình tôi thôi hiểu không em không cần phải tìm đâu xa một chỗ dựa vì tôi đủ bản lĩnh để lo cho em và đủ kiên nhẫn để trị cái tính bướng bỉnh của em tôi không hứa sẽ dịu dàng như mấy gã thư sinh nhưng tôi chắc chắn sẽ là người bảo vệ em tốt nhất vậy nên bảo nhi em chọn đi tự đổ hay để tôi tấn công cho đến khi nào em thuộc về tôi thì thôi đừng bắt tôi phải đợi lâu tôi không có thói quen chờ đợi thứ gì đó quá lâu đâu",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "gửi mấy bạn đi thang máy làm ơn có văn hóa và ý thức tập thể dùm không ai rảnh đợi các bạn giỡn trong thang máy mà giỡn cũng ngu nữa lỡ đâu thang đóng cửa khẹt tay khẹt chân thì sao ai chịu trách nhiệm nói vậy thôi ai nhột ráng chịu",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "các bạn xã hội học muốn mở lớp môn định lượng định tính xh quản lý không với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giáo viên thân thiện và tích cực đảm bảo nội dung học tập",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cần nâng cấp máy tính trong phòng thực hành nhiều kit denumber bị lỗi cần sửa chữa hoặc thay mới",
+                "sentiment": "negative"
+            },
+            {
+                "text": "đề nghị giáo viên dạy đúng giáo trình môn học do nhà trường đưa ra phần thi giữa kỳ thầy không dạy heapsort nhưng thi lại ra câu này number điểm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng dạy nhiệt tình hướng dẫn chi tiết",
+                "sentiment": "positive"
+            },
+            {
+                "text": "khủng hoảng sinh ziên năm cuối thực tập nghề nghiệp number tháng",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tìm player tham gia giải ạ tham gia là có quà không phân biệt bậc rank địa chỉ gần trường mọi người ghé chơi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em thích cách dạy của thầy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "phân chia nhóm thực hành không hợp lý và thầy cũng không quan tâm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho em xin tài liệu môn kinh tế chính trị mác được không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người cho em hỏi em đăng ký hđ này mà em lên hội trường chưa mở là có tổ chức hay không ạa",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ em chào mọi người ạ cho em hỏi môn học tự chọn chiến lược digital marketing và quản trị digital marketing sẽ học về gì với number cái này sẽ khác nhau như thế nào ạ em cảm ơn ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chuyện là tnumber tuần trước number number em có làm mất một cái kính như hình ở cơ sở bạn nếu ai thấy thì có thể nhắn dưới coment nhé ạ không biết ở bạn có chỗ nào hay giữ đồ thất lạc không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "sử dụng giờ học hiệu quả",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ cho em hỏi khu em ngoài trường có gửi xe không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên dạy dễ hiểu vui tính",
+                "sentiment": "positive"
+            },
+            {
+                "text": "bù lại cách chấm điểm sẽ đặt nặng phần hiểu vấn đề hơn như thầy wzjwznumber đã từng trình bày",
+                "sentiment": "negative"
+            },
+            {
+                "text": "bằng bài thi TOEIC ra trường yêu cầu number kĩ năng hay number kĩ năng vậy ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có ai học nghiệp vụ ngoại giao thầy huy trực tuyến sáng tnumber không ạ cho mình xin đường dẫn vào với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nên cài các phiên bản visual studio mới hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nghành tâm lý học trường Cần Thơ ổn không ạ nay chuẩn bị thi tốt nghiệp không biết ngành này khi ra trường có việc làm như nào dễ không khi được học đào tạo học những gì",
+                "sentiment": "positive"
+            },
+            {
+                "text": "đưa sinh viên đi tham quan thực tế về các doanh nghiệp",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em cần tìm công việc part time khu vực tân phú quận number ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chất lượng kiến thức được giáo viên truyền đạt hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có ai nhận làm đồ án nghành cnt lập trình website không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên tận tâm hỗ trợ nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người ơi cho em xin lại thời khóa biểu ạ em quên rồi ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "theo em thì không thể trách thầy wzjwznumber mà lỗi là do da đưa lịch học thực hành quá chậm trễ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giáo viên rất tận tình và dễ thương",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ em đang cần tìm việc làm có thể xoay ca ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người ơi ai có file soạn number topic này rồi cho em xin hoặc mua lại với ạ lưu ý thầy dặn number bài topic này phải lấy từ vựng liên quan từ bài number bài number ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "không phát huy được hết khả năng của sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người cho em xin đánh giá thi giữa kì môn kinh tế chính trị thầy lê văn thông với ạa",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên dạy nhiệt tình dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "không được đánh mạnh",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tích cực hỗ trợ sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giáo trình của môn học chưa đầy đủ chưa cập nhập",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho mình xin hỏi khoá number đã từng học csth number nhưng vắng quá buổi thì có được nộp bằng tin học không vậy ạ mình xin cảm ơn ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy nhiệt tình vui tính dạy dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "chỉ dạy ngữ pháp tiếng anh quan trọng phát âm và nói hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho em hỏi thi lại tin học cơ bản mình đóng tiền online rồi có cần nộp lại hồ sơ hay gi không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "phát âm tiếng anh sai rồi mà cứ nói chêm chêm nửa việt nửa anh mắc mệt",
+                "sentiment": "negative"
+            },
+            {
+                "text": "trường có tổ chức giải easport không fc trực tuyến đồ á",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chương trình đào tạo song ngành là mình chọn cả hai ngành đều trong phần đánh dấu sao hay mình được chọn ngành number tự do rồi ngành number trong phần đánh dấu sao ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô dạy quá hay rồi",
+                "sentiment": "positive"
+            },
+            {
+                "text": "ủa (ngạc nhiên) mọi người ơi cái phong cách của môn hdh ktmt học online là bật video YouTube ful từ đầu đến cuối hocj of là cũng có video cũng giảng nhưng không đáng kể nói về tự đọc tài liệu hả biết là đại học đa số phải tự học nhưng mà dạy kiểu này có hơi sao sao á bỏ tiền ra học mà sao lạ lẫm quá",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ít bài tập để rèn luyện kỹ năng",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho em hỏi là bài tập về nhà với bài tập trên lớp của các môn csth có tính điểm không ạ và nếu có thì làm sao biết mình làm đạt hay không đạt ạ em cảm ơn ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy rất tận tâm giảng dạy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người ơi hôm qua hạn cuối xác nhận đrl mà t quên mất còn cách gì cứu không vậy mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "đôi khi dạy hơi nhanh khiến học sinh hơi hoang mang",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em gia hạn học phí rồi em gia hạn tiếp đến qua tết được không ạ em đóng number rồi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy có kiến thức rất rộng và dạy nhiều kiến thức hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi năm khoa nva thường bao nhiêu điểm thì đạt học bổng ạ em năm nhất nên không biết mong anh chị giải đáp",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô dạy siêu dễ thương",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có ai giỏi môn kế toán ngân hàng không ạ mình nhờ tí có phí",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người cho mình hỏi có ai có tài liệu đáp án cnumber cnumber cnt không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạy học theo chương trình",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "đối với người lần đầu tìm hiểu directx với những yêu cầu đặt ra là rất khó",
+                "sentiment": "negative"
+            },
+            {
+                "text": "bài dạy phụ thuộc nhiều vào slide / trình chiếu cách truyền đạt chưa thực sự phù hợp với cá nhân",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho em hỏi là bao nhiêu điểm là liệt với bao nhiêu điểm là qua môn ạ điểm quá trình của em là number number ạ em cảm ơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tiền đi quân sự (viết tắt) ở bảo lộc đóng tầm bạn / bao nhiêu vậy mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cameron number numberft hàn quốc canh tài number numberht xỉu brazil number numberft bđn number numberft",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên dạy nhiệt tình và có tâm đến lớp đầy đủ cung cấp đầy đủ tài liệu tham khảo cho sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi hình thức thi giữa kỳ của môn kinh tế vĩ mô thầy định và toán ứng dụng thầy trường là thi trên giấy hay learning management system vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy nhiệt tình dễ thương",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cả hai lần đối đầu giữa brazil và thụy sĩ ở world cup đều kết thúc với tỷ số hòa thụy sỹ chỉ thắng number number cuộc chạm trán các đại diện đến từ nam mỹ tại world cup brazil bất bại trong number trận đấu liên tiếp ở vòng bảng world cup ft kèo / cơ hội chấp brazil number ft tài number number numberh kèo / cơ hội chấp brazil number number tỉ số number number kèo / cơ hội bóng trần minh tele tranminhnumber",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy rất nhiệt tình cập nhật thường xuyên những công nghệ mới trong giảng dạy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có hài lòng",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "othk education tuyển người phụ trách môn học bạn đạt điểm cao các môn trên trường bạn sẵn bộ tài liệu ôn thi các môn muốn làm công việc linh hoạt thời gian mà vẫn có thu nhập ổn gia nhập othk education ngay vị trí người phụ trách môn học kinh tế vi mô tiếng anh kinh tế vĩ mô tiếng anh nguyên lý kế toán tiếng anh toán cao cấp tiếng anh gửi Công việc về tuyendunghr othk gmail com hoặc điền biểu mẫu ứng tuyển dưới comment / bình luận hãy là người truyền cảm hứng học tập cùng othk education",
+                "sentiment": "positive"
+            },
+            {
+                "text": "không tận tâm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người ơi bây giờ em bị vướng môn tiếng anh number nhưng mà đợi quài không có chỗ / suất đăng kí giờ em phải làm sao mọi người ơi",
+                "sentiment": "negative"
+            },
+            {
+                "text": "rất có tâm nhiệt tình và tận tụy với sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy đảm bảo giờ lên lớp quá trình giảng dạy trên lớp hiệu quả",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên cần nhiệt tình và tích cực hơn nữa trong khi truyền đạt tới sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thông tin đầy đủ về môn học cho sinh viên khi sinh viên đăng ký môn học",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giáo viên vui tính tích cực",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em nhận kiếm hộ tsv bị mất ạ mọi ng đọc tên năm sinh và khoa là em tìm giúp ạ phí nhỏ ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thích cách dạy như kể chuyện chia sẻ kinh nghiệm của thầy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "lớp phân tích định lượng sáng tnumber vt có number bạn nam ngồi bàn cuối nói chuyện riêng suốt buổi kể cả cô đang giảng hôm nào đi học mình cũng nghe tiếng number bạn môn này kiến thức đã khó mong number bạn không có nhu cầu nghe giảng thì im cái mồm lại dùm cảm ơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người ơi cho em hỏi với ai học văn hoá đông nam á rồi vậy ạ có biết chổ thuê đồ brunei hay ai bán ở đâu không ạ chỉ em với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "do nghỉ cho năm nhất học quốc phòng nên quá trình học bị gián đoạn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có ai từng học môn chuyển đổi số của cô thanh bình mà được trên anh chưa mọi người",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy dạy rất dễ hiểu vui vẻ dễ chịu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có kinh nghiệm vui vẻ nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người cho mình hỏi là phí tốt nghiệp numberk nếu trả lễ phục thì trường có hoàn lại gì không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy có cách giảng dạy lưu loát truyền đạt dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "anh chị cho em hỏi môn nào là tiểu luận vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nên tổ chức các buổi dã ngoại để học các kỹ năng hoặc mời các doanh nghiệp về nói chuyện truyền đạt kinh nghiệm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "sinh viên trường Hutech number number đi học lại rồi vui quá",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người ơi cho hỏi ai giỏi môn điện tử công suất không do đang lo thi giữa kỳ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy rất ổn bổ sung vững kiến thức lý thuyết",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy rất nhiệt tình với chúng em và điều này làm em rất hài lòng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "anh chị nào có tài liệu môn thống kê trong kiểm tra / kinh tế kdoanh không ạ cho em xin với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy cô đảm bảo thời gian lên lớp",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi chứng chỉ kỹ năng học trực tuyến thì mình thi trực tuyến luôn hả anh chị",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy hơi khó hiểu đối với em",
+                "sentiment": "negative"
+            },
+            {
+                "text": "trường kinh tế năm nay có tập huấn cán bộ đoàn không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy nên cho nhiều ví dụ hơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho mình xin tài liệu môn tổng quan du lịch với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "trai knumber trường Hutech học được number tháng kiểu huỳnh hữu khang",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạy hời hợt không tập trung nhiều vấn đề về kiến thức của sinh viên không giải quyết hoặc chưa đưa ra được cách giải quyết hay",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mấy môn này nên học ai vậy anh chị cho em xin ý kiến với ạ em xin cảm ơn anh chị nhiều ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tiếng động cơ xây dựng có lúc ồn quá",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ mọi người đã chụp kỷ yếu mấy ngày trước rồi có thể cho em hỏi là khoảng thời gian nào mình sẽ được chụp hình cá nhân riêng với bạn bè vậy ạ bạn nào biết thời gian cụ thể cho em biết với vì lịch trường để không chi tiết lắm em cảm ơn nhiều",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy hay đi trễ nghỉ nên thời gian trên lớp rất ít",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy nhắm đến người giỏi không nhắm đến người dở",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nhưng khi thi cuối kỳ thì kiến thức quá khó",
+                "sentiment": "negative"
+            },
+            {
+                "text": "không dạy thật sự",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy dạy nhanh và khó hiểu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giáo viên nhiệt tình giúp đỡ học sinh rèn luyện tốt khả năng nói",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nên giảm số sinh viên trong number lớp",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nên cập nhật kiến thức thực tiễn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giáo viên tận tâm giải đáp những thắc mắc của học sinh cực kỳ linh động",
+                "sentiment": "positive"
+            },
+            {
+                "text": "xin tip kiểm tra thnlsud với mọi người với number đứa mù công nghệ và lần đầu đụng đến các thao tác chuyên sâu về word hay excel như mình thì nói là tuyệt vọng giảng viên thì gặp đúng sít rịt mình học môn này như người mù đi đêm ấy mấy thao tác cơ bản ok nhưng sâu hơn thì mong bạn nào từng thi xong môn này đánh giá lại cho mình với",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạy đúng giờ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy dễ hiểu tận tình với sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cần tăng số buổi học thực hành number buổi là tương đối ít không đủ để giảng viên truyền đạt hết nội dung thực hành",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho em xin file đề cương anh ngữ number với tư tưởng Hồ Chí Minh với ak",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "còn ít tài liệu tham khảo",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nên cho sinh viên biết bài tập thực trước khi đến lớp để sinh viên nghiên cứu thật sự rất khó hiểu về các bài phòng lab thực hành",
+                "sentiment": "negative"
+            },
+            {
+                "text": "chỉ tham gia chấm điểm không giảng dạy trong giờ thực hành của lớp một lần nào",
+                "sentiment": "negative"
+            },
+            {
+                "text": "rất tốt rất nhiệt tình chu đáo",
+                "sentiment": "positive"
+            },
+            {
+                "text": "ủa (ngạc nhiên) mọi người mình đến kỳ thực tập rồi mà chưa có email luôn ạ có ai giống mình không chỉ mình cách giải quyết với ạa",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mai học quân sự (viết tắt) nên đem gì với cần lưu ý những gì vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người ơi mình có tóc cắt sẵn muốn hiến thì gửi đâu ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giáo viên sử dụng giờ trên lớp hiệu quả",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có ai đi tập phòng tập ở ways station gò vấp không",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giáo trình quá dài yêu cầu giảm bớt",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nhiều khía cạnh thầy giải thích khá trừu tượng khó hiểu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "môn học này thật sự rất khó và chương trình học hơi nặng lúc trước môn này dược chia ra làm number môn là cấu trúc dữ liệu number và cấu trúc dữ liệu number năm nay lại gộp thành một nên sinh viên khó tải nổi kiến thức",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người cho em hỏi sau khi học hết năm nhất thì được chuyển sang ngành khác không ạ và nếu được thì làm thủ tục ở đâu ạ em cảm ơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mấy anh chị đi quân sự (viết tắt) roai cho em hỏi vô trỏng mình có bị thu đt không ạ em cảm ơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có ai giống mình không gần tới ngày xét tốt nghiệp mới nhớ chưa có chứng chỉ tiếng anh",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mặc dù đánh god nhưng vì em yếu anh văn nên em không hiểu gì về lý thuyết cả",
+                "sentiment": "negative"
+            },
+            {
+                "text": "anh chị khóa trước cho em hỏi với ạ môn thực tập nghiệp vụ du lịch numbertc mình đóng tiền tín chỉ tới lúc đi chuyến đi cũng đóng thêm tiền chuyến đi vậy sau có được trả lại tiền tín chỉ không ạ trước đó em có nghe thầy cô bảo có bắt in cd rồi ghi số Tài khoản để trả lại tiền mà tới giờ em vẫn chưa thấy được trả nữa ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tìm người đi học qp chung chia sẻ tiền xăng mình là nữ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy nhiệt tình dễ chịu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người ơi có chỗ nào hiến máu được tiền không ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "anh chị khóa trên cho em xin kinh nghiệm lấy sinh viên năm tốt với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thường xuyên dạy quá giờ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mình xin ifnumber bạn nhựt huy khoa kinh tế ạ thấy bạn dễ thương không biết (không dấu) có ni chưa ák",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cám ơn thầy fraction cô đã đọc một bài dài thế này",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nên lắng nghe sinh viên nói",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mình là nữ cần tìm trọ gần trường tháng number vào ở",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cái learning management system sao đăng nhập lỗi quài vậy cả nhà ơi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy rất vui tính dạy dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi nghiên cứu khoa học làm khác khoa với nhau được không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "đó là sau khi cô giảng xong một dạng toán thì nên cho ngay một ví dụ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho em xin mẹo / tips để chuẩn bị tốt cho thi cuối kì môn public speaking với ạ điểm giữa kì của em không được cao ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "ôn thi giữa kỳ plnckh nên học sao vậy mọi người ơi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên truyền đạt chưa tốt không gây hứng thú cho sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nên tổ chức thi hình thức trăc nghiệm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "chưa giới thiệu cụ thể các tài liệu cho sinh viên đọc thêm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy gần gũi với học sinh",
+                "sentiment": "positive"
+            },
+            {
+                "text": "trong các tiết học cô đều sử dụng tiếng anh để giao tiếp và hướng sinh viên tham gia các câu lạc bộ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mình cũng chủ động đi làm quen nhưng người tiếng Anh không chịu kết bạn lên đại học sinh viên sợ người lạ hay sao á",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên giảng dạy nhiệt tình bám sát chương trình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "trường Hutech đã number cá koi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ai có tài liệu môn quản trị logitics và chuỗi cung ứng pas em với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mình thấy các bạn nữ trường mình rất là xinh và dễ thương các bạn cho mình hỏi làm cách nào để làm quen với các bạn nữ với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tha thiết tìm bạn ở ghép tổng chi phí numbertrnumber thôi ạ gần trường cách trường Văn Hiến numberkm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "topic về giảng viên ngành thiết kế đồ họa trường mình",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nhiệt tình giúp sinh viên tìm phương pháp học tập đúng đắn cho nhiều bài tập",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên cần tập trung giảng dạy lợi ích liên quan thực tiễn tránh gây nhàm chán và lặp lại quá nhiều kiến thức cũ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tăng số lượng kit thực hành",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có anh chị nào khoa hoá học cô ái lệ cho em hỏi cách viết bài báo cáo thí nghiệm với ạtại em svien năm nhất không (không dấu) biết (không dấu) nên viết sao để đúng ý cô nữa ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chuẩn rồi nhé các em numberknumber",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nhiệt tình giảng dạy truyền đạt kiến thức",
+                "sentiment": "positive"
+            },
+            {
+                "text": "sinh viên khó tiếp thu được hết tất cả",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy cho bài tập về nhà hàng tuần",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "aply ngay đến với chúng tôi nào sự kiện the night in verona được diễn ra vào ngày number number number tại hội trường anh number number",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nghe nói sáng nay trường giờ bình thạnh có bạn iến",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "không nên đánh giá tập trung vào một bài thi cuối kỳ duy nhất chia thành nhiều phần phần mềm DoubledDot number kiến thức ai phần mềm DoubledDot trong đó có thể kiểm tra giấy như hiện nay bài tập lớn number một đồ án vận dụng trí tuệ nhân tạo ai bài thi cuối kỳ không đảm bảo đánh giá đúng chất lượng sinh viên phần mềm DoubledDot đề thi cho những câu dễ chỉ mất thời gian để trình bày hơn là thời gian suy nghĩ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô dạy hay dễ hiểu giảng kỹ thân thiện với sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô không thể cả năm không gặp mặt sinh viên lúc đầu em còn nghĩ tiết thực hành này được miễn nghỉ rồi number tuần cuối mỗi tuần number đồ án giao cho sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên nhiệt tình với các bài trên lớp",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi vi phạm điều kiện học phần tiên quyết song hành là sao vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cách chấm điểm giữa các nhóm chưa được công bằng",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cách nói của giảng viên khó nghe",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có ai muốn xin mở lớp tcs quản trị kinh doanh không (không dấu) ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tây ban nhan với nhật tài number number đức với rica rica chúc anh em nhiều tiền",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người có chụp chung ảnh với mình và bạn mình bên trường cnt t cosplay cương thi với siêu nhân thỏ đen ơi cho mình xin hình với mình xin cảm ơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nếu thời gian đó giảng viên cung cấp thêm tài liệu và hướng dẫn thêm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "được thực hành những bài tập mang tính vận dụng kiến thức đã học cao",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi nếu năm nhất học phòng tập thì năm number có được đăng kí học giáo dục thể chất vovinam không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em mới tập chơi cầu lông mọi người có nhóm nào tuyển newbie thì cho em ké với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nên có phần thực hành trên thiết bị để dễ hiểu hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mình cần tìm innumber bạn lớp trưởng lớp dhnumberfbnumber nhé mình muốn nhờ tí việc về bài tập trong lớp kinh tế vĩ mô thôi í",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thường xuyên vắng mặt làm sinh viên lên trường rồi phải về",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy cũng vui tính nói chuyện liên hệ thực tiễn cao",
+                "sentiment": "positive"
+            },
+            {
+                "text": "pas chỗ / suất nam ở ghép gren river qnumber cách trường UEH cơ sở n number numberkm cơ sở bạn number numberkm bạn vào ở ngay được luôn nhé căn numberpn numberwc number number number tháng hiện number sinh viên knumber number sinh viên knumber chi phí mỗi người khoảng number number numbertrnumber tháng đã bao gồm thuê nhà phí quản lý giữ xe điện nước tính theo nhà nước ful nội thất number máy lạnh number tủ lạnh number máy giặt bạn chỉ việc vào ở thôi bên dưới có đầy đủ tiện nghi tiện ích copmart winmart familymart bách hóa xanh cách numberm highlands kai cofe nhà thuốc long châu pharmacity bảo vệ number number giữ xe number number có hồ bơi phòng phòng tập rèn luyện sức khỏe thể dục anh em thân thiện tôn trọng sinh hoạt chung chi tiết các thông tin qua vậy alo mình number hoặc thả react comment / bình luận xuống bài đăng này mình sẽ chủ động nhắn nhé",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cách đăng kí học chính phần cho học kỳ I năm sau như thế nào vậy ạ em quên mất rồi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người cho em hỏi là nvs ở csc ở đâu có vòi xịt vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "anh chị cho em hỏi là sắp tới tốt nghiệp thì mình được dẫn number hay number phụ huynh vào hội trường ạ tiện thể có bạn nào không sử dụng vé ph khoa luật ngày number number pas lại cho mình với",
+                "sentiment": "positive"
+            },
+            {
+                "text": "muốn có anh ghệ cnt hoặc na quá",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "bạn muốn nổi tiếng tại trường Hutech hãy lên tầng number đi thang máy",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô dạy nhiệt tình và khá hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy tích cực tận tâm vì sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "xăng tăng mà trường không cho học trực tuyến ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy rất có tâm ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nội dung môn học có phần thiếu trọng tâm hầu như là chung chung khái quát khiến sinh viên rất khó nắm được nội dung môn học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "truyền đạt hay tận tâm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô rất nhiệt tình giảng bài khá hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cùng sinh viên giải nhiều bài tập",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy viết ít coment quá colonsmalsmile",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có ai tsv học luật kinh tế không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên nhiệt tình và giúp sinh viên hiểu thêm nhiều kiến thức",
+                "sentiment": "positive"
+            },
+            {
+                "text": "slide / trình chiếu chuẩn bị chưa tốt",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giải đáp thắc mắc sinh viên kỹ lưỡng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi có anh chị nào đã học number môn thay thế này cuối kì thi theo hình thức như thế nào vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ cho em hỏi khi nào khi nào thi học kì number vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "một số giảng viên khác nên có một số điều giống như cô",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tấm chiếu mới chưa trải của trường Hutech rồi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "đi trễ ba buổi không được điểm danh trễ một buổi thầy từ chối điểm danh trễ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy không đảm bảo giờ lên lớp nếu có nghỉ thầy cũng không thông báo trước rất vô lý",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nhóm mình có ai fan jack jnumber không ạkb với nhau đi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tập trung vào nghiên cứu phần kiến thức trọng tâm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "môn này học thi hình thức với thầy cô nào dạy oke vậy ạ em đly để đi quân sự (viết tắt) ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô giáo dạy tiếng anh nói tiếng anh rất nhỏ và khó nghe nếu nói bằng micro hơn nữa cách dạy của cô khiến cho sinh viên không thể nào không buồn ngủ vì nó rất rất nhàm chán",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng dạy rất nhiệt tình tạo cho sinh viên có tính chủ động rèn luyện kỹ năng làm việc nhóm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ mình cần number cuốn này có ai pas lại không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nhiều bài khá dài và khó number tuần làm number lần sẽ không đủ để cân bằng với các môn khác",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thời gian bài tập tương đối tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "các bài thực hành nên bám sát thực tế và có ứng dụng thực tiễn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nhiều bài thuyết trình",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có ai pas áo ush trắng không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên không hướng dẫn thực hành đầy đủ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có cách nào bây giờ huỷ học phần được không ạ khóc cứu em",
+                "sentiment": "positive"
+            },
+            {
+                "text": "các máy tính ở các phòng thực hành hầu hết đề cũ cấu hình thấp không thể đáp ứng được nhu cầu sử dụng cho việc học tập của sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "hỏi gấp phòng học môn lịch sử đảng chiều nay number number mọi người ơi ai học môn lịch sử đảng chiều nay biết phòng học ở đâu không website và learning management system của mình không hiển thị mình kiểm tra cả email rồi ấy",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên dạy rất nhiệt tình tạo sự thoải mái trong lớp học làm sinh viên hứng thú khi đến lớp",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cung cấp phương pháp học tập hiệu quả thân thiện vui vẻ với sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy dạy nhanh hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "còn nói chuyện lan man lạc đề dẫn đến tốn thời gian",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em xin lỗi nhưng đó là sự thật",
+                "sentiment": "negative"
+            },
+            {
+                "text": "hôm đi nhận thẻ cử tri mà em không đi thì có bị s không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nhiệt tình dạy dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho mình hỏi là giờ làm đơn xét tốt nghiệp thì tháng mấy mới làm lễ ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giao bài tập quá nhiều",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cần cho thêm giáo trình",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tìm việc làm partime ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "hy vọng học kỳ tiếp theo được học môn cấu trúc rời rạc của thầy",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người cho em hỏi ngành báo chí học phí number kỳ là bao nhiêu và cơ hội việc làm sau này có cao không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nhiệt tình tận tâm với sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nên tăng cường các bài tập về nhà",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cách trình bày bài giảng của thầy rất hay dễ hiểu và dễ tiếp thu đối với sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "học tập hơi khô khan cô cần ôn tập thi sát đề thêm chút nữa ạ coloncolon",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên chưa định hướng được mục đích học môn này cho sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy cung cấp tài liệu đầy đủ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "đầu tư thêm máy móc hiện đại",
+                "sentiment": "negative"
+            },
+            {
+                "text": "bảo hiểm y tế theo dõi qua ap nào vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "do thời hạn có hạn và sinh viên đi học nên giảng viên chưa quan tâm được hết tất cả sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "đây có phải số điện thoại thầy tuấn không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô dạy nhiệt tình vui nhộn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giọng nói hơi khó nghe ngoài ra không có gì không hài lòng",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên có thể giải nhiều bài tập và giảng kỹ ở mỗi dạng để sinh viên nắm được bài",
+                "sentiment": "positive"
+            },
+            {
+                "text": "liên hệ kiến thức với chuyện thực tiễn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có nhiều bài nói hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em có học ở một trung tâm tiếng anh ở ngoài trường thời lượng hợp lý không nhiều không ít khoảng number number tiết một buổi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho cực kỳ nhiều bài và cực kỳ khó luôn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy dạy rất tận tâm dễ hiểu truyền đạt rất tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tất cả đều mới mẻ nhưng phải làm trong một thời gian ngắn vào cuối kỳ trong khi đó sinh viên còn phải học rất nhiều thứ khác",
+                "sentiment": "negative"
+            },
+            {
+                "text": "học ở trường Hutech thì chứng chỉ nào nên học song song để ra trường dễ xin việc hơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tất cả đều tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em xét đánh giá năng lực nhưng mà học bạ thấp thì có cơ hội không ạ hay bắt buộc học bạ ph cao ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "một tối bình thường ở sân trường trường Hutech chuyện gì cũng có thể xảy ra",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nên có cách chấm điểm quá trình khách quan hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em thi giữa kỳ được numberdotnumber điểm",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần cài các phần mềm học tập mới chính xác ví dụ phần mềm DoubledDot visual studio number hoặc number để sinh viên học tập tốt hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "ai ôn với thi tiếng anh bnumber number tuần rồi cho em hỏi là thi có dễ không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "vận viên quốt tế",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hỏi em học thực hành thuế phòng hien truong là khu nào vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ai pas áo trường UEF trắng cỡ / kích cỡ xin lỗi không ạ hay numberxl cũng được ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thang điểm của đề thi cuối kỳ không hợp lý đề number câu nhưng nếu làm đúng hết number câu number number và number vẫn chưa được number số điểm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tìm bạn chạy bộ sáng lúc trước có chạy numberkm pace number nhưng bỏ lâu quá với nản nam knumber",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy có khả năng truyền thụ tốt giúp sinh viên có thể dễ dàng hình dung được các thuật toán",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy hiền dạy khá nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tìm đồ thất lạc tại cơ sở đinh tiên hoàng em có để cái bình tyeso như ảnh có khắc tên mỹ an bình này được tặng nên em quý lắm anh chị có thấy thì comment / bình luận ở dưới cho em ạ cảm ơn anh chị ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy tận tâm dạy hết tất cả mọi thứ mà thầy có",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thiết bị và dụng cụ thí nghiệm tại phòng phòng lab còn nhiều hạn chê hư hỏng nhiều không đáp ứng được nội dung thực hành",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em xin tài liệu môn tổng quan du lịch với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nên cho ví dụ nhiều dễ liên tưởng và giải thích rõ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy dạy không đúng giờ không hướng dẫn sinh viên thực hành",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người ơi cho mình hỏi thợ photo có được vào trường không mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chưa thực sự tốt",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giáo trình phần căn bản về website lặp lại các môn khác nên học rất nhàm chán",
+                "sentiment": "negative"
+            },
+            {
+                "text": "anh chị cho em hỏi em có phải thi chứng chỉ tiếng anh gì không ạ ngoài ra thì còn cần những chứng chỉ gì khác ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "hưởng ứng mẫu áo khoác sắp ra mắt của trường thì hôm nay mình sẽ recommend / gợi ý mẫu áo cho trường khtn trường mà ra mắt mẫu áo kiểu đặc trưng các ngành khoa học như này thì doanh số",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy rất tận tình chu đáo cách dạy phù hợp với môn học không yêu cầu sinh viên phải ràng buộc kiến thức phải tự tìm tòi học hỏi",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người cho em hỏi em bị mất bảng thẻ sinh viên thì làm lại có lâu không ạ và làm ở đâu ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nên sử dụng tài liệu bằng tiếng việt",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạy dễ hiểu học sinh tiếp thu tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy dạy nhiệt tình và thoải mái với sinh viên hỗ trợ sinh viên rèn luyện các kỹ năng mềm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy thật sự là một giảng viên dạy học rất có tâm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "slide / trình chiếu bài giảng tiếng anh giúp tụi em nâng cao khả năng học tiếng anh",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên hướng dẫn nhiệt tình dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy hài hước vui vẻ nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi em đăng ký học phần học online hết thì có đi được quân sự (viết tắt) không ạ dk bắt đầu tuần number",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người ơi nếu mình quên đồ dưới hộc bàn ở có ba gia thì mấy cô lao công có giữ giúp mình không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên nhiệt tình tận tâm với công việc slide / trình chiếu dễ hiểu hoạt động học tập sôi nổi luôn giải đáp mọi thắc mắc của sinh viên về bài học",
+                "sentiment": "positive"
+            },
+            {
+                "text": "khi giảng bài nói rất nhanh và khó nghe",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em rất hài lòng về phương pháp cách giảng dạy cũng như cách thầy tiếp xúc với sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "hướng dẫn học sinh giải bài tập tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy dạy dễ hiểu nhiệt tình vui tính",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em gia hạn học phí rồi mà đóng trễ number ngày có sao không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "không chỉ truyền đạt đầy đủ kiến thức thầy còn cho thêm sinh viên nhiều thông tin bổ ích khác",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em lần đầu vào thư viện không biết nên làm sao ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "môn học quá nặng cho một ngành không chuyên toán như công nghệ thông tin",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cách truyền tải vấn đề",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "gần gũi tận tâm thương sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên dạy cực kỳ nhiệt tình dễ hiểu lớp học sôi nổi đạt hiệu quả cao",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giá tiền tín chỉ thực hành theo hình thức number cao hơn số buổi học ít hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên gần như không có mặt ở lớp",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tiếng lòng sinh viên trường Hutech bao năm qua thi cử là khok luôn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy rất hiền dạy nhiệt tình giảng dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "chưa đào sâu vào các vấn đề mà chỉ nói đụng đến phần bề mặt và tốn nhiều thời gian vào các vấn đề đơn giản",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giáo viên cần tích cực hơn nữa trong giảng dạy trên giờ thực hành",
+                "sentiment": "negative"
+            },
+            {
+                "text": "máy chiếu thường có vấn đề ở phòng wzjwznumber",
+                "sentiment": "negative"
+            },
+            {
+                "text": "đó là ý kiến cá nhân của em về giảng viên môn anh văn number này",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "lại vui tính nữa",
+                "sentiment": "positive"
+            },
+            {
+                "text": "quản trị nhân lực làm quen đi nào anh em",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "kiến thức thầy truyền đạt rất thiết thực",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng dạy hay nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "pas do sài không hợp mới sd number lần",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "bài tập làm thêm",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạy sát với chương trình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "không có gì phàn nàn về giảng viên",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có bạn nữ nào thi đấu picklebal ở trường mình không",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên nên cho số lượng bài tập vừa phải giải chậm và sâu ở mỗi dạng toán đặc biệt là những dạng toán khó",
+                "sentiment": "negative"
+            },
+            {
+                "text": "đảm bảo tốt giờ lên lớp",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ cho em hỏi ngành ngôn ngữ đức cqt năm ngoái hknumber năm number bao nhiêu điểm có học bổng vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thi giữa kỳ công nghệ thông tin trong chuyển đổi số có khó không ạ em sắp thi rồi nên hơi lo ạ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy rất tâm lý và giảng dạy rất nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô hỗ trợ sinh viên khá nhiều",
+                "sentiment": "positive"
+            },
+            {
+                "text": "ai khoa học máy tính chất lượng cao chưa làm nghiên cứu khoa học không knumber",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy quá khắt khe",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giờ làm đơn xin mà cái number lỗi bị như thế nào thì làm sao để xin cho number đây ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy kỹ nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em quên đóng tiền hknumber hạn là ngày number giờ em đóng có được không ạ cảm ơn anh chị ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "không những truyền đạt kiến thức môn học mà còn chỉ bảo những kiến thức bên ngoài thực tế hướng dẫn những cái hay mà thầy đã trải qua để sinh viên từ đó có thể rút ra những cái tốt hơn để phát triển sau này",
+                "sentiment": "positive"
+            },
+            {
+                "text": "do là hình thức thực hành number",
+                "sentiment": "negative"
+            },
+            {
+                "text": "để môn này có những hiệu quả và tạo hứng thú cho sinh viên thì phần mềm DoubledDot cần có một giáo viên có những kỹ năng hợp lý và đó là người sinh viên nhìn vào đó để học tập",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô chủ đọng nhắc nhở các bạn học tập và ai có thắc mắc cô giải đáp hết",
+                "sentiment": "positive"
+            },
+            {
+                "text": "vui tính dễ chịu với sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô dạy đôi khi hơi khó hiểu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy có chỉ dẫn kỹ càng nhưng do kiến thức môn học quá nhàm chán gây ra đa số sinh viên trong lớp hay cúp học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô có nhiều chia sẻ hay về cuộc sống thông qua môn học",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có sự kiện hướng dẫn các em thi đánh giá năng lực để có đrl không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ anh chị ơi cho em hỏi trường mình có xét khối dnumber ngành ngôn ngữ trung không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "phương pháp quan trọng là kiến thức chứ không phải điểm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em thấy có vài vấn đề ở môn học này thay vì nó là một môn học có thể thay bằng một đồ án chuyên ngành",
+                "sentiment": "negative"
+            },
+            {
+                "text": "m n cho em hỏi em cuối kỳ tiền học sau numberh thì có bị sao không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có xác nhận điểm rèn luyện bổ sung không mọi người em nhầm tg thế là quên không xác nhận",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "rèn luyện nhiều khả năng nói tiếng anh cho sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tối này bđn về bờ nhé theo anh bảy nè tỉ số number number nhé",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "trường mình có top không vại sao ngó đâu cũng thấy bot không",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô có cách dạy hay dễ hiểu tận tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy thường xuyên yêu cầu học sinh trình bày lại những kiến thức đã học trong buổi lý thuyết một cách không cần thiết mất thời gian không khác gì một buổi dạy lý thuyết không đúng tinh thần và mục đích của một buổi học thực hành",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cách truyền đạt của cô khá khó hiểu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy nhiệt tình tạo lối tư duy cho mỗi sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho mình hỏi học giáo dục thể chất mấy bộ môn kia thì có tốn phí không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thường muốn tham gia các sự kiện ở bên ngoài để lấy kinh nghiệm thì nên tìm ở đâu ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "lên lớp đúng giờ dạy nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho mình hỏi giờ mình chuyển từ khoá luận qua number môn thay thế bằng cách nào ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nguyên tắc giờ học vui",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giáo viên dạy nhiệt tình và dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "ai pas sách tiếng anh number không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "theo em nên có thêm mục bài tập nộp qua modle sau mỗi lần học trên lớp hay có bài tập mới tài liệu nên được bổ sung nhiều hơn cho sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thì bài thi VSTEP trong trường number number nào mới có điểm vậy mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "sinh viên trường Hutech được nghỉ number ngày number ngày là number ngày",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em học ngành marketing anh chị recommend / gợi ý cho em nên đăng ký môn nào với ạ quan hệ công chúng quản lý sáng tạo hành vi khách hàng",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "xăng đắt nên ra đường toàn thấy number người đi chung number xe mình có điều kiện toàn number mình number xe",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy nên giảnh nhiều hơn và bài tập ít lại nhưng chất lượng hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cần thể hiện chi tiết hơn nội dung của môn học và nhiều ví dụ minh hoạ hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "đồ án thầy yêu cầu khó thực hiện vì toàn những bài báo khoa học có nội dung trừu tượng",
+                "sentiment": "negative"
+            },
+            {
+                "text": "kèo / cơ hội bóng Từ chối thuỵ sĩ cameron chọn cameron number number phạt góc chọn tài number number",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nên có giảng viên nước ngoài dạy để sinh viên có cơ hội thực hành giao tiếp",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho em xin kinh nghiệm thi học phần anh ngữ number trên máy tính với ạ em phải được điểm cao mới qua môn được ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần có nhiều giờ thực hành hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mình pas tài liệu các đề luật kinh doanh năm trước file vbpl đem vào phòng thi mới nhất ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "anh chị nào thi giữa kỳ môn thuế rồi em hỏi cấu trúc đề như thế nào với ôn phần nào với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "rất tốt bám sát môn học",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có chương trình thực hành cụ thể rõ ràng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cung cấp nhiều kiến thức mới hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tình hình là tôi vẫn đang đấm nhau với kinh tế chính trị nó dập tôi nát bét",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng dễ hiểu nhiệt tình trong công tác giảng dạy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giờ lên lớp ít",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng dạy kỹ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có ai nhận làm phần mềm Spark không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "pas sách đại cương",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "hướng dẫn tận tiện cho sinh viên về nghề nghiệp tương lai truyền đạt tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người đi từ vt lên Sài Gòn có hay chọn xe có trung chuyển tận nơi không ạ hay tự bắt grab cho tiện em thấy mấy hãng như hải vân có trung chuyển đặt khứ hồi còn giảm thêm mà không biết có tiện thật không hay vẫn lằng nhằng vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tương đối hài lòng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy vui tính dạy dễ hiểu và tận tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "đôi lúc hơi khó",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nghỉ number cái tết chỉ cách nhau number tháng quá đã luôn trường ơi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ mọi người ơi có ai có đề kiểm tra giữa kỳ môn toán dành cho kinh tế và quản trị thầy sáng không ạ cho em xin với em cảm ơn mọi người nhiều ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hỏi có ai lươmj được thẻ gữi xe lúc numberhnumber tới giờ không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nhiệt tình tận tâm và vui vẻ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "bài tập trên lớp làm quá nhanh có thể không theo kịp",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em định thi bằng phương thức trung học phổ thông học bổng dnumber vào tđpt ạ cho em hỏi có anh chị nào đậu bằng pthuc và khối này chưa ạ em nghe mọi người trên mạng bảo kiểu này hơi khoai nên cũng khá lo ạ nong anh chị giúp đỡ cười nhẹ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho mình hỏi ai có tài liệu học hay ôn thi môn quản trị marketing với tâm lý kinh doanh không ạ cho mình xin tham khảo đăng ký",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "một số nội dung giảng viên giảng khá nhanh",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy luôn chủ động tạo tranh luận và kiểm tra bài tập đầu giờ để sinh viên dễ dàng nắm bắt kiến thức",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mình cần người kia hộ ở cơ sở HEC chiều nay numberg ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy nhiệt tình tận tâm giúp đỡ sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho mình xin thông tin bạn tuấn kiệt khoa quản trị kinh doanh với ạ hình như có đánh giải cầu lông của trường á không biết bạn đang thích ai chưa vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mang tiếng phòng phòng lab của một khoa mà không bằng phòng phòng lab thực hành cơ bản",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người ơi em chưa biết number xíu gì về tiếng trung em định đăng ký tiếng trung giao tiếp number liệu có ổn không ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em muốn học thêm tiếng trung căn bản cần number chị n trung dạy kèm ạ online hoặc ofline đều được",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em muốn hỏi knumber bây giờ còn huỷ bớt học phần được không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "phòng thực hành về ngôn ngữ Java nhưng máy tính lại không cài netbean em mong trong những học kỳ sau trường sẽ khắc phục vấn đề này",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên dạy sôi nổi",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mấy anh chị ơi cho em hỏi sao năm nay em thấy trường không công bố điểm đánh giá năng lực number vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "bnumber trường mình thời hạn nộp là bao lâu ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô dạy quá phân biệt trình độ trong lớp không thích các sinh viên yếu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho em hỏi number number trung tâm ngoại ngữ tin học có làm việc không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy giảng bài giải bài còn quá nhanh",
+                "sentiment": "negative"
+            },
+            {
+                "text": "ít hướng dẫn sinh viên trong giờ thực hành",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mong thầy sẽ sửa bài tập về nhà nhiều hơn nếu có thời gian",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho mình hỏi thi môn thống kê trong kinh doanh và kinh tế thì mình được đem tài liệu nào cũng được vào phòng thi pk ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em cần tìm trọ gần trường numbertrnumber numbertr ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có lịch học bù đã tự sắp",
+                "sentiment": "positive"
+            },
+            {
+                "text": "ai pas đồ không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy cho chép nhiều ít giảng bài",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thường xuyên đặt câu hỏi cho sinh viên trả lời",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có ai pas áo trường UEH cỡ / kích cỡ s hoặc m không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy rất có tâm huyết với sinh viên thầy cũng giảng và hướng dẫn rất đầy đủ tuy lớp mất tiết khá nhiều",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi em học chính tiếng anh number cô quách thị tố nữ mà em lỡ nghỉ number bủi rồi không biết cô có cấm thi không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mình hỗ trợ bài tập kinh tế thống kê kinh tế và sẵn pas tài liệu giải bài tập môn này nhé",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô đưa ra nhiều phương án giải quyết khi sinh viên gặp vấn đề nào đó với đồ án",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy dạy rất dễ hiểu bài",
+                "sentiment": "positive"
+            },
+            {
+                "text": "phương pháp giảng dạy hiệu quả giải đáp thắc mắc tận tình cụ thể",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ hiện tại em đang ở tiếng Anh db number thì trong học kì hè em có cần phải đăng ký môn học để học tiếp không ạ hay nhà trường đăng ký hộ em vậy mọi người em học chất lượng cao",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tân sinh viên trường Hutech này xịn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ai có đề ôn môn toán cao cấp với môn quản trị chuỗi cung ứng và logistics không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên giàu kinh nghiệm sư phạm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người ơi em thuộc chính sách mà đầu tnumber có nộp đơn giảm học phần sao trên website vẫn chưa thấy giảm vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy day tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ anh chị ơi cho em hỏi là mình có thể vừa học vừa thực tập tốt nghiệp được không ạ em còn number môn mở duy nhất ở hknumber mà hknumber này em đến kỳ đi thực tập thì môn đó ở kỳ numberb ạ dạ vì em thấy có anh chị thì bảo được nhưng mà lúc shl thì bảo không được học ạ nếu muốn học thì huỷ thực tập",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô giáo nói rõ ràng dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy rất vui tính hòa đồng với sinh viên từ đó truyền đạt khá dễ tiếp thu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô luôn tận tâm nhiệt tình dạy sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi có hoạt động rèn luyện nào để cộng điểm không ạ gần hết học phần rồi mà em chưa có tham gia nhiều tại trùng lịch học",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "number hà tĩnh anh em",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "học bài thi VSTEP online hay of tiện hơn ạ do nhà em chuyển xa trường quá khóc",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người cứu em một vé với ạ hknumber em không kịp bảo lưu vậy ở kì này em không đăng ký học phần sang học kì number năm sau vẫn đăng ký lại bth đăng ký ạ và có bị ảnh hưởng hay mất phí gì không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng dạy đúng trọng tâm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em cần mua tài liệu ôn môn cnghe t chuyển đổi số ai có không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "bài tập cần bám sát trên lý thuyết hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "một số bài thầy giảng còn khó hiểu ít sát thực hành và ít sửa bài tập về nhà",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên chưa truyền đạt tốt dạy còn chán không có sự thu hút trong cách dạy lắm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "kiến thức cao",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mình thanh lí bạn nào có nhu cầu thì nhắn tin cho mình nhé",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho mình hỏi cô dương dạy kinh tế chính trị có nói giọng miền nam không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người ơi cho em hỏi theo như chương trình thì năm number sinh viên xuống có hóc môn học hôm bữa em đi nghe sinh hoạt có nhắc đến hóc môn nội thành và ngoại thành là gì ạ em cảm ơn ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em có ý kiến như sau phần mềm DoubledDot môn này em nghĩ là cần có nhiều tài liệu đặc biệt tiếng việt thì càng tốt vì không phải ai cũng giỏi tiếng anh",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạy từ cơ bản theo logic đến nâng cao",
+                "sentiment": "positive"
+            },
+            {
+                "text": "không thấy lên lớp",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy dạy nhiệt tình chỗ nào lớp không hiểu thầy nhiệt tình giảng lại cho lớp",
+                "sentiment": "positive"
+            },
+            {
+                "text": "trời quá nóng mà không có đủ không khí mát mẻ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "hẹn mọi người lên bhd lê văn việt xem quỷ ngập tràn number suất numberhnumber",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ai pas nón qp không",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giờ dạy nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giúp sinh viên hiểu chuyên sâu hơn về lý thuyết đã học trên lớp tạo điều kiện tối đa cho sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "drama / chuyện lùm xùm kết thúc",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần có những lớp training cho các bạn yếu mất căn bản",
+                "sentiment": "negative"
+            },
+            {
+                "text": "điều kiện vật chất chưa được đầy đủ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người cho mình hỏi là triết học và kinh tế chính trị ôn cuối kỳ trên learning management system là đủ chưa ạ hay phải học thêm từ nhiều nguồn khác nhau nữa ạ vì học kỳ number vừa rồi môn chủ nghĩa xã hội khoa học đề thi y đúc trên learning management system nên mình không biết number môn này có giống vậy không bạn nào đã thi number môn đó ở học kỳ number vừa rồi thì cho mình biết với ạ mình cảm ơn nhiều",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người ơi ai có nhu cầu xin mở lớp thì vào group / nhóm nhé",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giọng của thầy không được hay lắm",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ai có tài liệu kinh tế chính trị cho mình xin với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mình rất thích bạn tên chị học môn tlh của cô bích hạnh tnumber number number ngồi ngay cửa sau ra vào á tại sắp không được học chung nữa nên cho mình hỏi là bạn có Người yêu chưa nếu chưa thì có thể cho mình làm quen được không",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tài liệu cho môn học còn hạn chế",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người ơi hôm nay mình làm rớt một chùm chìa khóa trong ký túc xá anh lúc khoảng numberh đổ lên bạn nào có nhặt được cho mình xin nhận lại với ạ chùm chìa khóa khoảng number chìa có number chìa khóa xe sirius mình chân thành cảm ơn ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "phương pháp dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy nên có đề mẫu bài mẫu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tôi có tham gia number sự kiện và làm khảo sát mà",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy giảng dạy nhiệt tình và dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "không đáp ứng được nhu cầu của sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "hòa đồng vui vẻ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi em bị tai nạn ảnh hưởng vận động ở chân không thể học thể chất được thì có được miễn không ạ em có hồ sơ bệnh án đầy đủ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thời gian học",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hỏi trường mình còn nhận hồ sơ học bằng lái xe không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "góc tin đồn knumber nghe nói giàu lắm",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "các ví dụ dễ hiểu dễ áp dụng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "slide / trình chiếu đẹp",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nội dung môn học không hay khá nhàm chán không xác định được mục tiêu của môn học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "kiến thức thực cần phải tế hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy dạy tận tâm nhiệt tình truyển đạt dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô dạy hay nhiệt huyết tiết học vui nhộn dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em tìm tài liệu các môn này ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy cô vậy ok không ạ cho em xin ý kiến voi ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nhiệt tình và vui vẻ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên rất tận tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mình có nhu cầu học môn dịch thương mại trong học kì hè sắp tới bạn nào có nhu cầu muốn học sớm vào kì hè thì có thể nhắn tin ở dưới để mình xin khoa mở lớp mình cảm ơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tìm máy tính number ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tháng number không còn đợt xét tốt nghiệp nào hả cả nhà",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng dạy hay nhiệt tình dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có ai Từ chối bi anh không qua quán unumber chỉ mình vài cơ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên giảng dạy nhiệt tình tận tâm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "sinh viên trường Hutech kiểu dù bạn có chị úp học nhưng bạn phải lên trường để điểm danh",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên nhiệt tình vui tính giảng hay và dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "sửa bài tập",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "knumber vẫn phải tham gia shcd hay sao mọi người bởi vì không còn tính đrl nữa ấy",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tầm vào ngày thứ number thứ number mình có để quên balo màu đen có logo toyota màu đỏ ở trước cổng trường kinh tế nếu mình nhớ không nhầm hoặc có ai đó có thấy được thì cho mình xin thông tin với nhé mình xin cảm ơn nhiều ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hỏi em đăng ký number môn đó có bin trùng lịch đi quân sự (viết tắt) không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dễ tiếp thu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "anh chị cho em hỏi những môn này thi kthp bằng hình thức gì thế ạ kinh tế chính trị mác lênin luật kinh doanh thống kê ứng dụng kinh tế vĩ mô nhập môn tâm lý học",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên hướng dẫn rất nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người cho mình hỏi hội thao truyền thống của khoa giáo dục thể chất khi nào tổ chức vậy mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thời lượng môn học quá dài sinh viên cảm thấy mệt mỏi",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nguyên lí thống kê giữa kì trắc nghiệm ôn gì vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giờ là number rồi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "trang thiết bị tốt hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho mình tham khảo vài trung tâm dạy bài thi TOEIC đủ đầu ra trường mình với ạ mình cảm ơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô dạy vui vẻ nhiệt tình giúp em có hứng học môn anh văn hơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "toánnumber hôm nay lạ nhỉ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tầm tháng mấy thì có lịch đăng ký quân sự ạ tại theo lịch học chính của em thì giữa tháng number mới kết thúc môn ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "đối với cô wzjwznumber cô rất tận tình giải đáp thắc mắc và hướng đến sinh viên cùng trao đổi đối với y hoàn toàn tách biệt với sinh viên không có hướng trao đổi mà là hướng tra khảo kiến thức sinh viên",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "sắp xếp lịch học bù chưa hợp lý",
+                "sentiment": "negative"
+            },
+            {
+                "text": "chia ra nhiều hình thức điểm seminar bài tập bài tập thực hành",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên hướng dẫn làm bài tập dạy dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nhiệt tình chi tiết",
+                "sentiment": "positive"
+            },
+            {
+                "text": "sinh viên trường Hutech kiểu mang tiếng là trường đại học công nghệ mà numberg thì không dùng được còn wifi thì yếu thì sinh viên phải làm sao ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "đến hôm tiếp theo thì thầy lại nạp cho bọn em nhiều kiến thức mới dẫn đến khó hiểu hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy dạy sát theo slide / trình chiếu nhưng một số kiến thức bài tập lại khó hơn nhiều",
+                "sentiment": "negative"
+            },
+            {
+                "text": "number number không muốn không ì th ị trường Hutech hay gì đâu nhưng vẫn có một số thành phần m ất ý th ức lẫn nhận th ức chào các bạn mình là ngoại bang tối hôm kia number number khoảng gần numberh tối mình từ nhà bạn về tới khúc đường hai bà trưng qnumber thì gặp nhóm bạn này number nam number nữ và number bạn trong nhóm đó đeo balo trường Hutech chuyện sẽ không có gì nếu nhóm bạn này không chạy xe hàng number giữa lúc xe đông number bạn number chiếc vision numberb xe dàn hàng number chạy cà rồi ởn cà rồi ởn gi ỡn hớt thấy học trường Hutech xếp hàng ngay ngắn mà sao ra đường kì vậy mình và mọi người xung quanh phải đi sau nhóm bạn này qua hết chục cái ngã tư nhiều người đã phải leo lên lề để chạy vượt nhóm bạn này và sau đó mình quyết định vượt nên bóp kèn thì có number bạn trong nhóm đó quay lại chưa ửi chị on ỉ đó n l hả gì bóp còi quài zị xong nguyên đám cười lên rồi nói gì lum la hết xin phép mọi người tới đây mình không thể nói lịch sự được nữa trời ơi t tức run người tình huống giao thông bình thường thôi mắc gì chửi t ỉ này ỉ nọ vậy có ă n có họ chị mà m ất d ạy quá chắc ở nhà ba me không dạy tụi m hả gì nghe danh trường Hutech có number số thành phần này nọ đã lâu nay được mắt thấy tai nghe tụi nó chưa ửi quá đã mình không muốn vì những thành phần này mà gây tiếng xấu cho trường các bạn nhưng tức quá phải ghi confessions (trang) này thôi p s đợi các bạn nghỉ lễ vui vẻ xong nên mình nhắc nhở nhẹ ra đường cẩn thận cái mồ m không lại có ngày đi xa",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "wifi các phòng thực hành thường rất yếu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "không có ý kiến gì thêm",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "học hộ cũng bị quịt tiền má không lẽ Phốt nhỏ đó",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "anh chị ơi cho em hỏi với ạ em chuyển ngành rồi thì em sẽ đóng học phí theo chương trình môn học mới em đăng kí hay là theo ngành cũ vậy ạ tại trên website thì học phí của em vẫn đang là học phí của ngành cũ ạ em cảm ơn ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mong nhà trường có sự điều chỉnh cho các khoá học sau này",
+                "sentiment": "negative"
+            },
+            {
+                "text": "bỏ phần thuyết trình giữa kỳ đi chẳng ai để ý cái đó cả",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em thích học môn này với cô wzjwznumber",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho học sinh tích cực thuyết trình bằng tiếng anh",
+                "sentiment": "positive"
+            },
+            {
+                "text": "những buổi nghỉ thầy nên thông báo trước ạ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "học dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ anh chị knumber ngành truyền thông năm ngoái cho em hỏi mấy anh chị làm báo cáo gồm những nội dung gì vậy ạ vì tháng number em mới tới thời gian thực tập theo lịch trường nhưng cuối tháng number này em phải làm báo cáo thực tập cho công ty ạ em muốn hỏi để tham khảo ạ em cảm ơn anh chị",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng giải tận tâm dạy kỹ giúp sinh viên hiểu bài",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạy tận tâm nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên nên liên hệ thực tế đến bài giảng",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cách truyền đạt không sinh động không cô động không súc tích",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên rất vui vẻ thân thiện nhiệt tình trong giảng dạy chấm điểm hợp lý",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi ngành cnt đầu năm có mùa sách không ạ và sách gì mùa ở đâu",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có nhiều kiến thức thực tiễn phù hợp với môi trường làm việc hiện đại",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người cho em hỏi tí là em có nhỏ em năm nay tính thi vào trường trường UEH này mà tuần tới em có dịp chở em nó lên thành phố thì em tính ghé vào trường tham quan thì không biết có được ghé vào để tham quan không ạ ví dụ được thì chi nhánh nào cũng được hay sao ạ em cảm ơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thực hành trên lớp",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên sử dụng thời gian lên lớp không hiểu quả dẫn đến việc dạy lố giờ dạy bù quá nhiều",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có ai có đề ôn môn tư tưởng hồ chí minh chủ nghĩa xã hội khoa học kinh tế chính trị mác lê nin không ạ cho em xin ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chỉ cần học sinh siêng năng là sẽ làm được và hiểu rõ hơn về lý thuyết sau mỗi lần làm bài thực hành",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên cực kỳ tận tâm nhiệt tình giảng dạy rất dễ hiểu và rất thú vị tuy rằng đây là môn khô khan khó hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có anh chị nào đậu sp địa bằng bài thi VSAT không ạ cho em tâm sự mỏng với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mình xin đề cương môn quản trị thương hiệu kỳ này với ạ ai có có mình xin với ạ mình cảm ơn nhièu",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người cho em hỏi có lịch thi và lịch nghỉ tết chưa ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy có tâm huyết trong việc giảng dạy sẵn sàng giảng lại những kiến thức chưa rõ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ cho em hỏi mình mún đăng ký quân sự là đăng kí riêng hay đăng ký cùng lúc với đăng ký học phần luôn ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên giảng dạy tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mấy anh chị công nghệ may ơi bây giờ mình muốn đi may thêm thì may ở đâu được ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "bài giảng thú vị",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người ơi anh minh lớp tên môn học number chiều number number có ng thương chưa ạ hichic",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có ai chơi clash of clan không mọi người vào giao lưu với tôi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em có làm đơn gi hạn học phí đóng trước number number nhưng giờ Gia đình chưa xoay kịp tiền phải trễ mất vài hôm nữa liệu đóng trễ hơn thời gian gia hạn có được không ạ ai biết cho em xin ý kiến với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy nhiệt tình giảng dạy và rất cố gắng làm ví dụ mẫu cho sinh viên xem mặc dù wifi của trường rất phế",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mình đóng numberk đồ lễ phục tốt nghiệp có được hoàn lại tiền không ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "ngành nông nghiệp có đào tạo từ xa không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chưa truyền đạt cho rõ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên demo / trình bày ví dụ rõ ràng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có nên xin học lại môn để kéo điểm trung bình không",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "không đảm bảo giờ giảng dạy",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy chăm lên lớp giảng dạy tận tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có bạn nào hknumber học môn trí tuệ nhân tạo ứng dụng rồi không ạ cho mình xin tham khảo bài tiểu luận với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em chào mọi ng em kiếm nhóm đi phượt cùng vào tháng number ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ai để quên khăn cũng ở phòng cnumber number thì ghé bác bảo vệ chỗ đối diện phòng nhân lực để lấy nhé mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy vui nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "gộp chung number lớp khác khóa lại với nhau dẫn đến sự không cân bằng về kiến thức giữa number lớp gây khó khăn cho lớp dưới",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ anh chị ơi cho em hỏi em thấy thông báo về lễ tốt nghiệp mà hôm đó em không sắp xếp được thời gian để dự thì bằng tốt nghiệp chính thức em có thể lấy ở đâu ạ hay bắt buộc phải đăng ký tham dự lễ mới được nhận ạ em cảm ơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "bây giờ em chưa xác nhận điểm rèn luyện có sao không ạ tại em có đóng bảo hiểm y tế lúc tháng number rồi mà vẫn bị trừ numberđ rèn luyện ạ mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có nhiệt huyết trong giảng dạy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô dạy rất hay giọng nói truyền cảm dạy sâu vào các vấn đề",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em xin tip hết luỵ khu hoà an",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy trẻ phong cách giảng dạy có phần cởi mở hơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người ơi võ number tcnumber nên học ai vậy ạ em xin cảm ơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô rất tận tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô nhiệt tình giảng dạy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cách truyền đạt kiến thức rất hay chắc chắn và cụ thể",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ cho em hỏi kiểm tra đạo văn hiện nay chọn bộ lọc number hay number từ ạ em kiểm tra nó lọc luôn cả tiêu đề",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thực hành nhiều",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em xin đánh giá các giảng viên dưới ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cách thầy dạy môn này trong kỳ trước em không được biết chỉ được nghe từ các bạnem đã cảm thấy vui khi được học với thầy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "bữa mình có gặp bạn knumber psnumber hình như tên mỹ bạn nào biết innumber cho mình xin với bạn dễ thương nên mình muốn làm quen bạn có người yêu (lóng) rồi thì mình xin lỗi còn chưa có thì làm quen với mình nhé",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "kiểm tra môn nghe cô chiêu uyên là kiểm như nào vậy mọi người học hết bài khoá trong sách là được đúng không ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "shao mình cứ thấy khó chịu khi các bạn đã mang nước vào lớp rồi mà cứ mở nắp để trên bàn sau lưng người ta ă nó bay mùi rất khó chịu và đặt biệt là khi người trước không biết quay lưng lại quơ đổ Nói chuyện ra thì lại làm cái mặt khó khăn với nhau Vãi ra luôn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nhiệt tình giảng dạy có hiệu quả cao",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên nên cũng cấp slide / trình chiếu cho sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy dạy nhiệt tình rất hài lòng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cần đẩy mạnh tiếng anh liên quan đến ngành",
+                "sentiment": "negative"
+            },
+            {
+                "text": "đang yên đang lành tự dưng đến tết",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy tốt và tâm huyết",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có ai có file ôn môn kế toán tài chính nâng cao không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "làm sao để nhận được học bổng vậy ạ anh chị",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nên thực hành những thứ dễ tiếp thu bài học lý thuyết trước đó và có cuộc thi cộng điểm cho những ai làm thêm bài tập hoặc chương trình",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy sử dụng tốt hệ thống modle để trao đổi với sinh viên và những giảng giải mang tính dễ hiểu gần gũi với sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "pas number áo thun quân sự cỡ / kích cỡ number mỗi cái numberk number đôi giày cỡ / kích cỡ number number sách pháp luật du lịch quản trị lễ tân nghiệp vụ lễ tân quản trị thương hiệu",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "phòng học ngay cạnh bên công trường",
+                "sentiment": "negative"
+            },
+            {
+                "text": "phòng học không đáp ứng đủ nhu cầu học tập của sinh viên máy chiếu khá mờ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "hạn chế dạy bằng slide / trình chiếu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy dạy rất tận tâm nhiệt tình trả lời câu hỏi của sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thi nghe ghi chú có những dạng nào vậy ạ mong anh chị giải đáp giúp em ạ có những dạng ghi chú rồi trả lời câu hỏi sắp xếp nội dung giống trong sách không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần tìm romate nữ ghép number number khu vực nhà bè sát trường Tôn Đức Thắng dọn liền vào cuối tháng này",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "danh sách lớp phân bổ không đều số sinh viên nhiều hơn số máy trong phòng phòng lab",
+                "sentiment": "negative"
+            },
+            {
+                "text": "các buổi thực hành htnumber không thông báo với sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người ơi em đang phân vân nên tự học tiếng nhật hay học ở trung tâm ngoại ngữ trường mình ạ em đang học tới bài number mina mà thấy khó quá ạ ai từng học tiếng nhật ở trung tâm trường mình rồi thì cho em lời khuyên với ạ em cảm ơn nhiều",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "sinh viên gặp khó khăn khi làm giao diện và xử lý chuỗi khi làm đồ án",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy nên cung cấp đầy đủ slide / trình chiếu để sinh viên có thể học tập dễ dàng hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "học anh văn nên học ở phòng phòng lab cách âm để khi học listening không bị ảnh hưởng bởi bên ngoài",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giáo viên thường xuyên gây cười tạo hứng thú học tập",
+                "sentiment": "positive"
+            },
+            {
+                "text": "rất nhiệt tình và chuyên nghiệp",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nên cập nhât giáo trình tài liêu vì tài liệu từ number năm trước rất cũ so với hiện nay",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có nhiều thời gian hơn để gặp giáo viên và thực hành trên lớp",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy còn hơi khó hiểu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "hay trả lời thắc mắc của sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mình pas lại vợt kumpo numberk ạ gdt ở trường",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có ai chưa học tiếng anh number encnumber không mình muốn đăng kí mở lớp mà chưa đủ thành viên có bạn nào đăng kí chung với tụi mình không mong Admin duyệt giúp mình với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có ai cần pas quyển địa lý du lịch Việt Nam không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "đây là môn học khó và cần phải có nền tảng kiến thức từ những môn học cơ bản hơn nó nhưng chương trình knumber thì không có môn nào cơ bản về tín hiệu trước môn xử lý tín hiệu số",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cần có đề cương rõ ràng ngay từ đầu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "kết quả thực hành đánh giá chưa quy chuẩn còn qua loa",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy dạy hay và bổ sung cho chúng em nhiều kiến thức khá hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "bayh ai mà mỗi tuần đổ cho tôi number bình xăng chắc yêu / thân mật luôn quá tôi nói tht luôn á",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy cực kỳ vui vẻ lại dạy dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người cho em hỏi bằng bài thi TOEIC mình nộp cho trường thì thời gian xét nhanh hay lâu vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chiều nay sân ký túc xá có ai đánh cầu không cho mình xin đánh ké với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em xin tài liệu môn đcnt lý thuyết tct với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy cho khá nhiều bài tập và cách giải nhiều bài",
+                "sentiment": "positive"
+            },
+            {
+                "text": "kết quả của một chuyến đi lot quà tại map trường Cần Thơ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên giảng dạy nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có nhiều hoạt động cho phần speaking",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em học video tư tưởng mà chỉ còn có number video bị quá hạn chưa được number tiếng thôi thì có sao không ạ em lo quá",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên tận tâm và nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "rất bức xúc với cách làm việc của nhà trường đăng ký mua bảo hiểm y tế từ number number number và đã đóng tiền ngay lúc đó rồi tới thời điểm hiện tại number number number rồi vẫn không gia hạn cho mình gọi lên thì cứ bảo sau number number lên vsid kiểm tra thử mà có thấy gia hạn gì đâu chẳng may đau bệnh thì ai giải quyết",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ mọi người cho em hỏi ngôn ngữ anh học ở cơ sở nào vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần cung cấp thêm giáo trình",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thực hành chưa được học nhưng trên lớp buổi đầu tiên và buổi học thứ hai đã cho bài tập nhưng lại là bài tập của thực hành mặt khác là cho rất nhiều",
+                "sentiment": "negative"
+            },
+            {
+                "text": "hài lòng nhất là đúng giờ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người cho em hỏi không đủ đăng ký dự thi tanh thì có được nộp bằng không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tận tình chỉ bảo cho sinh viên những kiến thức bị hổng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nội dung hứng thú hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người cho em xin tài liệu thi môn này với ạ em cảm ơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên không xác nhận đánh giá về bài tập mà sinh viên nộp",
+                "sentiment": "negative"
+            },
+            {
+                "text": "knumber ơi cho mình hỏi các bạn đã học môn công nghệ trình diễn cơ bản chưa",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tặng vé sự kiện number number ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ anh chị ơi cho em hỏi ngành đông phương học thì xét điểm trúng tuyển để quyết định mình học nước nào đúng không ạ em có tham khảo nhưng chưa rõ lắm về cách xếp này ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ cho em hỏi là number em đang đi thực tập kỳ numberb năm nay ngày number number là vấn đáp xong tốt nghiệp thì có kịp làm lễ tốt nghiệp vào tháng number năm number không ạ number các hồ sơ để nộp tốt nghiệp cần những gì ạ em cảm ơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "slide / trình chiếu đầy đủ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cách giảng dạy phải hiệu quả hơn lớp học rất uể oải và nặng nề khó tiếp thu bài",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên cần hạn chế việc bỏ lớp trong giờ học hạn chế tới mức tối đa việc nghe điện thoại trong khi lên lớp và cần chú tâm hơn khi đang giảng dạy giờ nào việc đó",
+                "sentiment": "negative"
+            },
+            {
+                "text": "học với tma không phù hợp với nội dung môn học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "ai có file nghe bnumber không cho mình xin với ạ với thi tự do nhưng chung ngày với lớp ôn thì có chung đề không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "môn kế toán tài chính ai có đề ôn đề thử không ạ em chưa hình dung được khóc",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "vui hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "ai có tài liệu triết cuối kì cho em xin với ạ có phí hay không phí đều được",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên dạy có phần hơi nhanh",
+                "sentiment": "negative"
+            },
+            {
+                "text": "hutechers ơi mai qua ana number nguyễn gia trí tham gia l ọt săn labubu bigsize number ti ền mặt gọng kính dễ như ăn bánh nhé rất nhiều chiến thần đã săn gọn ơ number gọng kính gấu bông number number number number kính mắt ana number nguyễn gia trí bình thạnh",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tăng cường kỹ năng làm việc nhóm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên năng động hoạt bát tạo hứng thú cho sinh viên trong lớp",
+                "sentiment": "positive"
+            },
+            {
+                "text": "theo em nghĩ nên sửa lại hoặc thay mới dàn máy tính cũ và dễ bị lỗi đi",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho em hỏi là năm nay trường UEH xét bao nhiêu ngành vậy ạ và đó là những ngành nào",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nội dung giảng dạy rất là lý thuyết và thiếu phần bài tập để ứng dụng và nhớ bài hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em bị thắc mắc về điểm thi nên xử lý sao ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "khả năng truyền đạt của giảng viên chưa tốt",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạy tận tâm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cần thêm thời gian thực hành",
+                "sentiment": "negative"
+            },
+            {
+                "text": "lê hoàng phương đoạt giải á hậu number mis grand international number",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên thân thiện nhiệt tình trong giảng dạy như hướng dẫn thực hành hay giải đáp thắc mắc của sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy rất vui tánh",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy giải thích tận tình các lỗi",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tnumber đóng học phí em có thể lên văn phòng khoa để xin học môn đồ án không ạ em còn nợ môn đồ án chuyên ngành tài chính ngân hàng",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có những khoảng thời gian trống trong giờ học làm kéo dài buổi học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "trời nóng quá học không hứng khởi",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mình là top cần tìm top",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giải chi tiết bài",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em tham gia đầy đủ buổi học của lớp này em không có một chút hài lòng về môn học này",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mấy anh chị cho em hỏi xíu môn bóng chuyền thì nên học thầy cô nào vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chào anh chị hiện tại em vừa xin giấy xác nhận trường để hoãn nghĩa vụ cách đây number tháng nhưng vì lý do gì mà xã bị thất lạc giấy thì bây giờ em có thể lên trường xin thêm number giấy xác nhận nữa được không ạ huhuhuh",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "luôn gần gũi tham khảo ý kiến sinh viên và thống nhất cũng sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mình ở trường khác muốn hỏi đăng ký thi chứng chỉ tin học ở trường huflit mình có dễ với nhiều tiền không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "được number điểm là đươc number điểm quá trình",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nên có nhiều ví dụ thực tiễn cho môn học đi tham quan hoặc thực hành trên các thiết bị thật",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cải thiện trang thiết bị phòng học phần mềm DoubledDot quạt máy chiếu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô rất tuyệt giảng lý thuyết và bài tập siêu kỹ giải đáp thắc mắc của sinh viên cực nhanh vì chi tiết",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ anh chị ơi cho em hỏi là nếu mình đăng ký cái lớp ôn tập rèn luyện mà mình không đi học vậy bị trừ bao nhiêu điểm ạ em cảm ơn anh chị mọi người nhìu ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "hay giải theo cách của mình chưa giải thích được nhiều thắc mắc của sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy truyền đạt rất tốt rất lôi cuốn và thuyết phục",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nên giảng chậm lại",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho em knumber hỏi môn thống kê ứng dụng của thầy nguyễn văn sĩ có lớp nào học sáng hoặc chiều ở tầng number toà bnumber không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mai mình có đi sức khỏe / sự kiện bên cơ sở HEC từ numberh numberh nhận kiểm tra mã numberk và kí tên numberk xong mới nhận cuối kỳ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "anh chị em nào rành tư vấn giúp em đồ án tốt nghiệp ngành kỹ thuật điện với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mặc dù là một môn lý thuyết nhưng thầy giảng bài rất sáng tạo và đổi mới làm cho sinh viên có hứng thú với môn học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy rất nhiệt tình thân thiện và vui tính cách giảng dạy rất dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có anh chị nào học môn côn trùng có thể cho em xin file ôn với được không ạ pas cũng được ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em thấy thầy giảng hơi bị buồn ngủ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nên đơn giản hóa với các phần không quan trọng",
+                "sentiment": "negative"
+            },
+            {
+                "text": "những bài phòng lab cuối thầy cũng dễ tính hơn sử dụng thời gian trên lớp hợp lý hơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tha thiết xin tài liệu môn kinh tế lượng ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "không quan tâm sinh viên có nắm được kiến thức hay không",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên khuyến khích sinh viên tự tìm hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tôi tha thiết mong trường Cần Thơ mở ngành kinh tế chính trị quốc tế",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy ít có giảng về bài tập chỉ cho sinh viên tự tìm hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "anh chị ơi hiện tại em có mục tiêu săn học bổng mà lên website đọc cũng không rõ là khoa mình có bao nhiêu sinh viên và bao nhiêu học bổng hay săn như thế nào ạ các anh chị có ý kiến nào để em kham khảo không ạ hiện tại em là sinh viên khối ngành kinh tế không Bình thường nên làm gì và tìm hiểu như thế nào ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mong giáo viên có thể giải tham khảo đề thi các năm hoặc các dạng câu hỏi của anh văn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy rất nhiệt tình và vui tính",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nên cho bài tập để giải thêm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "âm thanh thầy giảng hơi nhỏ khó khăn trong việc nghe giảng",
+                "sentiment": "negative"
+            },
+            {
+                "text": "number năm sẽ có những đợt tốt nghiệp vào những tháng nào vậy mọi người ơi",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên hay nói chậm và còn giải thích lại bằng tiếng việt điều này không thực sự cần thiết",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có ai có tài liệu ôn thi kỹ năng thực hành chuyên môn ngành kinh doanh quốc tế không ạ cho em xin với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nhiều ví dụ được đưa ra để phục vụ cho bài học",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nhưng mong cô giảm tải bớt phần đồ án",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em xin mẹo / tips ôn với tài liệu ôn môn luật kinh tế với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "number number trường mình được nghỉ bao nhiêu ngày ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "ai chỉ em làm máy mạch lưu chất với tr ơi",
+                "sentiment": "positive"
+            },
+            {
+                "text": "những thông tin mới nhất liên quan đến ngành luôn đến với chúng em qua những tiết giảng dạy của thầy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "theo em giảng đường hơi nóng",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nhiều khi dạy quá thời gian",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cách thầy giảng rất hấp dẫn và dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "vừa tìm ra quán quán cà phê chạy deadline number number không phụ thu mà menu chỉ từ numberk xách deadline ra đây chạy liền đi thôi trễ deadline bây giờ đchi số number ngô tất tố phường number bình thạnh",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "theo em môn kiến trúc máy tính nên có thêm phần thực hành vì như vậy việc học sẽ dễ hình dung hơn rất nhiều",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy giảng bài chưa cuốn hút hấp dẫn dễ làm sinh viên chán và buồn ngủ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cần có thêm các ví dụ liên hệ thực tiễn chuẩn bị kỹ và giảng bài lưu loát hơn thay đổi cách dạy để sinh viên được chủ động hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho mình hỏi trong các môn dưới đây nên đăng kí môn nào và môn nào làm tiểu luận vâỵ ạ năm nay năm number nên mình muốn đi mà không biết đăng ký sao",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy diễn đạt khó hiểu giọng nói khó nghe",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cơ sở vật chất của trường nên được đầu tư làm mới và hiện đại hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "ít bài tập",
+                "sentiment": "negative"
+            },
+            {
+                "text": "hóa hợp với sinh viên hơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô dạy slide / trình chiếu lý thuyết hơi nhanh",
+                "sentiment": "negative"
+            },
+            {
+                "text": "ai có áo viện màu xanh cỡ / kích cỡ xin lỗi không ạ pas lại em với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "góc bức xúc đi học nhưng quá rủi ro để gửi xe xe em mới mua nét căng sau đúng number buổi chiều ngày number number number gửi ở bãi giữ xe sau toà enumber cạnh sân bóng rổ thì thành như này có cách nào để hạn chế không chứ thật sự em rất bức xúc ạ em không nhận được bất kì lời xin lỗi hay giải thích nào dù đi học vẫn phải trả phí gửi xe hoai thuong vo",
+                "sentiment": "positive"
+            },
+            {
+                "text": "chỉ có thể là trường Hutech mượn hội trại cầu hôn luôn trịnh thành luân",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên không dành tìm hiểu trước nội dung giảng dạy trước khi lên lớp",
+                "sentiment": "negative"
+            },
+            {
+                "text": "những sai lầm cần tránh khi viết chương number nghiên cứu khoa học sau khi đã có một chương number phương pháp nghiên cứu vững chắc chương number kết quả nghiên cứu chính là trái tim của bài nghiên cứu khoa học đây là nơi bạn trình bày những gì mình tìm thấy sau quá trình thu thập dữ liệu tuy nhiên đây cũng là chương dễ khiến nhiều bạn bị trừ điểm nhất do cách trình bày thiếu logic hoặc sa đà vào mô tả số liệu thô dưới đây là những sai lầm kinh điển lưu lại ngay bạn nhé",
+                "sentiment": "negative"
+            },
+            {
+                "text": "đề nghị tăng thời gian thưc hành",
+                "sentiment": "negative"
+            },
+            {
+                "text": "sinh viên tốn thời gian lên trường mà không được học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho em hỏi chiều tnumber tuần này các lớp thực hành có được nghỉ không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần tiếp cận với sinh viên nhiều hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ em xin mẹo / tips chụp và chỉnh ảnh bằng ip đẹp như máy ảnh chúc mọi người học chính tốt thi tốt",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ai có cuốn bài tập môn tiếng anh chuyên ngành kinh tế không ạ pas em với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em bỏ lỡ kì đăng ký tanumber em định ôn thi để lấy bằng pas được không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "sự tận tâm của giảng viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy dạy rất hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên dạy nhiệt tình vui tính",
+                "sentiment": "positive"
+            },
+            {
+                "text": "top những lý do chúng tiếng Anh có mặt ở trường UEH number thương hiệu uy tín hàng đầu một trong những trường đại học trọng điểm của việt nam cơ hội việc làm cao number chất lượng đào tạo và môi trường học tập tốt chương trình học gắn liền với thực tiễn number môi trường sinh viên hoạt động sôi nổi năng động giúp chúng tiếng Anh phát triển toàn diện number các bạn viết tiếp giúp mình ở dưới comment / bình luận nhé nhưng với lý do nào thì với hành trình tại trường UEH mục tiêu của chúng tiếng Anh vẫn là điểm cao và ra trường với tấm bằng giỏi tấm bằng xuất sắc nhưng nếu cuộc đời không cho bạn rực rỡ như vậy thì sao thì chả sao cả vì othk ở đây làm rực rỡ bảng điểm của bạn hơn đó các bạn chia sẻ lý do đến với trường UEH và mẹo / tips học tập hiệu quả cho mọi người cùng nhau phát triển nhé othk othkelitestudent hocungothk hocungothk othkeducation",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có bạn nào muốn đi cà phê chụp hình không mình theo với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "slide / trình chiếu hướng dẫn rất trực quan và bổ ích",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy dạy kỹ tận tâm với sinh viên thường xuyên trao đổi với sinh viên ngoài giờ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "kiểm tra bằng website",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần có phương pháp dạy hướng về sinh viên nhiều hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên thân thiện hay quan tâm tới sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "rât tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có bạn nào đang mở lớp thực hành an toàn window hay đồ án cơ sở không ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "bạn nào ở trọ khu cầu rạch nhum mình nhờ tìm đồ với mình gửi tiền",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mình bắt đầu nhận ôn lịch thi tin học đầu ra trường Hutech thi number number hạn chót đăng ký vào number number nhận ôn nhóm và kèm number number có nhận ôn online và trực tiếp hỗ trợ máy tính sl number máy kết quả thi đợt vừa rồi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có cung cấp tài liệu cho sinh viên",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "đóng tiền kĩ năng mềm trễ có bị gì không mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "góc tìm đồ thất lạc dạ tình hình là tầm trưa chiều hôm nay number number thì em có để quên nguyên cái hộp tai nghe baseus trắng dòng wmnumber có cái ốp như này ạ em không nhớ rõ mình đã để quên ở đâu nhưng em chắc chắn khu vực em làm mất là quanh chỗ căn tin bán nước gần hội trường nhân văn với quanh khu hội trường th ạ anh chị bạn nào có thấy và tìm được thì cho em xin lại với ạ em cảm ơn mọi người",
+                "sentiment": "positive"
+            },
+            {
+                "text": "number tiết liên tục không tập trung được phần cuối giờ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em thấy công thức tính điểm mà em tính cỡ được number mấy à không biết có lộn đâu không tiếng Anh có anh chị hay bạn nào hỗ trợ em tính điểm được không ạ trung bình điểm trung bình tích lũy em cỡ number number number number",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô giảng dạy nhiệt tình giải đáp thắc mắc cho sinh viên nhanh chóng kiên nhẫn giải thích cho sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho mình xin tài liệu chủ nghĩa xã hội khoa học với kinh tế vĩ mô với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tình yêu có thể fake trà sữa thì không nhóm number long island",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "anh chị cho em hỏi ngành tâm lý học tầm năm mấy thì sẽ đi thực tập và thực tập ở đâu ạ với cả do mình tìm hay là nhà trường sẽ giới thiệu vậy ạ em cám ơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "lên lớp đảm bảo thời gian và công tác giảng dạy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cung cấp thêm tài liệu phục vụ môn học cho sinh viên trình bày rõ mục tiêu bài học và sử dụng giờ lên lớp một cách hiệu quả hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có ai pas sách kinh tế chính trị mác không ạ em cần tìm number cuốn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người ơi cho em xin mẹo / tips thi kinh tế vi mô với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "vui tính hòa đồng nhiệt tình chỉ bảo tận tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy giảng dạy rất nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ cho em hỏi có ai tham gia câu lạc bộ ivt hoặc câu lạc bộ wegrow không ạ em muốn xin một vài đánh giá để tham khảo ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ cho em hỏi em làm đơn gia hạn đóng number mà em chuyển khoản sau numberh vẫn trong ngày number number thì ổn không vậy ạ do nhà em chuyền tiền hơi muộn nên em lo quá",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy còn giảng bài hơi nhỏ sinh viên tụi em lắng nghe không rõ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tốc độ dạy khá nhanh khiến việc tiếp thu không hiệu quả",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô tận tình với học sinh nhưng còn thiếu cách truyền đạt một chút",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em có góp ý nhỏ là trong giờ dạy lý thuyết thì những chỗ trọng tâm và thiết thực của môn học thì thầy nên nhấn mạnh và giảng giải nhiều hơn để chúng em chú ý hơn những chỗ đó ạ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "anh chị khoa quản lý thông tin ơi cho em hỏi là học ngành này sau này định hướng nghề nghiệp của mình là gì ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chưa thực sự đi sâu vào nội dung môn học phần lớn thời gian trên lớp làm bài thực hành mất rồi",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cổng bạn của trường mình coi trên map gõ sao để chạy đúng vậy ạ mong mọi người chỉ mình với mình cảm ơn ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "anh chị ơi bài thi IELTS của em number number nhưng kĩ năng nghe nói còn yếu thì vào học kdtm với kinh doanh quốc tế tiếng anh toàn phần thì có học nổi không ạ em sợ vào bị ngộp không học nổi khi tiếp xúc tiếng Anh number cả những môn toán nhưng chọn tiếng việt thì lại đi khá xa nhà ạ anh chị có thể cho em xem xíu tài liệu hay bài học trong tiếng ạn toàn phần để em hình dung hình thức học trong đó được không ạ với có cần chạy cơ sở không ạ em cảm ơn anh chị nhiều ạa",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy có slide / trình chiếu nhưng làm mất thời gian vì quá trình viết bảng",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thi tin cơ bản làm chắc world với personal trainer thôi bỏ phần excel có pas không m n",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần giảng dạy theo slide / trình chiếu tiếng việt hoặc giảng viên cần chú trọng dịch và giải thích hơn vì sinh viên cũng không giỏi tiếng anh nên khó tiếp thu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giáo viên có phong cách giảng dạy nghiêm túc",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng nhanh",
+                "sentiment": "negative"
+            },
+            {
+                "text": "đi học xa quá ạ mong trường có kế hoạch nào đó cho sinh viên học thể dục bên nhân văn đi bộ cho gần ạ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy sửa bài tập nhanh quá nên hơi khó hiểu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mình lỡ đặt áo td cỡ / kích cỡ m có hơi chật bạn nào có nhu cầu đổi không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mình có mua xe trái cây của anh chị trước trường thì gặp cảnh này mình đã ăn number miếng dưa hấu trước và bị chua không biết có nuốt sinh vật lạ nào không nữa mình quay lại hỏi thì chị đó đổi miếng dưa khác cho mình mình cũng bỏ qua không nói gì nhưng sau đó mình ăn miếng mận cũng bị thúi và dập trái cây đã cũ và hỏng vẫn bán cho khách còn có cả sinh vật lạ lần trước mình và bạn đi mua chung thì kêu lấy number loại numberk anh bán kêu phảinumber mình nói vậy thì bỏ number loại lấy numberk cũng được anh đó im lặng rồi vẫn cắt number loại và tính numberk numberk không phải vấn đề mà tụi mình number đứa ăn không hết và kiểu cố ép mua",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên có nhiều phương pháp giảng hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "phòng phòng lab còn chưa đáp ứng tốt",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có ai học ôn khoá tiếng anh bnumber trong trường để thi ngày number number không ạ vì mình cũng tự ôn thôi nên không bk đề trong khoản nào nếu được cho mình xin mấy phần trọng tâm có thể ra với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy trẻ và nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nội dung giảng dạy khá tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên dạy hay nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "trường Hutech theo ý sinh viên cho sinh viên học online number tuần còn thi vẫn thi of",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "number number trường mình nghỉ được bao lâu vậy mọi người",
+                "sentiment": "positive"
+            },
+            {
+                "text": "các bài tập thực hành có lượng bài khá nhiều và tương tự nhau",
+                "sentiment": "negative"
+            },
+            {
+                "text": "không nên giao bài tập cho sinh viên rồi để sinh viên trên lớp tự làm bài trong một khoảng thời gian lâu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy dạy nhiệt tình giải đáp thắc mắc của học sinh một cách tận tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi tancnumber của thầy huynh alexander là học những gì ạ có điều gì cần lưu ý thầy sẽ chấm điểm bằng hình thức gì vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên không biết cách diễn đạt nghỉ number tuần không thông báo trên modle",
+                "sentiment": "negative"
+            },
+            {
+                "text": "hay dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "ai lập đội nhóm f lq nch mic không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên vui vẻ hòa đồng với sinh viên tạo cảm giác hứng thú học tập hơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "theo như yêu cầu của môn học sinh viên phải mang lap để làm bài tập tuy nhiên ổ cắm trong phòng chỉ có number ổ không đáp ứng được nhu cầu dạy và học của giảng viên lẫn sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "hoặc nếu thấy bất tiện thì trường em nghĩ trường cần có một phòng chuyên môn luôn có giảng viên phần mềm DoubledDot một là để sinh viên có thể chủ động hỏi thực hành mỗi khi cần thiết",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giọng đọc tiếng anh khó nghe",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ có ai pas sách pháp luật đại cương không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ mấy anh chị ơi cho em hỏi mấy môn này môn nào là thi tiểu luận ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "gây lãng phí",
+                "sentiment": "negative"
+            },
+            {
+                "text": "trình độ chuyên môn cao",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mình chạy bộ ở trường Cần Thơ bị rớt chìa khoá như hình bạn nào nhặt được cho mình xin lại và hậu tạ ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạy chi tiết giải bài tập đầy đủ dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô rất thân thiện dạy tận tâm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên dạy nhiệt tình chu đáo tận tâm tạo mọi điều kiện cho sinh viên phát triển kỹ năng suy luận",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy hứa sẽ đăng / upload điểm giữa kỳ sớm mà điểm giữa kỳ thì tới giờ này vẫn chưa có",
+                "sentiment": "negative"
+            },
+            {
+                "text": "bài giảng hay và dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "xin Facebook mấy bạn nãy học công nghệ may để Facebook dưới tôi kb",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mấy bạn ơi mình muốn tham khảo chương trình vbnumber vừa học vừa làm học từ xa của trường mình xem trên website thì không thấy hạn tuyển sinh mình có thể tham khảo ở đâu được ạ hay lên trường hỏi ạ mình cảm ơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thường xuyên nghỉ mà không báo trước để sinh viên biết",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em là sinh viên năm nhất những môn này em chưa biết chọn giảng viên nào anh chị nào có kinh nghiệm cho em xin ý kiến ạ em xin cảm ơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "khởi động ngày mới mong number ngày suôn sẽ number number number number ma rốc croatia bet tài góc number number ft bet croatia chấp goc number number number ft chúc anh em may mắn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cung cấp bài giảng tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy dạy dễ hiểu tận tâm nhiệt tình với sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy tận tâm nhiệt tình giảng dạy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "knumber mình đã tìm được đơn vị thực tập chưa cho mình típ đi mọi người",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mình pas ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ em sinh viên năm nhất thì có được đăng ký hknumber để trả nợ môn không ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thiếu kinh nghiệm truyền đạt",
+                "sentiment": "negative"
+            },
+            {
+                "text": "ai có sách khởi nghiệp không ạ pas cho em với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "hay bị về trễ colonsad",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người ơi cho em hỏi nộp minh chứng phiếu thông hành ở đâu thế ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần thầy công bố điểm các bài kiểm tra sớm hơn nữa",
+                "sentiment": "negative"
+            },
+            {
+                "text": "hiện giờ giảng viên đã nghỉ number tuần mà không báo trước",
+                "sentiment": "negative"
+            },
+            {
+                "text": "anh chị cho em hỏi là sau kỳ quân sự là mình nghỉ hè luôn hay có lên lại trg gì không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "quá khó tính giờ cao su giảng dạy lan man không hiệu quả",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô giảng bài rất nhanh mong cô sẽ dạy chậm lại để sinh viên kịp hiểu vấn đề",
+                "sentiment": "positive"
+            },
+            {
+                "text": "học thực hành cũng là học mà sao thầy vô lớp cứ ngồi yên một chỗ đăng / upload bài lên course xong",
+                "sentiment": "negative"
+            },
+            {
+                "text": "môn thiên về kiến thức lập trình nhưng lại bắt buộc thi lý thuyết trên giấy là không hợp lý",
+                "sentiment": "negative"
+            },
+            {
+                "text": "hồ sơ nhập học trường mình càn những gì ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nhận ôn tin học rút gọn tin học nâng cao trường Hutech qua lễ có mở đợt thi tự do tiếp theo vào number number hạn đăng ký number number mọi người tranh thủ nhé",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giờ học thiếu sinh động",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thời gian thực hành ít",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em chào mọi người em muốn hỏi là trường mình có bao giờ tổ chức xuân tình nguyện mà đi nhánh xuân chiến sĩ ở các sư đoàn trong quân đội không / chưa ạ em muốn đi cái đó lắm mà không biết đăng ký làm sao é hay anh chị nào biết cách hay chỗ đi xuân chiến sĩ thì chỉ em dới nhé em cảm ơn ạa",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mình pas áo td size / cỡ l giao ở có cơ sở Hòa Mạnh nhé bạn nào cần comment / bình luận nhé",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dể gần tạo tình cảm tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "theo em cần trang bị và sửa chữa máy chiếu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tớ muốn tìm bạn có sở thích đọc sách để có thể đi đọc sách chung với mỗi cuối tuần đi nhà sách ấy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "phòng cho thuê tiênk nghi ngay cơ sở number chú tiến number",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy wzjwznumber dạy nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có anh chị nào học song bằng cho em hỏi là nếu vay nhcsxh cho ngành thứ number rồi thì khi học song bằng vay cho ngành thứ number luôn được không ạ em cảm ơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "môn học khá khó không phù hợp",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên vô cùng tận tâm hết mình vì sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cung cấp công cụ giảng dạy tốt hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nửa đầu tiên hơi có sự chênh lệch kiến thức dạy học giữa lớp sáng và chiều",
+                "sentiment": "negative"
+            },
+            {
+                "text": "sinh viên năm nhất number tháng làm được numbertr ổn không ạ mình không ở trọ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nên cho làm bài tập trên lớp sau mỗi chương",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô dạy cũng khá hay nhưng hay gọi lên làm bài tập gây áp lực cho sinh viên lắm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có ai học tđpt lớp numberdptbnumber không ạ cho em làm quen với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giới thiệu những kiến thức mới cho sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em nghĩ cần có các bài tập lớn để nâng cao khả năng lập trình của các sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người chơi bóng rỗ ở đâu vậy ạ lâu rồi em không chơi muốn chơi lại mà không có đội nhóm",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "hay và tận tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy có đăng bài tập lên hệ thống môn học",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy nên sử dụng modle và có cách thông báo rõ ràng dễ cập nhật hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người ơi cho em xin đánh giá thầy hữu lý giảng viên dạy môn nói trước công chúng với ạ em cảm ơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "lên lớp trễ number number phút",
+                "sentiment": "negative"
+            },
+            {
+                "text": "no one nhớ học phí",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "lên lớp đúng giờ giảng dạy dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tiếng lòng của nhiều sinh viên trường Hutech đây rồi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy đẹp trai",
+                "sentiment": "positive"
+            },
+            {
+                "text": "sinh viên trường Hutech đề xuất trường cho sinh viên học online number tuần sau khi thi hknumbera ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "kiến thức uyên bác và hài hước hay kể chuyện",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giọng thầy rất hay khả năng truyền đạt rất tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "trường Hutech có định xây bãi đáp trực thăng cho sinh viên không",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy rất có tâm trong việc tạo áp lực giúp sinh viên học nhiều hơn và thực hành nhiều hơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nên cập nhật bok slide / trình chiếu thường xuyên vì quá cũ không tích hợp được với chương trình bây giờ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mong thầy sắp xếp giữa việc giảng dạy và công việc cá nhân",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho em hỏi xin giấy đăng kí hoảng nghĩa vụ trực tuyến được không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "làm phim khó quá thầy ạ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên nói quá nhanh",
+                "sentiment": "negative"
+            },
+            {
+                "text": "chừng nào nhập học vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "vừa thi xong tâm trạng kiểu toàn phạm",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "truyền đạt hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên cần có những nhấn mạnh trong bài học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô rất tận tâm nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có ai đi làm gần trường không cho mình xin với ạ mình cảm ơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em chuẩn bị mua laptop thì cho em hỏi ngành kế toán trường mình có dạy chương trình chuyên ngành gì đặc biệt không tương thích trên mac không ạ em định dùng mac cho number năm đh",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nên cho bài tập thực tế quản lý thời gian cuộc đời sắp xếp thời gian làm việc học tập yêu đương hợp lý",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mình muốn kiếm Người yêu khóc",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "rất thân thiện nhiệt tình quan tâm sinh viên dạy hay và dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cách dạy của thầy rất có vấn đề",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy dậy quá nhanh và không sâu nên không nắm chắc được kiến thức",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ anh chị cho em hỏi mình đặt làm băng tải băng chuyền theo yêu cầu để làm đồ án ở đâu vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ em là con trai khoa x em tìm đồng đội đánh cầu lông nội dung đồng đội nam đồng đội nữ chuẩn bị cho trường Tôn Đức Thắng game ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ok hết",
+                "sentiment": "positive"
+            },
+            {
+                "text": "học Microsoft Office Specialist có nhóm nào còn chỗ / suất học Microsoft Office Specialist không ạ cho mình ké vứ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy rất nhiệt tình và giải đáp tất cả thắc mắc của sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho mình hỏi môn phân tích dữ liệu với phân tích hiệu quả tài chính trong kinh doanh có làm nhóm với number môn này có khó không ạ mình định hủy học phần",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "sinh viên hỏi nhận câu trả lời cũng như không hỏi",
+                "sentiment": "negative"
+            },
+            {
+                "text": "lớp đã nghỉ number tuần liên tiếp chưa tính một vài ngày nghỉ khác",
+                "sentiment": "negative"
+            },
+            {
+                "text": "chất lượng đào tạo tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người ơi cho em hỏi là chứng chỉ tin học Microsoft Office Specialist cần mấy môn ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mấy anh ơi em có để quên cây quạt cầm tay trong tolet nam lầu number ai thấy cho em xin lại với ạ em hậu tạ hậu hĩnh ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giáo viên tận tâm công minh",
+                "sentiment": "positive"
+            },
+            {
+                "text": "ai học lớp thầy khang cho mình xin ndung ôn tập cnt trong cds với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên nhiệt tình giảng dạy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy giáo nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nếu năm sau có cắm trại hãy number đi kiếm chổ nào đốt lửa trại chơi number dọn rác dọn rác dọn rác thật sự lúc chơi thì hết mình lớn hết rồi tưởng ai cũng có ý thức chứ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô giáo dạy nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "học marketing truyền thông đpt ở trường huf có ổn không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nên cải thiện cơ sở vật chất và thiết bị dạy học phòng máy chiếu mờ khó theo dõi",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giáo viên rất tận tâm nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy wzjwznumber dạy rất tốt và giúp chúng em học thêm các kỹ năng mềm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy rất thường xuyên kể về các câu chuyện cá nhân mặc dù không sinh viên nào yêu cầu và quan tâm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô dạy kỹ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "khó nghe trong việc giao tiếp ngôn ngữ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tham khảo mẫu làm báo cáo thực tập chuyên đề tốt nghiệp có anh chị hay bạn nào có thể cho em xin mẫu cách làm báo cáo thực tập chuyên đề em tham khảo được không ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "các slide / trình chiếu bài tập hàng tuần rất đầy đủ kể cả về nội dung thực hành",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ thầy lê hữu nghị dạy quản trị ngân hàng thương mại dễ không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mấy anh chị nào khóa trước học chương trình kế toán doanh nghiệp song nghành thuế cho em rieview với ạ về chương trình học có nặng hơn nhiều so với ct kế toán không ạ và học chính chương trình song nghành thì mình cần đóng học chính phí có nhiều không ạ em năm number đg băng khoăng có nên học chính thêm song nghành không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người cho em hỏi em lỡ bỏ áo khoác ở vnumber number hôm tnumber giờ đến phòng nào lấy lại ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nhiệt tình truyền đạt kiến thức cho sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "vui tính năng nổ dễ dàng tiếp cận sinh viên cách dạy có hiệu quả",
+                "sentiment": "positive"
+            },
+            {
+                "text": "lớp học quá đông nên rất nóng",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy dạy dễ hiểu nhưng còn chưa cho nhiều bài tập",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy nhiệt tình giảng lại cho học sinh",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi là em chưa đóng tiền và bị huỷ học phần thì giờ mình đóng có được đăng kí học phần lại không mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "hiệu quả",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi trường có mở đợt bổ sung học phí vào tháng number không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "fen nào đi cf sáng không ngủ đ được",
+                "sentiment": "positive"
+            },
+            {
+                "text": "không đầu tư nhiều cho bài giảng",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô dạy rất tốt nhiệt tình dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "number number là đăng ký môn học ở có hóc môn và trong chương trình đào tạo của mình có môn pháp luật đại cương nhưng sao mình tra thời khóa biểu thì lại không có lớp ở hóc môn ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ câu lạc bộ cầu lông của trg mình khi nào tuyển thêm tvien vậy ạ có yêu cầu gì không ạ em là nữ trình yếu muốn học hỏi và vận động á",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chưa tốt về mặt kiến thức",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nếu được thầy kể thêm truyện ngày xưa vào những lúc giải lao",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ cho em hỏi n trung cần bao nhiêu điểm đánh giá năng lực vậy ạ chủ nhật tuần này em thi rồi em sợ vụt mất bạch nguyệt quang của đời mình quá",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chúng em gửi lời cám ơn đến thầy wzjwznumber",
+                "sentiment": "positive"
+            },
+            {
+                "text": "kiến thức giảng hơi khó hiểu nhưng giải bài tập hay hướng dẫn sinh viên làm bài thì dễ hiểu và còn tận tình chỉ bảo cho sinh viên những gì không biết cô có thể nói lại giảng lại một vấn đề vài lần nếu sinh viên vẫn chưa hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên ôn đúng trọng tâm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có ai pas áo td cỡ / kích cỡ m không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tiên ơi tớ vừa phát hiện ra một vấn đề khá nghiêm trọng hình như trong lớp dhnumberacnumber có một người khiến tớ mất tập trung cực kỳ nặng mà người đó lại là cậu ban đầu tớ tưởng do bài khó nhưng không do cậu xuất hiện cái là tớ quên hết kiến thức luôn thậm chí có lúc tớ còn nghi ngờ bản thân bị lỗi hệ điều hành mỗi khi cậu cười tớ nghĩ đi nghĩ lại rồi chắc chỉ có một cách sửa lỗi thôi đó là cho tớ được ở bên cạnh cậu lâu hơn một chút biết đâu khi quen rồi tớ sẽ miễn nhiễm với cậu hoặc là thích cậu nhiều hơn nữa nên là tiên nè cậu có muốn thử sửa lỗi Bug cuộc đời tớ bằng cách làm người yêu tớ không",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên đưa ra nhiều kinh nghiệm thiết thực về các kỹ năng để áp dụng vào đời sống",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có ai có thông tin liên lạc của thầy nguyễn đức lộc khoa quản trị kinh doanh không ạ cho em xin",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô dạy hay dễ hiểu nhiều ví dụ minh hoạ kết hợp cả lý thuyết và thực hành",
+                "sentiment": "positive"
+            },
+            {
+                "text": "không đánh giá đúng khả năng của học sinh",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nên cho sinh viên tham gia làm các đề tài thực tế có sự hướng dẫn của giáo viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "luôn giảng quyết các thắc mắc mà sinh viên gửi email hỏi",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cập nhật nguồn tài liệu cho sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "các bài thực hành cần có tính định hướng hơn thay vì làm các công việc cụ thể như nạp firmware cho router",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng dạy nhiệt tình ví dụ dễ hiểu phương pháp dạy tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên rất tận tâm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi khi nào có đợt mua bảo hiểm y tế vậyaj",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho mình hỏi lịch đăng ký học phần là vào ngày mấy vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ cho em hỏi là môn thống kê ktr giữa kỳ là trắc nghiệm hay tự luận vậy ạ với anh chị nào có bài tập ôn cho em xin với em sắp thi rồi mà còn chưa biết ôn gì ạ em cảm ơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô tạo mọi điều kiện thuận lợi nhất cho sinh viên học tập",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên tương tác tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ cho em hỏi là em có sắp kht nhiều môn như này nhưng sao khi vài chỗ đăng kí chỉ hiện có number môn thôi ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em là sinh viên khoa khác nhưng em thích môn golf lắm cho em hỏi trường mình có câu lạc bộ golf không ạ em thấy có mấy anh chị mặc áo golf nhưng không biết là áo của khoa hay áo câu lạc bộ nếu có câu lạc bộ thì làm sao tham gia ạ em cảm ơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cần tìm sách môi trường con người cần gấp chiều nay thi ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giáo viên nên đưa tài liệu tham khảo cho sinh viên giống với tài liệu giảng trên lớp để sinh viên tiện theo dõi và ôn lại kiến thức khi về nhà",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mình nên học môn tchat nào ngoài võ ạ mọi người ơi cho em lời khuyên với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần tuân thủ đúng và đủ giờ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy hướng dẫn thực hành hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "đề nghị có màn che bớt ánh sáng",
+                "sentiment": "negative"
+            },
+            {
+                "text": "number number number number mình được nghỉ bao nhiêu ngày vậy mọi người không biết có email chưa ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "topic những giảng viên đáng yêu nhất tại trường UEH",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tạm",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ai có tài liệu và mẹo / tips học toán kinh tế không mọi người em khổ sở vì nó quá",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "phong cách phong cách",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người ơi cho em hỏi là năm nay trường xét tuyển kết hợp ba phương thức xét tuyển để tính điểm vậy nếu tổ hợp đăng ký thi tốt nghiệp trung học phổ thông có môn ngoại ngữ khác với môn ngoại ngữ được học ở trường thì mình xét tuyển tổ hợp môn đăng ký của học bạ như nào vậy ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho mình hỏi chuyển ngành cần thủ tục với giấy tờ gì với thủ tục gì ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nào mới có việt dã trường Đại học Mở vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có ai đã từng học thud môn xây dựng website landing page cho em xin đánh giá với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thủ đức qnumber ai pas áo cam cỡ / kích cỡ l hoặc m không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "quá trình giảng dạy luôn lấy ví dụ từ thực tiễn hài hước tạo nên hứng thú cho sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "hay lan man dạy những thứ không cần thiết",
+                "sentiment": "negative"
+            },
+            {
+                "text": "là sinh viên trường Hutech nhìn thấy cảnh này tôi quyết định leo thang bộ triet nguyen",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "kết thúc học thực hành trễ cũng không phù hợp vì cuối năm mới học đến những kiến thức làm đồ án nên rất bận",
+                "sentiment": "negative"
+            },
+            {
+                "text": "và có một số vấn đề thầy khó hiểu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "hoặc cô có thể cung cấp trực tiếp slide / trình chiếu tiếng anh để sinh viên học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "các bạn khoa hàn quốc có thể cho mình xin number số trung tâm dạy tiếng hàn uy tín và mẹo / tips học tiếng được không ạ mình cảm ơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ anh chị ơi cho em hỏi kì numberb em đăng ký rồi nhưng không sắp xếp được thời gian học thì bây giờ có rút học phần được không ạ em cảm ơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng nhiều bài tập",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên dạy nhiệt tình tận tâm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mình cần xin email giảng viên trần minh nhân dạy môn quản trị đa văn hoá ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "học nhiều buổi thực hành hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên dạy hay dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "gần gũi tốt bụng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cần trang bị phòng thực hành phù hợp với đặc thù môn học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người ơi ai từng học cô chiêu uyên môn nghe hknumber rồi cho mình hỏi bài kiểm tra cá nhân khó không ạ cô có cho những bài chưa học không mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cách dạy rất sáng tạo hy vọng được học nhiều môn khác với thầy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giáo viên hay tới trễ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giáo viên thân thiện giảng giải dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em chỉ muốn lấy bảng điểm hknumber number number mà nó báo này là sao ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho mình hỏi các môn nào thì hình thức sao vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có bạn nào nhặt được numberk từ thư viện sang nhà bạn không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em hy vọng nhà trường cải thiện lại các máy trong phòng thực hành để tương ứng với số tiền đối với số chỉ thực hành",
+                "sentiment": "negative"
+            },
+            {
+                "text": "môn học number cái đồ án đồ án lý thuyết thì không liên quan đến nội dung môn học dẫn đến khó hiểu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "hồ sơ tốt nghiệp gồm những giấy tờ gì mọi người ơi",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy nhiệt tình trong quá trình giảng dạy có thêm video cho học sinh về tự học thêm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên rất nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nên đưa ra các vấn đề thường gặp",
+                "sentiment": "negative"
+            },
+            {
+                "text": "không có giáo trình",
+                "sentiment": "negative"
+            },
+            {
+                "text": "các móc thời gian xem trường Tôn Đức Thắng game ở đau vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy hướng dẫn cụ thể chi tiết dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mình muốn hỏi có bạn nào đang học các môn làm đề tài với cô Tâm sự nguyễn thị hai viện không ứng dụng ngành cnsh không ạ mình nhờ xíu việc",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ anh chị các bạn cho em hỏi em có đăng ký tham gia cổ vũ này vào sáng mai nhưng em không thấy địa chỉ cụ thể chỗ nào ở bạn để đi hết ạ mọi người giúp em với em sợ không đi bị trừ đrl ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "hướng dẫn cụ thể",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ em chào anh chị cho em xin hỏi là tại sao lại dự kiến không đủ điều kiện vậy ạ em cảm ơn nhiều",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "đề thực hành hơi dài",
+                "sentiment": "negative"
+            },
+            {
+                "text": "còn ai chưa lên Sài Gòn không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "phòng thực hành thì máy bị treo bị hư hoài dây mạng thì cắm lúc nhận lúc không",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mình muốn mua thêm áo trường Cần Thơ thì mình mua ở đâu vậy mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tự nhiên muốn quen anh ghệ miền tây jet jet ghe",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hỏi đi quân sự (viết tắt) xong có được nghỉ không ạ nếu được nghỉ thì nghỉ bao lâu ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có nhiều hình thức giảng dạy mới giúp sinh viên tiếp thu kiến thức dễ dàng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nên học bằng tin học cơ bản trong trường hay bên ngoài ạ cái này ôn chi tiết hơn ạ admin duyệt giúp em với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần cải thiện cơ sở vật chất phù hợp với môn học anh văn hơn nữa",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giáo viên giảng hơi khó hiểu ạ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ anh chị nào còn pas áo thể dục không ạ em đang thiếu áo nhưng không biết mua ở đâu ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho mình xin azt môn dcnt với triết học mln ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hoi thi môn nhập môn hệ điều hành có nháp không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tận tình chỉ bảo",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giáo viên nhiệt tình đi dạy đúng giờ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ cho em hỏi môn luật lao động mình thi trắc nghiệm hay tự luận vậy ạ khóc có anh chị nào có file cho em xin ôn với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "luôn đảm bảo giờ giấc trong tiết học",
+                "sentiment": "positive"
+            },
+            {
+                "text": "khoa du lịch quantrikhachsan xuhuong",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thang điểm kiểm tra bài thực hành dễ gây ức chế",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ mọi người ơi cho em hỏi là bằng trung bình có được lên nhận bằng lúc làm lễ tốt nghiệp không ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em tính tham gia giải trường Tôn Đức Thắng games môn cầu lông nội dung đôi nam khoa ngoại ngữ ai hữu duyên có ý định tham gia comment / bình luận em nhắn tin nhé mình đánh giao lưu thử hợp thì đăng kí đi thi ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em pas phòng ạ numbertrnumber địa chỉ number number numbera phước kiển phạm hữu lầu nhà bè",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "hàn quốc học sau này có nh công việc gì ạ cho em xin ít review (âm) review (biến thể) với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô dung dậy nhiệt tình dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên nhiệt tình trong công tác giảng dạy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "trường mình không Bình thường có mấy anh Từ chối bóng không em muốn đi xem để tìm Người yêu qué",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ anh chị ơi cho em hỏi number number là hết hạn đợt number hay đợt number luôn vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giáo viên thực hành cần năng động hơn thầy có vẻ hơi thụ động trong giờ thực hành không tạo cảm hứng cho sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cơ sở vật chất phỏng máy không đủ phích cắm cho dụng cụ thực hành và số lượng sinh viên máy còn tiềm ẩn nhiều virus",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nhiệt tình giảng dạy hướng dẫn sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "pháp luật đại cương nên học chính giảng viên nào thân thiện dễ hiểu vậy mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thời gian giải bài tập với sinh viên chưa nhiều",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy dễ thương nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "rất mong thầy sẽ tiếp tục giảng dạy các khoá sau",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thời tới cho mấy ní sắm kính đi chữa lành đây nè",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "number number qua môn không ạ khóc",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ cho em hỏi thi chứng chỉ tin học word excel thì bắt buộc mỗi phần phải trên number điểm là đậu vậy ví dụ excel number điểm và word number điểm thì có đậu không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nay em đi tham gia ngày hội svnumbert có làm rớt thẻ xe ai nhặt được đem lại phòng bảo vệ dùm em được không vậy ạ em chị ơn rất nhìu",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy tận tâm nhiệt tình trong giảng dạy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy là một người sống rất có tâm lại có vẻ bề ngoài đẹp trai thầy rất hóm hỉnh và dí dỏm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "number number học trực tiếp drama / chuyện lùm xùm đầy ra giờ thêm hệ đào tạo từ xa trường Hutech có ai d ính không iếp n ạn học đại học từ xa chưa quá m ệt m ỏi lúc tư vấn thi nói học number number năm giờ học gần number năm chưa xong chưa kể lúc tư vấn xin chương trình đào tạo thì nói nào trúng tuyển rồi biết các môn sẽ học chuyện vậy thì cũng chưa có gì gọi là không iếp n ạn học number năm mà điểm năm number chưa lên đủ điểm giờ chẳng biết điểm đậu hay rớt thời khóa biểu tên giảng viên number kiểu giảng viên dạy thực tế lại là người khác học phí đóng từ hồi thanh xuân giờ rồi âu tóc sắp bạn ạc ph ơ thì bạn áo n ợ học phí hết email tin nhắn mà học phí lại báo sai lên sai xuống chả khớp tẹo nào viện hợp tác phát triển đào tạo nhưng không thấy phát triển được gì đào tạo chả ra làm sao làm việc thì không hợp tác với sinh viên để x ử l ý giải quyết vấn đề đúng kiểu t iền thì m ất bằng cấp rất cần thì không thấy đâu hutechcfs",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô rất nhiệt tình cô còn có phương pháp giảng dạy gây hứng thú cho người học",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cảm ơn cô rất nhiều",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em nữ sinh viên năm number nhiều lúc thấy cuộc sống sinh viên Nhạt nhẽo không có tuổi trẻ cũng không có kĩ niệm không tham gia câu lạc bộ không kết bạn làm quen chỉ đi học rồi về trọ không đi làm cũng không đi chơi học bài chán thì chơi game còn ở trọ number mình nữa nhiêu khi suy nghĩ thấy thời sinh viên mờ Nhạt không có gì để sau này nhớ hay kể lại luôn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô dạy tốt tận tình tài liệu đầy đủ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "ai bán tài liệu chủ nghĩa xã hội khoa học không ạ đúng đề thi giúp em chứ em học number number môn rồi vô đúng được có number number câu mà học tới number number câu lận",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "anh chị nào có slide / trình chiếu môn ktnbdn cho em xin với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy cô nên đưa thêm các đoạn video ngắn để luyện cho học sinh cách nghe được tốt hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người ơi cho mình hỏi kế hoạch như này tức là tháng number mình mới làm lễ đúng không mọi người lần đầu tốt nghiệp chưa có kinh nghiệm lỡ hỏi có dô tri quá thì mọi người thông cảm nhé cười",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "gần có nb có chỗ nào in nhựa thẻ không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "điểm danh nhiều quá",
+                "sentiment": "negative"
+            },
+            {
+                "text": "sinh viên hỏi những cái cơ bản về bài học thì thầy cũng không nắm thầy kêu hỏi bạn khác rồi làm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "bạn này Ngầu vậy",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy vui tính trong việc dạy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "câu văn trong bài giảng khó hiểu không diễn đạt rõ ràng ý nghĩa",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nên khắc phục thái độ của giảng viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên giảng dạy không quan tâm đến sinh viên hiểu hay không",
+                "sentiment": "negative"
+            },
+            {
+                "text": "bài giảng chưa thật sự thu hút",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tận tâm và nhiệt tình trong giảng dạy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên giảng dạy nhiệt tình dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên rất tâm huyết nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi với ạ bao giờ nhà trường mở đăng kí học phần bổ sung ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em tìm mua sách tanumber ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy thường vắng và thay vào đó là dạy bù",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ có ai mở lớp môn lý thuyết tài chính finnumber hay muốn mở không ạ cho em xin với ạ để em mở hoặc mở cùng ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ mọi người ơi cho em hỏi là tnumber này bỏ phiếu cử tri thì mình không đi có bị gì không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "sự vui vẻ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên chưa cung cấp kiến thức đầy đủ cho sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "không ý kiến gì",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ai nhận làm bài tiểu luận môn tâm lý du khách không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên dạy nhiệt tình và dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có ai biết chỗ cho thuê chân stande chữ x không cho em xin với cuối tuần này em cần dùng ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hỏi đổi mới sáng tạo và khởi nghiệp kiểm tra ofline như nào ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô nhiệt tình giảng dạy giờ học có không khí",
+                "sentiment": "positive"
+            },
+            {
+                "text": "đã đổi mới chương trình đột ngột thì không nên đổi cả ngôn ngữ vì quá khó đối với sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "phần này khó nên giảng nhiều hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "update vẫn chưa thấy ai vô nhận thẻ tín dụng và mình cũng khá chắc đây là thẻ của bạn huflit bài được duyệt nhiều nên bị trôi nên mình xin đăng lại lần nx nhé thẻ có tên n q không d nhé ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em xin đánh giá đề kinh tế vi mô với ạ chất lượng cao",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nếu được phòng thí nghiệm có thể có thêm các thiết bị thật để chạy và phát triển ứng dụng windows phone để các bạn biết điểm khác nhau giữa chạy thiết bị giả lập và thiết bị thật",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô dạy hay nhưng nói tiếng miền wzjwznumber em nghe không được",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy rất nhiệt tình truyền đạt kiến thức và giải đáp mọi thắc mắc của sinh viên cung cấp tài liệu lý thuyết đầy đủ và có chọn lọc",
+                "sentiment": "positive"
+            },
+            {
+                "text": "bài giảng dựa theo chuẩn ngôn ngữ asembly trên linux nên tìm kiếm thông tin tài liệu khá khó khăn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "các phần bài tập trên modle của cô đăng lên hay bị lỗi do đó hay bị điểm kém oan",
+                "sentiment": "negative"
+            },
+            {
+                "text": "để ra hơi khó",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho em hỏi là thi kiến trúc máy tính được mang tài liệu không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "truyền đạt hơi nhanh",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy khá vui tính gần gũi với sinh viên nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em mong là có phần khảo sát môn học ở giữa kỳ chứ cuối kỳ thì môn học đã qua đi rồi",
+                "sentiment": "negative"
+            },
+            {
+                "text": "chuyên môn sâu nhiệt tình hiệu quả trong giảng dạy vui tính dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "phòng học còn nóng và bụi bặm máy chiếu tuy vẫn nhìn được nhưng như thế là mờ ngồi xa hay hôm nào trời sáng quá sẽ khó thấy việc chia hay phân công đề tài giảng viên cần tự làm thay vì giao cho lớp trưởng lúc đó sẽ không khách quan nữa vì có sự thiên vị giành giật",
+                "sentiment": "negative"
+            },
+            {
+                "text": "lên lớp đúng giờ tận tâm với sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tài liệu tiếng anh gây khó khăn cho ôn thi",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ mấy bạn ơi tôi đang tìm nữ ở ghép chia ra các chi hết chưa tới numbertrnumber ở đường trần thị điệu tới trường công thương number phút phòng sạch sẽ thoáng mát khuôn viên bao chil tiện lắm luôn weo com mí nàng",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "không khí lớp thoải mái tạo động lực phát biểu góp ý kiển",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tăng thời gian giảng dạy",
+                "sentiment": "negative"
+            },
+            {
+                "text": "chiều ngày number number mình có bỏ quên number túi bút màu hồng có máy tính ở trong tại phòng anumber number có ai nhặt được cho mình xin lại ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần cho slide / trình chiếu về đọc",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dễ hiểu nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "anh em nào cài được phần mềm adams view number mô phỏng trên winnumber không cài giúp mình với gửi ít uống quán cà phê",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thiếu trang bị dụng cụ thực hành cần thiết không đáp ứng đủ thời gian giảng dạy do vắng tiết",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên siết chặt hơn nữa việc báo cáo tiến độ tránh tình trạng các nhóm bao che cho nhau",
+                "sentiment": "negative"
+            },
+            {
+                "text": "gần trường mình có chỗ nào bán quán cà phê kem dẻo không gần gần xíu ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy rất tốt với học sinh",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy dạy hay nhưng không ôn tập thi giữa kỳ cuối kỳ cho sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy giáo vui tính nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giáo viên tận tình chuẩn bị bài học chu đáo",
+                "sentiment": "positive"
+            },
+            {
+                "text": "kế toán tài chính doanh nghiệp number mở học kì nào vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nhiệt tình lên lớp đúng giờ dạy dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giáo viên giảng dạy tận tình và cho làm nhiều bài tập",
+                "sentiment": "positive"
+            },
+            {
+                "text": "trường Hutech mờ ê mê là đây",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy rất tận tâm và nhiệt tình chỉ dạy sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cách dạy tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tìm number bạn nữ ở ghép quận number gần sgu trường UEH hiện tại phòng mình đang cần tìm thêm number bạn nữ ở chung với number bạn sinh viên sgu number bạn sinh viên trường UEH vị trí quận number ngay trung tâm cách sgu chỉ number number phút đi xe trường UEH number phút cách trọ numberm có chợ cách bách hóa xanh winmart kingfod numberm vạn hạnh mal numberm tiện ăn uống mua sắm phòng ở rộng rãi sạch sẽ thoáng mát có number cửa sổ khu vực an ninh yên tĩnh chi phí tiền phòng numbertrnumber tháng điện numberk kilowatt giờ (điện) nước numberk người dịch vụ numberk phòng giữ xe numberk number chiếc tổng chi phí khoảng numbertrnumber numbertr người tháng bạn nào quan tâm coment mình gửi ảnh phòng nhé",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi tiết number là vào học lúc mấy giờ vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mình bị trường hợp không hiện ra mục tháng để đăng ký bài thi VSTEP trên trường ai biết này bị gì không ạ trước đó thì em đăng ký thi đều được mà đợt này lại không đăng ký được",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy nên dạy kỹ và chậm hơn để sinh viên dễ tiếp thu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô nên tập trung vào việc giảng dạy hơn là dành number number phút để hỏi từng từ tiếng anh trong slide / trình chiếu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người ơi mình chiều nay mình có để quên một cái sạc type chị xiaomi numberw tại thư viện ai có thấy thì cho mình xin nhé ạ mình cảm ơn nhiều ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hỏi mình chuyển trường thì trường có báo hay gọi về không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy tốt cần phát huy như thế",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có bạn nào dự lễ tốt nghiệp ngày number number còn dư vé cho người thân vào hội trường xem comment / bình luận mình mua lại",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi môn nào thi tiểu luận dị ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "kiến thức dồi dào thường xuyên cập nhật thông tin cho sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "ai có nhu cầu thì vào nhé mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tại do tuần thi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ngày đầu đi học có gì vui không các tân sinh ziên",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ cho em hỏi mình có đợt dkh hè bổ sung không ạ hay là có đợt dk môn hè bổ sung không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "học kỳ I hè có cần đăng ký tanh không ạ em đang Chuẩn bị thi dbnumber",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạy tương đối đầy đủ chương trình",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "pas áo quân sự numberk còn mới",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "anh chị ơi cho em xin tài liệu môn quản trị học được không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy wzjwznumber nên sử dụng website môn học hoặc website phòng đào tạo là kênh thông tin đến với sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mấy bạn / bao nhiêu ơi bài thu hoạch là gì vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nên học môn gì để kịp đi quân sự (viết tắt) vậy ạ với cho em hỏi môn nào làm tiểu luận vậy",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mình đang tìm chỗ học bài thi TOEIC cấp tốc ạ mọi người chỉ giúp với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người cho em hỏi là trường mình có cho qua học ké ngành khác không ạ với lại mọi người đề xuất các giảng viên và môn học đỉnh của khoa cho em tham khảo với được không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tìm đội nam bóng chuyền khxh nhân viên",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "top nào chứ top này trường Hutech không muốn có mặt",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "sáng nay anh em nào đi học xứng đáng nhận number điểm quá trình môn học",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thực hành với lý thuyết có vẻ không có liên quan với nhau",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy luôn đúng giờ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em xin đánh giá cô này với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "kiến thức học luôn được liên hệ với thực tế",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cung cấp tài liệu đầy đủ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nên dạy thực tế hơn một chút và máy chiếu nên rõ hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "góc thắc mắc học quân sự dạ cho em hỏi trường mình đi học quân sự có được mặc áo thun trắng rộng không ạ mong các anh chị giải đáp giúp em em học trên bảo lộc ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em hỏi mấy môn này học ai để dễ ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "rất nhiệt tình với sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cần cho thêm nhiều bài tập kết hợp hướng dẫn để sinh viên tham khảo",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nên giảng cho học sinh kỹ hơn nữa",
+                "sentiment": "negative"
+            },
+            {
+                "text": "ai pas dùm em number chỗ / suất nhóm hpnumber với ạ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng bài kỹ càng dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "anh chị ơi cho em hỏi môn cnxhk và môn nguyên lý quản trị ngoài ôn trong sách và slide / trình chiếu còn nguồn nào ôn điểm cao không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mình là sinh viên knumber nhưng do thiếu number chứng chỉ nữa bây giờ có cách nào xin gia hạn number học kì nữa được không ạ bạn nào biết tư vấn giúp mình với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "anh chị nghĩ sao về việc chuyển ngành kế toán năm number qua ngành quản trị kinh doanh ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần người học hộ thực hành khoa thú y khue",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tăng cường ôn tập để kiểm tra như phần mềm DoubledDot cho sinh viên làm thử các đề kiểm tra",
+                "sentiment": "negative"
+            },
+            {
+                "text": "chừng nào có tên giảng viên trên thời khóa biểu vậy anh chị ơi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người ơi cho em hỏi pháp văn căn bản em nên học ai ạ tiến sĩ nguyễn thị kim lan tiến sỹ lữ quốc vinh thạc sĩ nguyễn ngọc phương thảo",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giáo viên tâm huyết hướng dẫn và chỉ dạy tận tình những thắc mắc của sinh viên về môn học",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô nên sắp xếp lịch làm việc chính xác hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nên cho chơi trò chơi về anh văn thật nhiều để có hứng thú nhiều hơn nữa",
+                "sentiment": "negative"
+            },
+            {
+                "text": "không thực hành",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nếu như trên lịch thông báo giờ học từ đầu năm là thứ number thì em sẽ sắp xếp được lịch học phù hợp hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cần nâng cấp phần mềm lập trình và dàn máy tính thực hành",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô thật nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tận tình của giáo viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên không đảm bảo giờ lên lớp không lên lớp giảng dạy",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có lúc nhiều vấn đề trong bài học giáo viên chưa giải đáp được",
+                "sentiment": "negative"
+            },
+            {
+                "text": "đồ án cuối kỳ của em được giảng viên xem xét và góp ý chỉ sửa duy nhất một lỗi là hoàn thiện khi báo cáo trong năm học nhưng đến cuối kỳ giảng viên lại cố gắng tìm ra lỗi khác để cho sinh viên rớt môn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho mình hỏi group mình có bạn nào học kiến trúc knumber cho mình xin kht toàn khoá tham khảo được không ạ mình đang muốn chuyển ngành cảm ơn ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "đôi khi diễn đạt khó hiểu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "còn câu lạc bộ nào tuyển người không ạ mình đang muốn tham gia câu lạc bộ liên quan đến thể thao hoặc học tập nhé",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy giảng dạy rất phù hợp với đời sống thực tiễn cung cấp kiến thức dễ xin việc làm hơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên nên nói lớn hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy nên điều chỉnh lại cách giảng bài thầy nói thường xuyên ngắt nhịp nên buồn ngủ quá",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cơ sở vật chất máy tính trường cần được nâng cấp",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạy hiệu quả",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nhiều lúc thầy nói hơi nhanh",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mình nữ kiếm bạn đi chowi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy nhiệt tình truyền đạt tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có ai đang mún kím phòng trọ ở ghép hăm phòng siu rộng luôn nữ nhé",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "sau numberngay có cần nộp lí lịch tư pháp không vậy",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có sự tương tác hỗ trợ tốt trong quá trình học",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy chỉ hướng dẫn còn lại để sinh viên tìm hiểu nên kiến thức khắc sâu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ cho em hỏi em học giải tích number buổi mà được nghỉ number nhưng thầy nói được nghỉ number ngày là chỉ được number ngày thôi ạ anh chị",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần ng học hộ trưa hôm nay và biết thuyết trình ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có ai pas áo thể dục cỡ / kích cỡ l không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ủa (ngạc nhiên) m n ơi em lỡ đăng kí đi sự kiện trên website doantn trường IUH giờ cách nào để hủy ạ mà hủy không được mà không đi có bị trừ điểm với lại bị thêm vào danh sách đen không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hỏi có mẹo / tips hay dàn ý để đi thi môn viết và biên tập tin không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có ai có format thi môn nghe ghi chú number không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy cho các bài thực hành cần dàn trải đầy đủ nội dung học đề thi thực hành dài",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô hướng dẫn rất nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cần tài liệu nhiều hơn đọc dễ hiểu hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy vui tính và có sửa bài tập đầy đủ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nội dung có liên hệ nhiều với thực tế",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô rất vui vẻ khi dạy trên lớp",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nội dung kiến thức được đảm bảo",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho mình hỏi đăng ký học thạc sĩ mà nộp bằng đh tạm thời trước rồi bổ sung sau được không",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "khoa vậy ơi nhập điểm hán văn giúp em đi mà khóc",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạy dễ hiểu dễ tiếp thu tập trung vài kiến thức trọng tâm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "đề nghị phòng đào tạo sắp lịch thực hành cho môn này kỹ lưỡng hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô rất hiền",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy nhiệt tình dễ hiểu đưa ví dụ bài tập rất thực tế",
+                "sentiment": "positive"
+            },
+            {
+                "text": "slide / trình chiếu giảng dạy và slide / trình chiếu trên modle chưa thật sự đồng bộ với nhau",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ mọi người ơi cho em xin file ôn môn thcm và lịch sử Đảng với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em xin tài liệu mấu môn này với ạ đề đóng hay mở vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người ơi cho em xin đánh giá về các ngành có chuẩn quốc tế hoặc liên kết quốc tế ở trường nhân văn với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng bài hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "anh chị cho em hỏi em có đăng ký thi bài thi VSAT của trường và đã đóng cả phí thi nhưng mà giờ em có việc bận đột xuất trúng ngày thi nên huỷ thi thì có được hoàn lại phí đã đóng không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em đang định vào ngành giáo dục thể chất của trường mình không biết mấy anh chị cho em hỏi là đầu vào có khó không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "xin cảm ơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có ai đang đi học sáng hôm nay tnumber mà có đồ sạc mac type chị không cíu tôi dới",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ít nhiệt tình",
+                "sentiment": "negative"
+            },
+            {
+                "text": "chép hơi nhiều",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cảm ơn thầy đã sửa lỗi khi cài vmware giúp em colonsmalsmile",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cười duyên rất tốt với học sinh",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cần có thêm tài liệu tiếng việt vì nhiều khi không phải ai cũng giỏi tiếng anh để theo kịp slide / trình chiếu tiếng anh",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cách giảng viên liên kết nội dung bài học với những thông tin mang tính thực tế",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạy rất hay và nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "không có",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy vui tính giảng bài dễ hiểu chỉ dẫn tận tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "phương pháp giảng dạy không phù hợp với sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "ủa (ngạc nhiên) còn đợt bổ sung hồ sơ không vậy mọi người em còn giấy khám sức khỏe / sự kiện với bằng tốt nghiệp mà tháng này bận quá chưa đi nộp được mà giờ không nộp có bị sao không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "kế văn hiến lũy bán bích có máy lạnh numbertrnumberk phòng mới siêu thoáng có ban công number tân",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "các phòng máy cần được trang bị các phần mềm hỗ trợ cho môn học phù hợp",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho em hỏi khi nào trường có thông báo hệ vhvl vbnumber vậy ạ em cảm ơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tận tâm truyền đạt dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cần cập nhật kiến thức sâu hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "lịch thi thực hành cần được thông báo sớm tới sinh viên và phù hợp với thời gian môn học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người cho mình hỏi là trường bắt đầu nghỉ hè là từ tháng mấy ạ và di quân sự (viết tắt) thì khi nào ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ mọi người cho em xin đánh giá chỗ học chính lái xe bnumber",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "đồ án cuối kỳ trong vòng một tháng cuối áp dụng được quy trình thực tế",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy ôn rất kỹ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em xin tip học thi qua bằng bnumber được không ạ em không giỏi tiếng anh em sợ đăng ký thi rớt quá",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giáo viên dạy nhiệt tình tâm huyết",
+                "sentiment": "positive"
+            },
+            {
+                "text": "anh chị ơi cho em xin hỏi ký túc xá trường Cần Thơ mình đăng ký ở mà mình tối không ngủ lại có được không ạ có bị kiểm tra mỗi tối hay không ạ em cảm ơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em học quản trị kinh doanh năm number Công việc trắng trơn chưa có gì ngoài điểm điểm trung bình tích lũy em thích mấy thứ liên quan digital chạy ads Content mà không biết nên học ở đâu cho đáng tiền anh chị nào học rồi chỉ em với ạ em cảm ơn nhiều lắm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em muốn tìm việc phụ vụ quán quán cà phê hay gì đó em rảnh buổi chiều và buổi tối ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tân sinh viên trường Hutech không làm anh em thất vọng",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho mình hỏi nếu mình bận vào ngày thi thì mình có thể đăng kí đổi lớp thi trước đó được không nhỉ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nội dung bài học có phần sơ sài",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tôi có balo của trường mà chưa xài còn mới nên tôi pas nhé",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho em hỏi tnumber với tnumber thay vì mặc sơ mi thì mặc áo khoa có được cho phép không ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "do đặc thù của môn học yêu cầu sinh viên phải vận dụng được lý thuyết vào phân tích tìm ra vấn đề vì vậy nên tăng cường đưa ra các bài tập bài phòng lab gần với thực tiễn để sinh viên có thể luyện tập",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thường thì đống trễ học phí bao nhiêu ngày thic sẽ bị huye học phần vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên dạy rất dài dòng lê thê mặc dù chẳng cần kéo dài đến thế",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có được đem bảng tài khoản kế toán vào phòng thi môn ktcnumber khôg ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cần cho nhiều ví dụ trên lớp hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "anh chị nào Bình thường trọ nào tầm numbertr đổ lại không ạ chỉ em với tại em ở một mình",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có thuyết trình tạo sự sáng tạo cho sinh viên giáo viên tận tâm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cải thiện màn hình slide / trình chiếu khó nhìn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "ngoài ra cũng cần có tiết học để sinh viên được nói tiếng anh với nhau nhiều hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nhiều khi đang làm thực hành mà không có mạng để tìm hiểu thứ mình cần",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy wzjwznumber là một giảng viên rất tâm huyết với sinh viên thầy tận tình chỉ dạy tất cả những điều chúng em chưa rõ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng dạy hơi dài dòng lan man dẫn đến khó hiểu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ anh chị cho em hỏi học cô cần lưu ý những gì ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thấy cái gì cũng ổn không đáng chê cũng không đáng khen",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ít bài tập làm thêm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên dạy nhiệt tình vui vẻ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "câu chuyện buồn của number bạn nữ trường Hutech dyn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "luôn yêu cầu sinh viên nắm vững kiến thức nền nhất trước khi thực hành",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên tận tâm hướng dẫn cách sinh viên học tập một cách chủ động",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng dạy tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tận dụng tốt thời gian nhiệt tình hiền",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mình cần tìm bạn nữ kí tên hộ ở trung tâm tdt conic lô bi đường số number kdc conic đối diện đại học văn hiến cơ sở nguyễn văn linh cơ sở HEC sáng chủ nhật numbergnumber ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hỏi đóng học phí trễ có bị sao không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em điểm trung bình các năm lópe number number number loanh quanh number thôi thì có xin chào / cười vọng vào trường UEH các ngành kinh tế kinh doanh quốc tế thương mại điện tử không ạ tầm bao nhiêu điểm trung học phổ thông có thể bù lại ạ em không đánh giá năng lực không bài thi IELTS",
+                "sentiment": "negative"
+            },
+            {
+                "text": "đi quân sự mình mang giày gì vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô dạy dễ hiểu dạy kỹ tận tình không khí học tập thoải mái",
+                "sentiment": "positive"
+            },
+            {
+                "text": "bài tập cô đảm bảo đủ và bám theo nội dung lý thuyết",
+                "sentiment": "positive"
+            },
+            {
+                "text": "bài giảng không lôi cuốn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "sửa chữa những thiết bị máy tính hư trong phòng máy",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên có lên lớp đầy đủ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mình cần tìm việc làm partime gần ký túc xá ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "phòng máy cũ cần nâng cấp",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên giảng dạy rất nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mình pas áo polo xanh của trường cỡ / kích cỡ xin lỗi còn mới mặc được number lần ạ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em xin tài liệu plt và kinh tế chính trị với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người ai có tài liệu môn marketing truyền thông xã hội với triết học mac lenin không cho em xin với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy tạo môi trường để các bạn sinh viên chủ động sáng tạo cho thuyết trình báo cáo các phần tìm hiểu được",
+                "sentiment": "positive"
+            },
+            {
+                "text": "slide / trình chiếu bài giảng còn lẫn lộn anh việt phần tiếng việt thì giảng viên lại dùng gogle dịch nên đọc không hiểu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "bên mình công ty du lịch cần thực tập sinh ngành du lịch kinh doanh thực tập có lương thời gian thoải mái làm trong môi trường năng động cùng các trẻ nếu làm tốt nhận ở lại làm luôn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô wzjwznumber rất nhiệt tình tận tâm phương pháp giảng dạy của cô mới và hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên có trình độ chuyên môn tốt hướng dẫn chi tiết dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "khi dùng micro em nghe được hai giọng của thầy và của loa rất đau đầu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "slide / trình chiếu bài giảng thì rất dễ hiểu nhưng sau khi thầy giảng thì chúng em cảm thấy không hiểu gì cả cách truyền đạt của thầy làm cho học sinh rối rắm thầy chưa biết cách truyền đạt những thứ mà học sinh cần biết",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nội dung bài giảng không thực sự hấp dẫn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em xin tài liệu môn chủ nghĩa xã hội với kinh tế chính trị ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giáo viên rất nhiệt tình trong việc giải đáp thắc mắc cho sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tìm một bạn nữ muốn tham gia giải cầu lông khoa công nghệ thông tin ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên nhiệt tình giúp đỡ sinh viên trong học tập",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạy thiên về lý thuyết nhiều nên kết hợp cả lý thuyết và bài tập vận dụng trong cùng một buổi học để sinh viên dễ dàng nắm bài",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy luôn nhiệt tình có những chia sẻ rất gần gũi với sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giáo viên lúc dạy lúc không không dạy cũng không thông báo sinh viên tốn thời gian công sức tiền bạc rồi ngồi đợi và đi về",
+                "sentiment": "negative"
+            },
+            {
+                "text": "pas kỹ năng mềm quản trị lễ tân nghiệp vụ lễ tân",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần có nhiều trò chơi vận động hấp dẫn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "đánh giá kết quả học tập chính xác công tâm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "học Microsoft Office Specialist fre mà ổn áp hơn tôi tưởng luôn recomend cho mọi người học Microsoft Office Specialist ở tinz project tin học Microsoft Office Specialist miễn phí có ful tài liệu record mocktest quên là mở lại xem liền cày lại cực tiện lên đh làm bài làm luận mượt hẳn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có ai mở môn truyền thông giao tiếp chuyên nghiệp mdcnumber không à / ạ cho em xin number chỗ / suất với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nước yến thanh nhiệt giải nhiệt cơ thể giải tán cuộc tình khoadulich nganhcongnghethucpham",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em chào mọi người sắp tới em có thực tập tại công ty s logistics khu đô thị vạn phúc anh chị nào từng thực tập ở đây cho em xin đánh giá với ạ em cám ơn nhiều",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giáo viên thực hành cần quan tâm chỉ dẫn sinh viên tận tình hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thời gian học tập thoải mái thầy rất hiểu tâm lý sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ em cần tìm người phụ em môn đồ án quản trị digital marketing ạ mong anh chị hoặc bạn nào đó phụ mình môn này em xin cảm ơn anh chị và các bạn ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy cần chủ động hơn trong việc dạy và dạy bù khi em hỏi các bạn về lịch dạy bù thì hầu hết các bạn được em hỏi đều không biết",
+                "sentiment": "negative"
+            },
+            {
+                "text": "luôn liên hệ thực tiễn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô rất thân thiện",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thái độ xem thường sinh viên khi báo cáo",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mong trường xem lại phương pháp dạy của thầy",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có người yêu để làm gì vậy mọi người",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em có number môn học cải thiện và em muốn bỏ thi có rớt không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cách truyền đạt tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ cho em hỏi khoa kế kiểm khi nào đi học quân sự vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ mọi người cho em hỏi đóng học phí toàn khoá có bao gồm giáo dục thể chất chưa ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nói to chậm rãi dễ hiểu truyền đạt nhiều kiến thức quan trọng có tính thực tế",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô hướng dẫn làm đồ án rất nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em chào anh chị sắp tới em có đi quân sự ở trung tâm huấn luyện trường cho em hỏi việc xin giấy phép về có khó không ạ tại sáng tnumber em phải thi lái xe nên phải về chiều em quay lại khu liền ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có ai pas tài liệu ôn thi môn quản trị học kinh tế vi mô triết mác lenin không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người cho em hỏi với mấy cô trên thư viện rảnh lắm hay sao đi lui tới hoài vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ai có lịch thi vào tối thứ number cho mình xin với ạ lịch test tiếng anh càng tốt ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên tận tâm giảng dạy hiệu quả có trao đổi và thảo luận trên modle",
+                "sentiment": "positive"
+            },
+            {
+                "text": "anh chị cho em xin thông tin về đề kiểm tra giữa kỳ môn kinh tế vĩ mô của cô thảo trang với ạ cô dặn mang laptop",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có ai mún ra trọ ở ghép không ạ mình nam",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chuyện là sáng nay number number mình học bóng chuyên ca numberhnumber và học tới chiều ở khu em lớp chiều enumber number number có làm rơi chiếc vòng này anh chị bạn nào thấy được hay nhặt được cho mình xin lại với ạ mình cảm ơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cảm ơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chiều tnumber tiết number number có bạn nào học lớp tiếng việt thực hành không ạ lớp đó học phòng nào ạ tại mình xin học bù",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chưa ổn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy rất vui tính và rất thật",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người ơi cho mình hỏi nếu nộp hồ sơ sinh viên trễ hạn có bị ảnh hưởng tới tiến độ xét tốt nghiệp của mình không ạ number number mình có kết quả xét tốt nghiệp ạ mong mọi người giải đáp ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ai có tài lịu ôn hệ thốnh thoing tin không cho em xin với khóc",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mình muốn bảo lưu phải làm thế nào ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người ơi sinh viên được công nhận tốt nghiệp đợt number number thì khi nào diễn ra lễ tốt nghiệp ấy ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "hôm nay mọi người thi triết sao rồi ạa khóc mai thi mà chưa Bình thường ôn trọng tâm gì cíu em với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "là người cô rất có tâm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "anh chị cho em hỏi với ạ em nhuộm tóc đi quân sự có bị bắt nhuộm đen lại không ạ em cảm mơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ai có đề cương môn marketing điện tử cho mình xin với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên hơi khó tính với sinh viên giảng bài lan man gây khó hiểu cho sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có ai pas sách nguyên lí thống kê không sách đừng ghi tên với msv là được ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần một bạn học dùm ngày mai ở number",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giải cứu em môn logic học với ạ em không hiểu mình phải học sao ạ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "anh chị ơi cho em hỏi thi cuối kỳ môn anh ngữ number thì có tài liệu ôn không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mong có sự hỗ trợ trong thực hành",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy thường xuyên bận việc đột xuất và báo nghỉ sát giờ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có ai pas sách luật thương mại không ạ mình đang cần gấp ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giáo viên giọng khó nghe và hơi nhỏ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "vì sao thư viện đhct không mở cửa xuyên đêm để các bạn chăm học vào học mà lại đóng cửa sớm vào lúc numberh và đóng cửa ngày chủ nhật vậy quý anh chị thấy trên ở bên trung người ta mở rất khuya để cho sinh viên vào học thế mà trường chúng tiếng Anh không học theo nhỉ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chém gió nói chuyện quá nhiều hướng dẫn giải bài tập một cách quá sơ sài",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô dạy rất sát kiến thức",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tiếp cận với sinh viên một cách thân thiện phương pháp dạy khoa học dễ tiếp thu dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "truyền đạt dễ hiểu giảng viên hài hước tạo không gian học tập hưng phấn khi đến lớp",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người ơi cho mình hỏi chừng nào có lịch thi và tầm tháng mấy thi ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "góc nhỏ tham khảo nếu trường mình tổ chức buổi hòa nhạc cho đêm noel mọi người muốn tên buổi hòa nhạc là gì dạa",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạy chắc là hơi nhanh",
+                "sentiment": "negative"
+            },
+            {
+                "text": "trường Hutech tặng quà tết cho sinh viên là number tuần học online nhé em",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ai đăng ký mở lớp môn xử lý tín hiệu số với đồ án kỹ thuật số không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hỏi học thạc sĩ trường mình có học online không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "rất hòa đồng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô chấm bài tập còn khắt khe",
+                "sentiment": "negative"
+            },
+            {
+                "text": "điểm trung bình tích luỹ number number kì sau em còn number tín trên tổng number tín vậy điểm trung bình môn bao nhiêu mới lên number xin cách tính ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có anh chị nào thi đại số tuyến tính và giải tích chưa ạ em xin ít kn với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "đảm bảo đủ giờ lên lớp",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cần nâng cao chất lượng trang thiết bị",
+                "sentiment": "negative"
+            },
+            {
+                "text": "đa số thời gian trên lớp thầy không đi vào nội dung bài học mà thường xuyên nói những vấn đề không liên quan và cần thiết đến bài học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "muốn tìm trọ kiểu rồi ẻ lắm rồi ẻ lắm nhưng chỉ thấy ba chấm tối qua Admin tưởng mất ngủ với con bạn phòng kế bên do numberh đêm rồi mà bật nhạc ầm ĩ không cho đứa nào ngủ sáng dậy mới nhớ ra nhỏ bạn nó chuyển trọ từ hôm trước rồi thật ra trọ mà rồi ẻ lắm đấy cũng tiện nghi khi có nh ang đuổi muỗi với bạn ùa bình an mà tiền trọ thì đâu có cơ hội để chia với bạn cùng phòng đâu cơ mà sao phải khổ thế khi có thể tham gia chơi vui number phút fre trọ number năm thử thách đến từ nhà batdongsan com Việt Nam vừa không tốn tiền vừa tiện lại không lo sống với đông người nhé vậy phải làm gì để nhận trọ number đồng đây trên đây tìm không ra đâu vì nó ở dưới phần bình luận đấy",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ mọi người cho em hỏi là em đăng kí phiếu điểm rèn luyện và trên ap để như thế này là mình lên cơ sở quận number lấy giấy được chưa ạ hay là trường sẽ gửi email thông báo không ạ em cảm ơn ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em xin phép anh chị cho em xin ít thời gian em đang làm bài khảo sát của môn pdnumber mọi người giúp em xíu với xong gửi bài khảo sát vào em giúp lại cho",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người có ai bị gửi email là btc không thể sắp xếp chỗ ngồi sự kiện nâng cao lòng tự trọng sáng ngày number number gì đó không chớ mình đăng kí sớm nhất vừa ra là mình đăng kí mà bây giờ kêu không thể sắp xếp chỗ ngồi cho mình làm ăn gì kì vậy",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có nhiệt tình tâm huyết",
+                "sentiment": "positive"
+            },
+            {
+                "text": "truyền đạt nhiều kiến thức mở rộng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có bạn nam nào đang tìm người ở ghép gần cơ sở mtl không",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tìm đội Từ chối banh giao lưu với lớp mình numberh tối nay",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ cho em hỏi gần trường mình có ai bán nem chả bình định không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ngoài ra còn cung cấp thêm một số kiến thức mới mà không có trong chương trình dạy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy rất ten và cập nhật từ ngữ ten rất nhanh",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nói quá nhanh",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên lý thuyết giảng bài không được hay dễ gây buồn ngủ không có gì đặc biệt ngoài việc chỉ toàn đọc lý thuyết từ trong slide / trình chiếu ra",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy giảng bài hay và hiệu quả",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên dạy lý thuyết và thực hành cần thống nhất với nhau về nội dung đã được giảng dạy qua mỗi tuần tránh trường hợp thực hành trước khi học lý thuyết",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có bạn nữ nào pas áo quân sự không mình numberkg ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "pháp luật đại cương phần nào ôn sát đề nhất vậy mọi người hay có nguồn nào học không",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy hay và rất vui ngoài các kiến thức môn học",
+                "sentiment": "positive"
+            },
+            {
+                "text": "anh chị cho em hỏi là mình học hè là học hết hè luôn ạ hay được nghỉ number number tuần trước khi vô học kì tiếp theo vậy ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "không cho nhiều bài tập về phần mạch chẵn lẻ mạch so sánh",
+                "sentiment": "negative"
+            },
+            {
+                "text": "học thì đơn giản mà sao đề khó quá ạ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "anh chị cho em hỏi trường mình có nhận đăng kí thi bài thi TOEIC không ạ chi phí trên website là numbertrnumber nhưng bạn em đăng kí ở trường khác có numbertrnumber thôi nên em muốn hỏi trường mình có không ạ em cảm ơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô dạy chậm dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "trưa mai có ai ăn trưa number mình không cho tôi đi zới mai tôi học cả ngày mà không quen ai để rủ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "sửa chữa hoặc thay mới máy chiếu và loa nguyên nhân phần mềm DoubledDot máy chiếu chiếu hình ảnh bị Nhạt màu loa hay có trục trặc",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy hay kể chuyện để khuấy động lớp làm cho các bạn có hứng thú học hơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên năng nổ hoạt bát dễ gần",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có anh chị nào thi bnumber ngày number hoặc number cho em hỏi vài vấn đề với ạ em cảm ơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "triển khai srum cho tổ hợp nhóm nhỏ chừng number người number nhóm number người",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em học phân tích thiết kế cô wzjwznumber mà",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em học bên trung tâm ngoại ngữ ush mà giờ có việc về quê thì được hoàn học phí không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "môn thực hành dạy trước lý thuyết làm sinh viên không theo kịp",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tên thầy dài quá nhưng em nhớ nó như một món quà dành cho thầy",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "lớp hay nghỉ giáo viên chưa tận tình lắm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có anh chị nào pas sách qth không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "buổi học cuối cùng trước đợt thi cuối kỳ chưa nói rõ về nội dung sẽ được thi",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho em hỏi hiện tại em đang là sinh viên năm number điểm trung bình tích lũy hiện tại number number number number đại cương cũng hoàn thành nốt rồi em muốn hỏi bây giờ học bằng thứ number thì mình có thể bỏ qua việc học lại đại cương không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mấy anh chị ơi cho em hỏi cái môn kinh tế chính trị mác làm video website phóng sự để thuyết trình là làm sao ạ em chưa hiểu",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "đồng thời phòng học được phân bổ không hợp lý với những lớp học về trưa phòng khá nóng bức quạt cũng không mát máy chiếu khá mờ và cửa khó đóng mở khi trời mưa hoặc khi quá nắng",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nhiệt tình khá dễ tính trong việc báo cáo các phòng lab có thể để nhiều phòng lab đến cuối kỳ báo cáo một lần",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tạm biệt trường Hutech thân yêu / thân mật tháng sau mình gặp lại nhé",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên nhiệt tình bài tập đa dạng hướng dẫn đầy đủ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mở rộng thêm các kiến thức bên ngoài",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tạo ra các hoạt động giúp tụi em chủ động tìm hiểu kiến thức và ghi nhớ bài học sâu hơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên nhiệt tình dạy tốt nhưng cô cập nhật điểm lâu không đăng / upload bài lên course",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho mình hỏi dự lễ sinh viên tiêu biểu ròi nhưng mà khi nào có giấy khen hay thư chúc mừng của trường vay ạ tiếng nấc / buồn sao mà lâu quá",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên dạy hay thu hút tận tâm với sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có giấy miễn giảm học phí number chưa ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "anh chị ơi cho em hỏi nếu trong học bạ không học tiếng trung thì có thể xét khối dnumber ngành ngôn ngữ trung năm nay không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng dạy tốt đưa ra nhiều vấn đề cho sinh viên tham khảo",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cập nhật những đổi mới về môn học nên có chương trình đào tạo phù hợp hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy là giảng viên đầu tiên mà em đánh giá điểm number ở gần như tất cả các mục",
+                "sentiment": "positive"
+            },
+            {
+                "text": "chào bạn cho mình làm phiền chút ạ mình đang xin khoa mở lớp acnumber thực hành kế toán doanh nghiệp hknumber năm học number number môn này học phòng máy ở trường và tuần học number buổi bạn muốn học vượt môn này hay học cho kiệp tốt nghiệp thì nhắn mình nhé bạn có thể rủ bạn bè học cùng nè",
+                "sentiment": "positive"
+            },
+            {
+                "text": "vui vẻ tận tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "ghi lý thuyết và bài tập trên bảng nhiều quá thể",
+                "sentiment": "negative"
+            },
+            {
+                "text": "điều em hài lòng nhất đó là thầy rất là vui vẻ khi mà hỏi bài thầy và thầy rất nhiệt tình trong lúc giảng dạy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạy nhiệt tình dễ hiểu luôn vui vẻ trong các buổi học học không căng thẳng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy tận tụy hết mình vì sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi qua kì numberb mình có thể nói họ đổi lớp được không ạ và có được chọn không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "hữu duyên hộp cơm trắng khu vực sảnh number",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "phòng thực hành thường xuyên không mở đúng giờ hy vọng giáo viên mở cửa đúng giờ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "anh chị cho em hỏi làm sao để đạt được điểm rèn luyện ở number mục này vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "sinh viên trường Hutech kiểu ai vui",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tận tâm nhiệt tình tiết học vui vẻ dễ tiếp thu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô nhiệt tình nhưng cách trình bày của cô nội dung cô nói khó hiểu quá",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy nhiệt tình không gây buồn chán khi học",
+                "sentiment": "positive"
+            },
+            {
+                "text": "sự nhiệt tình tận tâm của giảng viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cải thiện lại cơ sở vật chất máy chiếu trong phòng học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ em có xin chuyển ngành nhưng em bị khác khối không xin chuyển được giờ em không biết phải làm sao vì tài chính gia đình em và hiện tại em không theo kịp ngành này nữa ạ cho em hỏi còn cách nào không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cách giảng dạy tạo không khí sôi nổi trong lớp",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cách giảng dạy của thầy rất hay và có phần dễ hiễu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi dbnumber học chung mấy bạn nhưng lên dbnumber em bị tách ra thì có được xin chuyển lớp được không ạ anh chị ơi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "học dồn quá sức",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô dạy rất hay gần gũi với tụi em",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mỗi ngày đi học kinh tế đại cương là một niền vui đối với em",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người ơi cho em xin tài liệu ôn môn quản trị rủi ro thi tự luận với ạ khóc",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô giảng hay dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tuân thủ đúng giờ học",
+                "sentiment": "positive"
+            },
+            {
+                "text": "sử dụng hình thức điểm danh không cần thiết trong khi các lớp khác đều rất tự do không có hình thức điểm danh",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên rất nhiệt tình ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mấy bạn quân sự hút thuốc về trường hút dùm tôi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "môn học chỉ có number tiết nên kiến thức vẫn chưa truyền đạt hết thời gian phân bố môn học chưa hợp lý lắm sáng học number tiết rồi chiều học number tiết",
+                "sentiment": "negative"
+            },
+            {
+                "text": "slide / trình chiếu hơi khó hiểu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người ai báo cáo đồ án chuyên ngành cn phần mềm rồi cho mình hỏi có khó không ạ thầy có hỏi cụ thể phần nào không ạ để em chuẩn bị trước",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy nhiệt tình ân cần",
+                "sentiment": "positive"
+            },
+            {
+                "text": "hình thức thực hiện chưa chuyên nghiệp và máy móc",
+                "sentiment": "negative"
+            },
+            {
+                "text": "number nam cần tìm công viec part time quán cà phê gần khu vực ngã tư thủ đức",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên dạy rất nhiệt tình chỉ bảo tận tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy nhiệt tình giảng dạy nhiều vấn đề rất hay cần thiết cho sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giáo viên cần thông báo cụ thể các chương thi học kỳ một cách cụ thể hơn giúp cho sinh viên nắm được thông tin chích xác khi ôn tập tránh tình trạng chỉ tập trung vào các chương trọng yếu mà không học các chương còn lại",
+                "sentiment": "negative"
+            },
+            {
+                "text": "khả năng truyền đạt chưa được tốt",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em có làm rơi cd ở number tên phan thành hưng number quanh khu vực tcsnh anh chị nào nhặt được cho em xin lại ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "xin chào / cười mọi người mình có number số thắc mắc là number vạch trong hình rốt cuộc có công dụng như thế nào vậy ạ có phải là mình phải đứng number hàng không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "bạn nào có tài liệu ôn giữa kỳ tài chính doanh nghiệp không ạ cho tôi xin vứi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nguyên lý kế toán có lý thuyết không ạ với mấy câu ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "máy chiếu mờ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cung cấp cho sinh viên đủ bài tập khi đến lớp cũng như làm ở nhà",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nhiều lúc cô wzjwznumber hơi nhầm lẫn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "không tiếp cận lắm với sinh viên hơi chán",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảm tảibỏ những phần không thật sự cần thiết",
+                "sentiment": "negative"
+            },
+            {
+                "text": "bỏ qua những phần của những môn khác như báo cáo hoặc những phần thứ yếu như làm poster youtube giới thiệu về đồ án như một sản phẩm công nghệ thực sự",
+                "sentiment": "negative"
+            },
+            {
+                "text": "học kỳ number cần học riêng theo từng lớp để có được kết quả học tập tốt nhất",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tăng tính thực tế trong các đồ án hơn một chút là tuyệt vời",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "buồn ngủ quá anh em ơi cho xin ý kiến làm sao để hết buồn ngủ đây",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy tốt em thích thầy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô dạy hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi thứ đều tốt mong thầy chia sẻ thật nhiều kinh nghiệm hơn nữa cho tụi em",
+                "sentiment": "positive"
+            },
+            {
+                "text": "coi học phần thay thế ở đâu vậy ạ tại có môn em chưa học mà học kì number mới mở lận ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em xin thông tin anh này ạ ai biết comment / bình luận xuống dưới",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thực trạng chung là giảng viên dạy thực hành ở trường chưa thật sự tận tâm giúp sinh viên nâng cao kỹ năng thực hành của môn học đó",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên không dạy phần trọng tâm của môn học dạy quá dài dòng và cần hạn chế viết bảng",
+                "sentiment": "negative"
+            },
+            {
+                "text": "điều chỉnh số tín chỉ cho môn từ number tín chỉ thành number tín chỉ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy dạy rất tốt và tâm huyết phương pháp hợp lý và nội dung giảng dạy tạo hứng thú cho sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên dạy rất tốt theo nhiều mặt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "hơi đi sâu vấn đề khác lạc đề",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mất thẻ sinh viên làm lại khoảng bao lâu và đăng ký làm lại ở đâu vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "điểm trung bình bao nhiêu thì được xét học bổng khuyến khích học tập vậy mọi người",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy dạy rất nhiệt tình và dễ hiểu tuy nhiên do học sinh còn lười nhác học bài nên đôi khi kết quả không được như mong muốn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thường cho nghỉ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em thấy hiện nay ngành sư phạm đang rất hot / nổi như ngành sư phạm khtn em đăng ký nvnumber ở trường Cần Thơ còn nvnumber ở dthu nếu chẳng may may mắn không đến ở nvnumber thì cơ hội em đậu ở nvnumber cao không ạ hay không còn cơ hội nào",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy rất hiền và nhiệt tình trong từng tiết học",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nhiệt tình giảng bài chậm rãi dễ nắm bắt nội dung",
+                "sentiment": "positive"
+            },
+            {
+                "text": "bài đăng này dành riêng cho hội chị em hỏng biết ăn gì trong ngày number number tuyệt vời này bún đậu ba anh em chúc các bạn nữ sinh viên trường Hutech có một ngày number number thật ý nghĩa vui tươi tràn ngập hạnh phúc chúc các bạn sẽ luôn tươi trẻ cười duyên bên cạnh những người thân yêu nhé ba anh em gửi tặng các bạn voucher miễn phí number đồ uống tự chọn áp dụng cho các bạn nữ đi bao nhiêu bạn nữ miễn phí bấy nhiêu nước hội chị em chốt kèo / cơ hội ngay tới ba anh em thôi nào chi nhánh number number nguyễn gia trí chi nhánh number number xô viết nghệ tĩnh ba anh em cảm ơn các bạn nhiều nhiều",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nội dung môn học không thừa không thiếu",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thích năng lượng của mấy bạn bot nam thiệc thấy mấy bản cứ tuyệt vời vui vui xin mẹo / tips tự tin",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy dạy rất sát với thực tế",
+                "sentiment": "positive"
+            },
+            {
+                "text": "xin chào / cười mọi người tin nâng cao chỉ cần đăng ký thi mà không cần học được không nhỉ mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nhiệt tình trong giờ lên lớp cũng như kiểm tra email",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên hoàn toàn không trả lời thích đáng các câu hỏi thắc mắc được đặt ra của sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho em hỏi muốn tham gia chiến dịch tình nguyện mùa hè xanh của trường thì đăng ký ở đâu ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chưa từng thấy cô giảng dạy trên lớp và nói gì đồ án trong khi thầy dạy lý thuyết lại có",
+                "sentiment": "negative"
+            },
+            {
+                "text": "hạn chế bỏ giờ buổi vì giảng viên bận",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nhiều sinh viên chán nản thông báo nghỉ thì muộn lên trường rồi mới nhận được thông báo nghỉ học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy cung cấp những thông tin rất mới và rất có ích cho sinh viên cả về học tập và làm việc sau này",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nhưng ngoài điều đó ra thì giảng viên rất tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "môn này rất chán giáo viên dạy cũng chán nói chung vô cùng không hài lòng với môn này",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô hay yêu cầu học sinh phải làm bài tập đầy đủ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "trường mình có cho trả góp học phí không ạ hay chỉ cho gia hạn thôi vậy ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "đồng thời giảng viên rất tích cực năng nổ trong việc giảng dạy cung cấp cho sinh viên nhiều kiến thức bổ ích và cũng luôn vui vẻ hoà đồng nhằm khiến sinh viên cảm thấy thoải mái khi đến lớp",
+                "sentiment": "positive"
+            },
+            {
+                "text": "fact trường Hutech thêm cơ sở sinh viên thêm tiền đóng học phí",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "sao kỳ này không thấy hoạt động nào điều number ngoài hiến máu hết vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạy khó hiểu quá nhanh",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có ai pas áo thể dục numberxl đổ lên không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em đóng học phí rồi nhưng muốn huỷ number môn được không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng dạy theo phương pháp mới thú vị dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em muốn làm giấy bản lưu mà hết hạn rồi giờ lên tcsnh hay sao ạ chỉ em với anh chị",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên giảng dạy nhiệt tình bám sát nội dung môn học",
+                "sentiment": "positive"
+            },
+            {
+                "text": "buổi đầu tiên của kỹ năng giao tiếp và làm việc nhóm em nghỉ được không ạ do trùng với lịch thi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên đến đúng giờ và luôn điểm danh sau đó khoảng number phút",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy rất nhiệt tình vui tính dạy dễ hiểu và cặn kẽ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng bài vài giải bài quá nhanh",
+                "sentiment": "negative"
+            },
+            {
+                "text": "kinh tế chính trị cô tuyết tính toán nhiều không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chiều nay có ai đi coi văn nghệ ở hội trường rùa không ai đi number mình cho em ngồi chung với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy rất hay truyền cảm tốt phong cách giải toán có một không hai thiếu buổi nào là bù buổi đó",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cách dạy để sinh viên tiếp thu bài tương đối có hiệu quả",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nên cập nhật những phần mềm mới",
+                "sentiment": "negative"
+            },
+            {
+                "text": "không khí học tập sôi nổi dễ tiếp thu kiến thức",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi các anh khoá trước ngành kỹ thuật máy lạnh trường dạy ổn không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "othk tuyển dụng mentor ctv các môn ở trường UEH jd chi tiết dưới comment / bình luận",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "trang bị thêm nhiều thiết bị mạng hơn nữa để thực hành",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho em hỏi hkdn quản trị kinh doanh là học về gì mà tận number tín chỉ vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hỏi bao giờ trường tổ chức lễ tốt nghiệp ạ và mình đăng kí tốt nghiệp ở hội trường như nào ạ em mới hoàn thành chương trình học",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ai thi pháp luật đại cương rồi cho em hỏi ra chu yếu là chương mấy vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạy dễ hiểu tận tâm dạy từ cơ bản tới nâng cao",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cập nhật bài giảng trên trang coursedotuitdotedudotvn đầy đủ có bài tập hàng tuần",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi là có anh chị nào pas lại cuốn tài liệu học tập chủ nghĩa xã hội khoa học không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chưa rõ mục tiêu và các bước thực hiện bài tập truy vấn dbpedia và tạo ontology",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giáo viên tâm huyết truyền đạt tốt kiến thức",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có ai pas sách chủ nghĩa xã hội khoa học với tư tưởng hồ chí minh không ạ em cần ở cơ sở Hòa Mạnh",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em muốn được hiểu rõ những ứng dụng của môn học này vào ngành học mà chúng tiếng Anh đang học là gì",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nhiều lúc giảng dạy nói hơi nhanh",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giờ học trên lớp chưa thực sự hiệu quả",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ anh chị nào ra trường cho em xin cảm nhận về ngành kĩ thuật hoá học ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "moi người ơi cho em hỏi nó không ghi điểm rèn luyện là bao nhiêu thì có được cộng không ạ em cảm ơn ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hỏi trường mình có mấy đợt tốt nghiệp và vào những tháng nào vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cố tạo động lực cho sinh viên phấn đấu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nội dung chưa cô động",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nếu đợt number em không đăng kí thi đánh giá năng lực nhưng đợt number em thi thì có bất lợi gì không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên dạy dễ hiểu nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người ai từng kiểm tra / kinh tế lý thuyết môn tư duy hệ thống của cô tuyến chưa ạ cho em hỏi kiểm tra / kinh tế trong bao lâu với có được lật tài liệu hay tra gì không ạ với có khó không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em xin ap tính điểm lại với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "sinh viên năm number trở lên đều có laptop cả rồi vậy nên vào phòng máy là không cần thiết",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạy hay tận tâm với sinh viết kiến thức truyền đạt rất tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mấy anh chị ơi cho em hỏi là hạn học phí kêu number number là hết number number mới hết hạn hay sao ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "anh chị học kiểm toán cho em hỏi trường mình có liên kết với công ty bignumber nào không ạ tại em thấy ngành kiểm toán trường mình ít người học quá với lại em cũng khá là tò mò ý ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "hơi lạ một xíu em xét tốt nghiệp nhưng không muốn đăng ký dự tốt nghiệp chỉ lấy bằng được không ạ tại giờ em thấy nó chả còn quan trọng nữa cũng trễ number năm rồi",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi mọi người làm s để có bồ vậy ạ em chỉ đi học rồi về thôi không biết kiếm bồ ở đâu luôn khóc",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "trình bày chưa đủ cuốn hút",
+                "sentiment": "negative"
+            },
+            {
+                "text": "wow chào mừng tân sinh viên tới cửa đại học trường Hutech nhé khôi nguyên",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô vui tính giảng dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên dạy hay tích cực",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mỗi một vấn đề đều phải dừng lại hỏi xem còn sinh viên nào có cách khác không hay đơn giản là cách hiểu khác trên cùng một vấn đề",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em rất hài lòng về cách dạy của thầy trong môi trường đại học",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có ai có lớp học chính tanumber không ạ cho em ghép với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dễ hiểu thân thiện với học sinh",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy giảng bài rất hay dễ hiểu và thực tế",
+                "sentiment": "positive"
+            },
+            {
+                "text": "người thậy nhiệt huyết dù học sinh không đi học đầy đủ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ cho em hỏi là hiện tại em đã có điểm tin học mà chưa có quy đổi chứng chỉ vì mới thi xong ạ mà kỹ năng và bnumber đã có chứng chỉ mà bây giờ em muốn làm đơn xét tốt nghiệp để cho kịp thì em có thể bổ sung sau được không ạ em cảm ơn ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tin học thi lại dành cho thí sinh tự do thì đề nó có trên trời không mọi người anh chị trước có ai từng không ạ cho em lời khuyên với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "trời quơi gửi xe ở bên sân golf sân vận động / sinh viên hội học có number tiết đi ra bạn nào hoá duyên cái chong chóng conmeno luôn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "anh chị cho em xin lịch quân sự hè tham khảo với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạy quá số giờ quy định",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho em hỏi em bị khóa anh chị face để chia sẻ bài lấy đrl rồi thì nó có ảnh hưởng gì không ạ em sợ mất rồi nó không tính điểm vô",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giải tích là một môn học khó thầy cần thêm thời gian giảng dạy và cho sinh viên một bài thi phù hợp trình độ đồng đều hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô hướng dẫn thực hành khá đầy đủ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "bạn nào có đề cương nnumber tiếng hàn number không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nhiệt tình tôi khá làm khó học sinh nhưng thế học sinh mới học",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy nền cộng điểm phát biểu hay có nhiều điểm cộng hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tận tâm giảng dạy nhiệt tình tận tâm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người ơi đăng kí thi Microsoft Office Specialist ở trung tâm trường mình có cần bắt buộc đăng kí ôn tập không ạ em đăng kí thi thôi được không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ai để quên chuột máy tính ở phòng cnumber lớp kinh tế chính trị mác lênin sáng nay lên phòng trực giảng đường tìm nhé",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cái email sinh viên của trường giờ hết dùng được bên ofice number rồi hả mọi người",
+                "sentiment": "positive"
+            },
+            {
+                "text": "đến cuối kỳ sẽ đỡ bỡ ngỡ hơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "kiến thức uyên thâm tầm hiểu biết sâu rộng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "lên lớp đầy đủ và đúng giờ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "học thể chất thầy nguyễn phúc thanh phong thầy có cho rớt luôn không mnem không thể thạo môn bóng chuyền luôn í",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tìm bạn tập phòng tập chung",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người ơi cho em hỏi là khoa em tổng kết rồi nghe nói sinh viên tiêu biểu cũng có giấy khen do trường phát nhưng mà tới giờ chưa thấy là có thật không ạa",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ai nhận làm phiếu pdnumber không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "lớn hết rồi nhưng ý th ức thì không có",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "hoá ra bắt buộc học ptbv là có lý do cả bảo sao không làm hoa hậu được",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy cho nghỉ học thường xuyên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy dành thời gian cho các nhóm thuyết trình nhưng không duyệt lại những kiến thức do các nhóm thuyết trình là đúng hay không",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho em hỏi muốn phúc khảo điểm thi thì làm sao ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thấy người tiếng Anh có bồ vui quá nên cũng muốn dị mình là nam nhé",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nhiều lúc nghe giảng giảng viên đang nói vấn đề này chỗ này lại tự nhiên chuyển sang vấn đề khác rồi quay lại vấn đề cũ khiến sinh viên dễ rối và không hiểu bài",
+                "sentiment": "negative"
+            },
+            {
+                "text": "trợ giảng tận tình dễ chịu giảng viên chính hầu như không có mặt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có ai có lịch thi được và cnt bên cơ sở HEC không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hỏi em gia hạn học phí được duyệt tới number number hiện em chưa đủ kinh phí em xin gia hạn thêm được không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "hiền dễ thương cười tươi",
+                "sentiment": "positive"
+            },
+            {
+                "text": "đrl dưới bao nhiêu bị cấm thi vậy mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người ai học bnumber ở trung tâm trường rồi cho m xin đánh giá với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chấm điểm quá nhiều chưa quá quan tâm đến việc sinh viên đã hiểu hay chưa",
+                "sentiment": "negative"
+            },
+            {
+                "text": "sao mấy bạn có bồ hay vậy mình cũng muốn yêu / thân mật",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tài liệu học bằng lái xe là mình lấy ở đâu vậy mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "các bạn ở ký túc xá có thấy dạo này mạng yếu dữ không mình dùng sim mạng vina ra ngoài dùng được numberg mà về ký túc xá thành numberg luôn mở gì cũng xoay tròn bực mình ghê",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng bài đôi khi hơi khó hiểu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "slide / trình chiếu bài giảng bài tập đầy đủ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cám ơn ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "hướng dẫn đầy đủ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy dạy vui dễ hiểu rõ ràng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nên đưa ra một vài phương pháp học lập trình hay cho sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giờ lên lớp thời gian đầu là dành cho seminar number number phút còn lại sau khi seminar giảng viên lại cho làm bài tập thực hành sinh viên tự làm giảng viên không hướng dẫn gì thêm và làm việc riêng",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giáo viên dạy nhiệt tình đảm bảo kiến thức cho sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "bị người ta Ghost rồi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy khá hay và dễ hiểu em rất hài lòng về môn học do thầy wzjwznumber dạy em xin cảm ơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ anh chị cho em hỏi kinh tế vi mô cuối kỳ thi chương nào vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "và quá gấp gáp",
+                "sentiment": "negative"
+            },
+            {
+                "text": "chừng nào ubc bên mình tuyển tv vậy ạ em háo hức quá",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cả nhà cho em hỏi điểm rèn luyện tổng trên number của cả number năm học mà điểm trung bình tích lũy chỉ đạt từ number number number number thì có được sách đỏ gì không ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "trợ giàng nhiệt tình quan tâm và theo sát sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "khả năng truyền đạt chưa tốt",
+                "sentiment": "negative"
+            },
+            {
+                "text": "phương pháp dạy tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô cũng khuyến khích seminar để tăng khả năng sinh bày của sinh viên trong quá trình trình bày hoặc xây dựng nội dung trình bày cô luôn tận tình giúp đỡ nếu có khó khăn từ phía sinh viên đó",
+                "sentiment": "positive"
+            },
+            {
+                "text": "bạn nào từng chỉnh sửa tiểu luận ngoài trường cho mình hỏi gần khu ab và bạn / you có tiệm photo nào chỉnh sửa tiểu luận tốt không ạ mình cảm ơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em đang cần tìm bạn ở ghép ở cơ sở nb vì bạn hiện tại em chuyển qua qnumber em là nữ ạ bạn nào có phòng cho em ở với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em xin đánh giá và slide / trình chiếu về môn cảm thụ nghệ thuật truyền thông với kĩ thuật audiovisualnumber với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nội dung khảo sat quá dài nhiều mục lặp đi lặp lại nhiều bạn khảo sát mà không cần đọc toàn tích chàn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "hướng dẫn tận tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên rất nhiệt tình tâm huyết",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô giảng dạy nhiệt tình và tận tâm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô nên thêm nhiều phần đọc",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng khó hiểu nói chuyện ngoài lề đi trễ đuổi sinh viên về sớm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "chưa có Người yêu thì học hỏi đi anh em cre cpđ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy dễ hiểu tận tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "các ví dụ giáo viên đưa ra trong tiết học giúp sinh viên dễ hiểu được bài học",
+                "sentiment": "positive"
+            },
+            {
+                "text": "trường mình có cho mặc váy đi học không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "khả năng tư duy được nâng cao",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cách giảng của cô hơi buồn ngủ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "anh chị ơi cho em hỏi nếu cuối kỳ không kí giấy xác nhận điểm là kết quả bị huỷ phải không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ai bắn fifai không nè",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "học văn bằng number xin chào mọi người mình đang muốn học văn bằng number ngành luật tại trường UEH mà ngoài việc đi qua phạm ngọc thạch thấy trường đẹp đẹp thì mình chả biết thông tin gì cả không biết muốn đăng ký học thì phải làm thế nào ạ thanks",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy mời doanh nghiệp về dạy sinh viên khá thiết thực",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tôi cần tìm numberb nữ ở ghép number number vào đầu tháng number",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tài liệu giảng viên cung cấp đầy đủ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ cho em hỏi là điểm rèn luyện ở mức trung bình điểm trung bình tích lũy em đang bằng giỏi có bị hạ xuống bằng khá không ạ em cảm ơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảm bớt số lượng nội dung của môn học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có ai học bài thi tiếng Trung HSK ở trung tâm cti chưa ạ cho mình tham khảo với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nguyên lý kế toán mình học thầy cô nào được dạ mọi người cứu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cần tìm người chơi cầu long chung nhà bè mới biec chơi ạ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tham gia điểm rèn luyện ở đâu ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô dạy rất tận tình dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người cho em hỏi tiếng anh không chuyên có tính vào điểm trung bình tích lũy không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nhiệt tình chuyên môn tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "anh chị cho em xin tư vấn với ạ học bạ của em number năm là number number em học ở trường top tp number năm chưa có bài thi IELTS aim đánh giá năng lực number aim thi THPT quốc gia number có khả năng vô được kinh doanh số không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô vui vẻ và nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người ơi em muốn nghỉ học number hôm có sao không (không dấu) ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nhiều ví dụ minh hoạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cuối buổi học thầy chia sẻ kinh nghiệm để tụi em có thể học tốt hơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "sự nhiệt tình quan tâm lắng nghe",
+                "sentiment": "positive"
+            },
+            {
+                "text": "vui",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy vui vẻ tận tâm sẵn sàng giải đáp thắc của sinh viên khả năng truyền đạt tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "huflit với trường Văn Hiến trường nào mạnh về du lịch hơn vậy ạ em mình nó muốn học du lịch mà mấy trường học phí nhẹ xíu th á",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy hay dễ hiểu thầy thường xuyên cho chúng em làm các dạng bài tập",
+                "sentiment": "positive"
+            },
+            {
+                "text": "trai trường Hutech kiểu đã ai làm gì đâu",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy rất dễ chịu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "number điểm rèn luyện khi tham gia thi mình hỗ trợ vé cuộc thi này",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên tận tình hay giúp đỡ sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có bạn nào có tài liệu ôn nghe nói number không ạ cho mình xin với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tốt tận tình với sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô dạy nhiệt tình giảng bài tập hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy nhiệt tâm và rất cởi mở",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thông báo nghỉ hơi chậm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ anh chị cho em xin đánh giá về ngành văn hóa học trường mình ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "đi đâu cũng gặp trường Văn Hiến",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "môn học nên bám sát vào nội dung mục đích cuối cùng thay vì giảng dạy lý thuyết tràn lan",
+                "sentiment": "negative"
+            },
+            {
+                "text": "luôn vui vẻ và rất nghiêm túc trong chuyện giảng dạy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "kết hợp lý thuyết và thực hành",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người cho mình hỏi có ai học anh này chưa mình xin tí review (âm) review (biến thể) với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người có ai bồi dưỡng hay ôn thi bài thi VSTEP ở trường chưa ạ cho em xin tí đánh giá với nên học ở trường hay học ở ngoài ạ em cũng hơi yếu tiếng anh",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có nhiều hoạt động theo nhóm tăng tính đoàn kết",
+                "sentiment": "positive"
+            },
+            {
+                "text": "phòng học thực hành wzjwznumber không đảm bảo chất lượng cho việc học thực hành",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người ơi cho em hỏi là kì numberb sắp tới nếu như mình không đóng học phí đóng muộn là coi như phải chờ qua kỳ hè hoặc qua năm sau mới đăng ký học lại được đúng không ạ nếu như vậy thì có ảnh hưởng đến điểm tích lũy gì không ạ mong mọi người giải đáp giúp em nhé",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "động lực cho các bạn nữ trường Hutech chăm học hơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy wzjwznumber giảng dạy rất nhiệt tình và đầy đủ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "làm bài tập nhiều",
+                "sentiment": "negative"
+            },
+            {
+                "text": "sửa bài tập chưa được kỹ chưa nhiều",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có ai hôm nay nhặt được cái thẻ sinh viên nào không ạ em vừa mất khoảng trưa nay numberhnumber em m đi đường nguyễn bình đi học í ạ xong bị rơi mất khi nào không hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ có anh chị nào làm bên tcsnh không ạ em hỏi một số vấn đề với khóc em có Nhắn tin page gấp mà lâu tài liệu khóc",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô rất nhiệt tình dạy kỹ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi bảo lưu học bạ thì cần những gì và đến đâu để hỏi vậy ạ em cảm ơn nhiều ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ai có giới hạn đề thi bnumber number tuần thi vào ngày number number number cho mình xin với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em xin tài liệu môn logic học giưac kì ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em mong muốn cô tương tác với sinh viên nhiều hơn qua modle bài đăng tài liệu tham khảo thêm bài đăng ghi chú về bài giảng và các lưu ý trên lớp và cập nhật điểm số bài tập nhanh hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "ai có hình mô phỏng cái cơ xở đang xây bên cơ sở HEC lúc hoàn thiện không ạ em nhớ lúc thnumber thnumber năm ngoái có ai đăng mà giờ tìm lại không thấy",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hỏi suốt thời gian mất thẻ sinh viên em chỉ ở phòng học đó không đi đâu lúc lên lại tìm không thấy trong thời gian đó lớp cũng không nghỉ do mượn phòng để thi bác lao công không vào hỏi lớp cũng không có kết quả em có xin được phòng công tác sinh viên trích xuất cam để mình xem không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người ơi em đăng ký knm nhưng lỡ đăng ký có number môn giờ em muốn đăng ký thêm thì ph lsao ạ khóc cứu em với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên cần tạo thêm những hoạt động tranh luận làm việc nhóm nhiều hơn thay vì chỉ dạy lý thuyết",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em không có ý kiến về vấn đề này",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ cho em hỏi là em muốn thi khối dnumber nhưng em không học tiếng trung ở trg thì điểm học bạ sẽ xét bằng tiếng anh đúng không ạ hay không được xét ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "rất tận tâm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên chưa cung cấp đầy đủ đề cương môn học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người cho em hỏi em muốn đi thực tập tốt nghiệp không Bình thường nên tìm và hỏi ở đâu ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "đảm bảo đúng giờ học",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên nhiệt tình chịu khó giúp đỡ sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cần nêu được ý nghĩa cụ thể của từng phần tránh trừu tượng hóa",
+                "sentiment": "negative"
+            },
+            {
+                "text": "bài giảng bằng tiếng anh giúp sinh viên tiếp cận ngoại ngữ tốt hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có ai biết vì sao môn thq lại đổi giảng viên giờ chót không ạ tnumber mình đăng ký cô đx mà tuần trước nhận lớp là giảng viên khác nên khá bối rối",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên có tâm ân cần nhiệt tình dạy dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ mọi người ơi cho em hỏi em không theo dõi tình trạng học phí nên đã không hoàn thành học phí đúng hạn đợt number và đã làm đơn xin gỡ điểm f cuối kỳ nhưng giữa kỳ em lại bị điểm f vậy có cách nào để xin gỡ điểm f giữa kỳ không ạ và nếu không gỡ được điểm f thì với giữa kỳ là điểm f thì có dễ rớt môn không ạ em xin cảm ơn ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "bóng chuyền number học ai ok vậy mọi người",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giáo trình không phù hợp với sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người ơi xét tuyển kết hợp có cần nộp học bạ hay gì không ạ hay chỉ cần thi tốt nghiệp rồi đăng kí nguyện vọng là hệ thống tự xét ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy giảng dạy hay và nhiệt huyết luôn có nhiều bài tập sau mỗi chương",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nhà trường cần cải tiến thiết bị trong phòng học vì máy chiếu quá mờ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "anh chị cho em hỏi những môn này nên học giảng viên nào có tâm giảng bài dễ hiểu ạ nguyên lý kế toán pháp luật đại cương tư tưởng hồ chí minh lịch sử đảng marketing quốc tế",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên rất nhiệt tình giảng bài dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy chuyên nghiệp trong cách giảng dạy và rất nhiệt tâm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "hôm nay ai thi nguyên lý kế toán rồi cho em hỏi thi gì vậy ạ và ôn tập trung vào chương nào vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "học hết môn mà chẳng biết cái gì",
+                "sentiment": "negative"
+            },
+            {
+                "text": "không sửa bài tập thực hành chỉ cho sinh viên làm rồi nộp trên courses",
+                "sentiment": "negative"
+            },
+            {
+                "text": "xin chào mọi người em là sinh viên năm nhất ạ mọi người ai học cô hương trà rồi cho em xin đánh giá được không ạ mai đi học em đỡ bỡ ngỡ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mấy anh chị cho em hỏi sách in được phép đem vào phòng thi không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "quá nhiều",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho phép sinh viên chuẩn bị bài trước tiết kiệm thời gian làm thực hành",
+                "sentiment": "positive"
+            },
+            {
+                "text": "làm đồ án phải báo cáo mỗi number tuần",
+                "sentiment": "positive"
+            },
+            {
+                "text": "học thực hành cơ sở lập trình sài máy mình hay máy trường nhỉ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "học kì number đã bắt đầu học được number tháng nhưng giờ em xin bảo lưu thì còn kịp không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "anh chị cho em hỏi ngành tdpt và tâm lý học number năm anh chị đóng bao nhiêu tiền thế ạ và đóng bao nhiêu lần và number lần bao nhiêu được không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy rất vui tính và thú vị lớp học luôn sôi động",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy giảng bài kỹ chi tiết",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô cần phải truyền đạt tốt hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "sao em đang học tadbnumber mà em xem thời khóa biểu hknumber lại thấy chuẩn bị học tadbnumber là sao ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô dạy rất nhiệt tình và tài liệu của cô rất cụ thể dễ hiểu cô hướng dẫn rất tận tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giáo viên tạo nhiều cơ hội cho sinh viên được luyện nói tiếng anh trên lớp",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên tận tình giảng dạy hay chất lượng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nội dung thầy giảng mang tính cập nhật có nhiều nội dung hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô phát âm chưa chuẩn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "không co ý kiến",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cần nhiều bài tập hơn nữa",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy nên giảng chậm hơn để sinh viên có thể theo kịp bài và cho sinh viên copy slide / trình chiếu bài giảng",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người ơi cho hỏi là đăng nhập mới teams mà biết tài khoản gmail nhưng quên mật khẩu thì làm thế nào",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tài liệu môn mạng máy tính được dịch từ computer networking anh topdown aproach còn hơi khó hiểu để sinh viên học hay tự nghiên cứu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "đây liệu có phải là chuyên môn nghề nghiệp của ngành công nghệ thông tin chúng tiếng Anh",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy luôn quan tâm đến sinh viên luôn nhắc nhở giám sát quá trình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "olympic trường mình không có bóng rổ nữ hả mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em nghĩ môn này chỉ nên dành cho khoa khoa học máy tính kỹ thuật máy tính",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy luôn biết cách thúc đẩy sinh viên học tập một cách hăng say hơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy dạy thực tế nhiệt tình với sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thường xuyên cho bài tập về nhà",
+                "sentiment": "positive"
+            },
+            {
+                "text": "hỗ trợ nhiều bài tập giúp nâng cao trình độ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "kiến thức học khá vừa sức với sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ do tính chất công việc nên em cần pas phòng ạ phòng ở đinh bộ lĩnh bình thạnh phòng numbertrnumber cho number người nước numberk number số điện điện number number dịch vụ fre trọ chỉ có number phòng nên an toàn và mọi người rất hoà đồng có thắc mắc gì Nhắn tin mình ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "anh chị nào thi lí thuyết bóng bàn cơ bản của thầy nguyễn ngọc hưng cho em hỏi đề khó không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "môn học này thiên về định hướng logic nên học theo hướng trao đổi và tham khảo tránh đặt nặng bài tập",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tiến độ dạy hơi nhanh",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người cho em hỏi sinh viên bên viện có được làm lễ tốt nghiệp chung với chính quy được không ạ em cảm ơn nhiều",
+                "sentiment": "positive"
+            },
+            {
+                "text": "bài tập anh văn nên sát với yêu cầu ở ngoài",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nãy bạn nào để quên cả đt cả chìa khoá trên xe thì xuống bnumber gặp chú bảo vệ lấy nhé",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mình muốn tìm nam ở ghép chung trọ ở qnumber á bạn nào có nhu cầu thì comment / bình luận nhé",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy rất năng động",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy vui tính giảng hay nhiệt tình kiến thức sâu rộng trong các lĩnh vực",
+                "sentiment": "positive"
+            },
+            {
+                "text": "việc thắc mắc thầy điều giải đáp",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ cho em hỏi hôm nay mới đóng học phí có sao không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chưa chú ý đến sinh viên lắm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mở thêm lớp cho môn này đi ạ phải học xong môn này thì mới đăng ký mấy môn khác được",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần mua đề môn tâm lý học đại cương ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "anh chi nào có tlieu cho em xin môn kinh tế vĩ mô tư tưởng Hồ Chí Minh chủ nghĩa xã hội khoa học với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em nghĩ nhà trường nên kiểm tra kỹ trình độ giảng viên trước khi bố trí để họ dạy một môn học nào đó",
+                "sentiment": "negative"
+            },
+            {
+                "text": "ví dụ như mục quy hoạch động là mục em thích thú nhưng cô nói đây là mục khó cô dạy chỉ những ví dụ cực kỳ cơ bản",
+                "sentiment": "negative"
+            },
+            {
+                "text": "sinh viên trường Hutech chú ý triệu tập các bạn dưới numberkg qua ana number nguyễn gia trí tham gia game lọt khe nhận ngay iphone number sáng nay đã có vị khách đầu tiên tham gia và giành được giải number xèng rất dễ dàng chi tiết",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nên có thêm slide / trình chiếu cho sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nội dung đa dạng giảng viên tận tình học đầy đủ và chi tiết mặc dù đây là môn học mới",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cần hạn chế dạy bài giảng điện tử",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có đưa ra ví dụ cụ thể",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mai tôi đi thi bài thi IELTS ai thi rồi cho tôi xin ít kinh nghiệm với mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nên đưa những giảng viên có kinh nghiệm dạy thực hành",
+                "sentiment": "negative"
+            },
+            {
+                "text": "truyền đạt chưa hiệu quả",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho mình hỏi phụ huynh có việc bận và vắng buổi họp phụ huynh thì có sao không ạ với cả có bị kêu lên họp number number không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên nhiệt tình luôn luôn đến lớp đúng giờ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nghỉ nhiều",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy chỉ dạy nhiệt tình những chỗ sinh viên chưa nắm rõ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cần tăng cường nội dung nghe và nói để sinh viên giao tiếp tốt hơn bằng tiếng anh",
+                "sentiment": "negative"
+            },
+            {
+                "text": "anh chị cho em hỏi mình không làm lễ tốt nghiệp thì nhận bằng chính thức ở đâu ạ mình nhận trước hay sau thời gian làm lễ ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "truyền đạt quá nhanh em chưa nắm kịp lắm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "lên kèo / cơ hội nhậu không mấy ní",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ cho em hỏi mấy sân thể chất ở trung tâm tdt đhqg với nhà thi đấu trường mình tnumber cn vào chơi tự do được không ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mình muốn mua áo thể chất vnu cỡ / kích cỡ l đến cỡ / kích cỡ xin lỗi",
+                "sentiment": "positive"
+            },
+            {
+                "text": "phòng máy đôi khi quá nhiều máy hoạt động không ổn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em là một học sinh không lười biếng nhưng thầy giảng bài em thấy buồn ngủ quá colonsad",
+                "sentiment": "negative"
+            },
+            {
+                "text": "khả năng truyền đạt chưa cao",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi nguòi ơi cho em hỏi thây cô nào oke ạ có bonus và kiểm tra dễ ạ điểm cao ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ cho em hỏi em nộp giấy tờ thi tin học hạn number em nộp đúng ngày number number có được không ạ em cảm ơn an",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nhiệt tình tâm huyết",
+                "sentiment": "positive"
+            },
+            {
+                "text": "đề nghị trừ lương",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy nhiệt tình bài giảng phong phú đa dạng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi những môn này nên học thầy cô nào và thi hình thức gì vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy nhiệt nhiệt tình vui tính niềm nở với sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên nên nhiệt tình hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mình mới kiếm được number phòng ful nội thất cần thêm number bạn nữa chia ra mỗi người tầm numbertrnumber number tháng nữ ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "là sinh viên phải tỉnh táo đừng để bị d ụ l ừ thì trong mọi trường hợp nhé",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên dạy dễ tiếp thu nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thuế giữa kỳ I thi bao nhiêu câu vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "sau khi bị dời lịch chiếu vào ngày number number bộ phim không inh d ị dân gian việt bất ngờ vượt rào kiểm duyệt chính thức ra mắt vào ngày number number tabo dieucamkykinhoang",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "lôi cuốn thú vị biết thêm nhiều kiến thức lạ có tính áp dụng cao",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy dạy nhiệt tình dễ hiểu dễ áp dụng làm bài thi",
+                "sentiment": "positive"
+            },
+            {
+                "text": "anh chị ơi em mới biết được là năm nay trường mình có tuyển sinh thêm ngành mới là quan hệ công chúng anh chị có thể phổ cập hơn giúp em ngành này lấy trung học phổ thông đánh giá năng lực tầm bao nhiêu điểm nếu là ngành mới thì có ưu nhược điểm gì không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chào anh chị sinh viên ush ạ không biết học phí của trường về mảng ngôn ngữ thì sao ạ ngôn ngữ anh trung đông phương học sao em nghe bóng gió cũng cao lắm khóc",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "hiện tại môn học còn mang tính lý thuyết quá nặng",
+                "sentiment": "negative"
+            },
+            {
+                "text": "kinh tế vi mô nghỉ mấy bữa là bị cấm thi ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy rõ ràng dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên sử dụng giờ hợp lý tận tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạy dễ hiểu kỹ càng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "làm sao để được đi tư vấn tuyển sinh cho các trường trung học phổ thông vậy ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô hiểu rõ trình độ của từng học sinh để có phương pháp bài tập phù hợp với từng học sinh",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi có talkshow nào diễn ra vào sáng tnumber ngày number number không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giờ bổ sung các loại giấy tờ lúc nhập học còn thiếu thì ghé phòng nào ạ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "trợ giảng dạy không hiểu gì",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho em hỏi thi tin học bnumber để xét tốt nghiệp thì mình nên đăng ký cái nào ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "góc thông tin trường Hutech khoá number number năm sẽ có number học kỳ numbera numberb numbera numberb bao gồm ngành đào tạo bằng cấp cử nhân thời gian đào tạo number number năm number kỳ học phí khoảng number numbertr kỳ tương đương khoảng numbertr năm ngành đào tạo bằng cấp kỹ sư thời gian đào tạo number năm number kỳ học phí khoảng numbertr kỳ tương đương khoảng numbertr năm ngành đào tạo đặc thù kiến trúc dược học thú y thời gian đào tạo number number năm number kỳ học phí khoảng number numbertr kỳ tương đương khoảng numbertr năm học phí được thu theo từng học kỳ mỗi học kỳ khoảng number tuần học phí mỗi học kỳ được tính theo số tín chỉ sinh viên đăng ký trong học kỳ đó khoảng number tín chỉ giúp giảm áp lực tài chính cho mỗi lần đóng lưu ý mức học phí trên chưa tính học bổng giảm number toàn khoá có điều kiện",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô max có tâm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "ai học thú y không / chưa ạ mình cần kiếm bạn nữ ở trọ chung học khu em thủ đức vinhome grand park ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy đầy đủ nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô giúp tụi em tìm ra phát hiện lỗi và sửa lỗi trong quá trình thực hành",
+                "sentiment": "positive"
+            },
+            {
+                "text": "anh chị cho em xin mẹo / tips ôn tập môn pháp luật đại cương với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần giảng kỹ hơn phần lý thuyết đi sâu chậm hơn một chút",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy giảng dạy nhiệt tình chu đáo",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ em hỏi là chứng chỉ tiếng anh trường minh sao ạ học ở ngoài xong nộp vào được không với đầu ra là bao nhiêu ạ vậy nếu thi trong trường sẽ bao gồm những gì ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy đẹp trai vui tính hòa đồng với học sinh",
+                "sentiment": "positive"
+            },
+            {
+                "text": "hôm nay numberg ai đăng ký dùn mình number môn kĩ năng mình có hậu tạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "pas sách cầu lông ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "anh chị ơi cho em hỏi các đợt học quân sự rơi vào tầm ngày nào ạ năm ngoái á anh chị",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có kiến thức để lập trình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ em muốn giữa kỳ tiếng anh cơ bản thì nó ra cái gì vậy ạ nó có giống file thầy cô ôn không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ không liên quan lắm nhưng mọi người có ai biết chỗ mua báo sài gòn giải phóng có thể chỉ cho mình được không ạ ông ngoại mình muốn mua tờ kết quả bầu cử quốc hội để làm kỉ niệm ông bảo báo giấy mới giữ còn mãi được ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mình muốn xin innumber bạn nữ tầng number ca number thấy hoài mà không dám xin tóc vàng da bạn trắng lắm luôn dáng người nhỏ mặc áo đen mình gặp bạn hôm thứ number không biết bạn có đọc được bài này không nhưng nếu có thì mình muốn xin innumber",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho mình xin infnumber của bạn khánh linh khoa marketing ạ mình gặp bạn đó ở ngoài trông xinh và sang xỉu nhưng Ngại không dám bắt chuyện",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giờ mình bị mất thẻ sinh viên thì phải xử lý làm sao ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thấy hôm nay mọi người bảo được giảm học phần chỉ ở học kì nhập học cái này là tuỳ mức học bổng phải không nhỉ cái mình nhận được có phải là tất cả các học kì đều được giảm number không ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi thứ đều tốt và giảng dạy dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "xin làm phiền chút anh mình đang xin khoa mở lớp luật tố tụng hình sự lawnumber hknumber năm học number number bạn vào muốn vào lớp thì nhắn mình nhé cứ xin vào nhóm trưởng sẽ duyệt ạ lưu ý phải học luật hình sự xong mới được học luật tố tụng hình sự ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy hay đòi hỏi sinh viên những điều hơi quá cao",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy dạy có tâm nhiệt tình chấm điểm công bằng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "đầu năm đến giờ gặp thầy được một lần thôi thầy tổ chức gặp được một lần",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô dễ tính",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có ai thi nói avcbnumber của thầy quốc duy rồi cho em xin cách ôn với tại thầy không dặn gì hết ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "điềm báo cho học phí sắp tăng",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên dạy nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "micro hay bị hú và rè",
+                "sentiment": "negative"
+            },
+            {
+                "text": "rất hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "lớp ồn đến nỗi không muốn đi học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giáo viên thực hành và giáo viên lý thuyết không đồng nhất tiêu chí yêu cầu của đồ án và kiến thức môn học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người có ai có nhu cầu học thiết lập và thẩm định dự án đầu tư không mình tập hợp / gom người mở lớp đi ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tinh thần kiến thức",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mới gửi về trường thông tin cập nhật bảo hiểm y tế thì điểm đó tính vào hknumber hả mọi người hay chờ trường cập nhật điểm rèn luyện vậy mọi người",
+                "sentiment": "positive"
+            },
+            {
+                "text": "chỉ giải đáp thắc mắc cho một bạn mà không nói cho các bạn xung quanh biết về thắc mắc đó",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nên tập trung vào kỹ năng nghe và nói nhiều hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "môn học có chương trình chủ đề để sinh viên dễ nắm bắt và liên tưởng học tập",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên cho nhiều thử thách hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "trai trường Hutech ga lăng vậy thôi chớ vid dưới comment / bình luận",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có kết hợp với bài tập ví dụ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "bài học niềm tin và cây kem mát lạnh của kaito kid cảm ơn người đã thức cùng tôi qua number tiếng học buổi chiều để được chiêm ngưỡng kỹ nghệ của siêu đạo chích trong vài giây ngắn ngủi ngài đã biến numberk cụa tụi tôi thành number bãi phẩm màu đông lạnh nhỏ xinh cực dăm không chỉ mát lòng mát dạ mà còn nóng hết cái đầu nữa đảm bảo sẽ tỉnh táo trong suốt buổi học còn lại và mãi về sau mọi người nhớ không ngừng không ủng hộ quý ngài kaito kid và chiếc xe đẩy kem của mình ở cổng mai lụ nhé",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên ra đề thi hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "chất lượng dạy còn khá nhiều chỗ chưa tốt thời gian dạy còn chưa hiệu quả",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mình có tài liệu chủ nghĩa xã hội khoa học",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng không hiểu nói nhiều",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ điểm d là có rớt môn chưa vậy ạ nếu học lại thì đăng kí như thế nào vậy ạ anh chị hỗ trợ em với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ngày sinh viên chờ đợi mòn mỏi cũng đã tới",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ em numberknumber cho em hỏi học phí trường mình cho hệ đại trà như thế nào vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần tìm trọ numbertrnumber quay đầu ạ với riêng giờ giấc tự do có chỗ để xe riêng không có cũng được number chuyển vào ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em xin file ôn tập môn lý thuyết tài chính tiền tệ ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mình có dư number găng tay numbern numberoz dây quấn dây nhảy còn rất mới mình không đổ mồ hôi tay bạn nào có nhu cầu cần thì mình tặng lại nhé mình cảm ơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "kiểu đề thi trắc nghiệm quá phức tạp",
+                "sentiment": "negative"
+            },
+            {
+                "text": "marketing trường mình có ổn không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hỏi thư viện trường mà học nhóm phòng riêng là có máy chiếu không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy giảng đủ nội dung bài học và có chỗ lưu ý",
+                "sentiment": "positive"
+            },
+            {
+                "text": "đề nghị trường triển khai hệ thống user để quản lý tốc độ cũng như sinh viên nào đang tải phim soft vdotv",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cú sốc tân sinh viên cả học kỳ I không làm gì mới nhận ra là không có đrl luôn học kỳ I này sống sao đây trời",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người cho em hỏi là thi phòng tập mình được mặc áo đồng phục của trường thay vì áo td của trường duoc không ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy dạy rất nhiệt tình rất tâm huyết ôn tập rất kỹ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nhận ôn tin học ứng dụng rút gọn tin học mnumber nhận ôn kèm number number và nhóm có ôn online và trực tiếp cho mượn máy tính để học lịch thi tự do number number và number number kết quả thi tin number number",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô giảng hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mình cần mua đáp án knlvn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "khả năng truyền đạt kiến thức của thầy chưa hay kém chưa lôi cuốn được sinh viên kể cả so sánh với em một sinh viên năm number",
+                "sentiment": "negative"
+            },
+            {
+                "text": "không thu hút được sự tập trung của sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô rất nhiệt tình vui tính biết quan tâm học sinh",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người ơi nguyên lý kế toán thi giữa kì tự luận bảng có chữ sẵn không ạ hay mình phải viết ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "chuyên mục món ngon cạnh bên trường Hutech đầu tuần luôn là thời điểm công việc căng thẳng cậu bắt đầu tụt năng lượng vậy phải để box mandu thổi luồng gió thật tươi mới đến cậu với number in number kimbap phô mai thanh cơm được cuộn chặt tay dẻo dẻo bùi bùi phô mai béo ngậy và củ quả tươi rói ăn hoài không ngán khoai tây chiên miếng khoai giòn tan thơm thơm siêu cuốn miệng mandu chiên chiếc mandu ú nu ngập ngụa nhân thơm phức gà sốt cay gà giòn đẫm sốt quết cùng tương chua Ngọt thì phê chữ ê kéo dài miến trộn sợi miến dai dai thấm gia vị thịt bò đậm đà ngất ngây chả cá hàn quốc xào chả xào chín tới vẫn còn mọng nước cắn ngập răng chỉ cho number siêu to khổng lồ dư sức number number người ăn phủ phê đặt món cùng the bnumber ngay nhé catering bnumberb customized set inquiry se our menu at menutheb originaltaste website ơi thebnumber Việt Nam hà nội ig thebnumber hanoi number dã tượng trần hưng đạo hoàn kiếm number number number number number number number number number tp Hồ Chí Minh ig thebnumber saigon number numberd nguyễn gia trí p number bình thạnh khu dnumber cũ number",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có liên hệ thực tế",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "bảo hiểm y tế nộp trước ngày number mà em quên mất bây giờ ngày number nộp kịp không mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy hay rất vui vẻ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng dạy đều",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có các phương pháp dạy tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giáo viên phân bố thời gian dạy không rõ ràng",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ cho em hỏi tuần dự trữ là như nào vậy ạ em chưa có lịch thi nhưng mà number number hết hạn đăng kí rồi ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có ai nhận học hộ qpannumber chủ nhật không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "khả năng truyền tải cần thuyết phục hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mình có dự định học vbnumber tâm lý học nên lên hỏi tài liệu tâm lý học đại cương xem trước nhà mình có ai đã học xong cần pas lại không ạ cảm ơn cả nhà",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có nhiều ví dụ và giải thích rõ hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "chép bài nhiều quá nhưng không sao",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giáo viên rất gần gũi với học sinh",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tập trung giảng dạy những kiến thức có ích cho chuyên ngành sau này hơn những kiến thức không quan trọng nên bỏ qua hoặc dạy lướt qua",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng dạy ngắn gọn dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy rất nhiệt tình và thường xuyên dạy lố giờ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "hội trường giờ tao và một đống người phải ngồi dưới đất còn ghế trống thì tụi nó giữ chỗ cho bạn nó",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy giảng bài rất dễ hiểu bên cạnh đó còn có các câu chuyện của cuộc sống rất ý nghĩa mong được học nhiều môn thầy dạy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "kì hè muốn đăng ký avnumber thì đăng ký ở đâu vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cách dạy thiếu khoa học cứng nhắc áp đặt không thu hút gò bó tư duy của sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "môn học có phần không hợp lý vì từ giữa kỳ qua phần sau tức từ chương number chuyển qua chương number trình độ của môn học tăng rất nhanh có nhiều sinh viên không hiểu không nắm bắt được bài",
+                "sentiment": "negative"
+            },
+            {
+                "text": "để tiện cho sinh viên xếp lịch",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ai đi tập phòng tập với mình đi chỉ mình tập với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "đôi khi quá nghiêm túc",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tìm ng cùng mình khám phá fodtour các quận nam hay nữ gì cũm được hết tim bài nhé để tôi dễ Admin",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi trường UEH có ưu tiên xét tuyển Học sinh chuyên không ạ em là Học sinh chuyên có bài thi IELTS và học sinh giỏi tỉnh ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cách sửa bài tập còn sơ sài",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên cần linh hoạt trong giảng dạy chuẩn bị bài giảng phong phú",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên luyện nói rất hiệu quả",
+                "sentiment": "positive"
+            },
+            {
+                "text": "điều chỉnh máy chiếu phù hợp với kích thước phông màn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tác phong làm việc nghiêm túc chuyên nghiệp",
+                "sentiment": "positive"
+            },
+            {
+                "text": "một phần do hoàn toàn là tiếng anh và tụi em vẫn chưa thích nghi kịp",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy dạy hay dễ hiểu tìm nhiều bài tập và cách giảng hay cho học sinh hiểu và rất nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên dạy dễ hiểu dễ tiếp thu nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy đã nhận xét phần mềm DoubledDot các bạn chỉ nói theo cách hiểu của các bạn nội dung thuyết trình đã chán mà các bạn không có sản phẩm để demo / trình bày giới thiệu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "xác suất thống kê với giải tích cho kỹ thuật môn nào dễ hơn vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người ơi cho mình hỏi môn môi trường và con người thi giữa kỳ từ chương mấy ạ với lại thi trắc nghiệm mở hay đóng ạ mình cảm ơn ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "đầy đủ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên giảng dạy khó hiểu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho các bài tập lớn để sinh viên có thể làm việc nhóm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy dạy rất nhiệt tình luôn luôn xuống giữa lớp để giao tiếp với sinh viên một cách dễ dàng luôn đưa ra những ví dụ xung quanh lớp giúp sinh viên dễ dàng hiểu bài hơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "đăng ký ai để học dễ lấy điểm ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô nên tăng tốc độ giải bài hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em muốn nhà trường xếp lịch làm sao để chúng em ít bị trùng lịch nhất ạ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "từ vựng hôm nay trường UEH voyager n anh trường UEH student who goes on anh long and sometimes dangerous journey cre lydieuphatnumber",
+                "sentiment": "negative"
+            },
+            {
+                "text": "những môn này nên đăng kí giảng viên nào vậy ạ em cảm ơn mọi người nhiều lắm ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô midu mãi đỉnh hutechcfs",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên dạy hay dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng dạy tốt đạt hiểu quả cao",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô rất nhiệt tình và vui tính",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em có đăng kí thi Microsoft Office Specialist thông qua email của trường gửi mà sau khi đăng ký em quên lên phòng enumber để xác nhận và đóng tiền thì em nên đăng kí biểu mẫu lại hay em vẫn để biểu mẫu đó rồi lên văn phòng ạ em phân vân quá ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "không dạy lướt và áp dụng những phần chưa học vào tiết học hiện tại",
+                "sentiment": "negative"
+            },
+            {
+                "text": "treo phần mềm Spark sao vậy cả nhà ơi treo đã không được tín phút nào hết á",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "không cho bài tập về nhà phần học thực hành có độ dễ chênh lệch rất nhiểu so với lý thuyết",
+                "sentiment": "negative"
+            },
+            {
+                "text": "các anh chị có thể chia sẻ kinh nghiệm ôn thi zô trường UEH được không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "đây là năm đầu tiên thầy giảng dạy chúng em đều thông cảm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ cho em hỏi em mượn sách thư viện tới hạn trả mà muốn gia hạn thêm thì có được không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hỏi đăng kí học chị tin học ứng dụng ở đâu và thời gian mở lớp ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nên lắng nghe ý kiến của sinh viên nhiều hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "môn này là môn học mới vì vậy cô chưa có đủ kiến thức để truyền tải hỗ trợ tốt tới sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thống kê ứng dụng nguyên lí kế toán marketing quốc tế tagt number cnkhxh kinh tế vĩ môn kinh tế lượng kinh tế chính trị mác lênin báo cáo chuyên đề thực tiễn maảketing mấy môn này học chính ai ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có thêm các tài liệu tham khảo",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có ai biết làm bài thu hoạch không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em đủ sl khảo sat rồi ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "học vậy đâu phải là học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tầng number xin innumber bạn hát phép màu canumber học lớp bên cạnh mà nghe hay quáa",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên dạy nhanh quá",
+                "sentiment": "negative"
+            },
+            {
+                "text": "numberh wc hà lan number number ft hà lan tài number number ft hà lan canh tài number number ft hà lan hnumber number number hỗ trợ hà lan hnumber tài number number lên tiền vào vị hỗ trợ number number ft number number number number chưa có dấu hiệu xỉu anh em tham khảo chơi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em muốn viết đơn gia hạn cho em hỏi anh chị nào viết rồi chỉ em viết với à / ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy chuẩn bị tài liệu thực hành cho sinh viên tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có ai biết cách để học cải thiện điểm số không ạ mình năm number mà điểm trung bình tích lũy mới có number number thì ổn không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nội dung của môn học hiện tại chỉ ở mức lý thuyết khá nhiều ít thực hành",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người cho em hỏi qua về ngành du lịch và học phí chính phụ ở trg mình với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "phương pháp thái độ và sự nhiệt tình của giảng viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tuần sau tnumber có ai học buổi chiều phòng bạn / you number number không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giáo viên dạy rất hay tạo niềm vui cho sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ cho em hỏi nguyên lý kế toán của thầy lê tín cuối kì ra dạng đề như thế nào vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cập nhật kiến thức chương trình đào tạo thực tế ví dụ phần mềm DoubledDot việt nam đang bắt đầu chuyển sang giai đoạn ipvnumber thì chương trình cũng phải cập nhật theo",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho em hỏi học quân sự là thi tháo lắp súng hay sao ạ hay chi là hoạt động ngoại khóa th ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên giảng dễ hiểu theo xác chuyên cần của sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "không đáp ứng đủ số buổi học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giáo viên có kiến thức tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô lại kiểu khó tính nữa",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nội dung thi khá nặng so với sinh viên không chuyên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "hiện tại sinh viên khá mơ màng về môn học này",
+                "sentiment": "negative"
+            },
+            {
+                "text": "không reply email",
+                "sentiment": "negative"
+            },
+            {
+                "text": "xin chào m n em hiện đang làm báo cáo thực tập chuyên ngành kinh doanh quốc tế anh chị nào cùng chuyên ngành có thể cho em xin bct của m n để tham khảo được không ạ em cảm ơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "vui tính nhiệt tình thật lòng thương sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mình nam knumber thấy mọi người tìm Người yêu trên này quá cũng muốn thử",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mình cần tìm mua tài liệu ôn môn văn hóa các nước đông nam á ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nhàm chán",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có anh chị nào cho em xin tài liệu ôn thi môn vẽ kiểm tra / kinh tế giữa kì duoc không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "luôn trả lời những thắc mắc của sinh viên dạy tận tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "hệ thống chấm điểm thực hành wecode rất tiện lợi hiệu quả",
+                "sentiment": "positive"
+            },
+            {
+                "text": "đôi khi mọi chuyện một con người không thể đánh giá qua học hành được àm phải nhiều phương diện cô ạ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ cho em hỏi là cái học bổng svnumbert là mình có đủ number cái tốt là mình được học bổng hay cần yêu cầu gi nữa không ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "phải học quá nhiều phần không cần thiết nên giảm bớt vài nội dung ví dụ phần mềm DoubledDot vector ngẫu nhiên number chiều phân phối poison",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ em đang sắp thi môn quy trình sản xuất sản phẩm truyền thông em không biết ở đây có anh chị nào đã học có thể chia sẻ và giúp em vài trả lời vài câu hỏi liên quan đến dự án show không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em xin có kiến nghị là nội dung môn học nên gắn bó hơn với nội dung các bài tiểu luận kiểm tra",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô rất vui vẻ nhiệt huyết",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người cho em hỏi bây giờ em có thể bảo lưu lại học kỳ numberb này không ạ do em cần giải quyết công việc riêng tầm number tháng mà number tháng thì các bạn học cũng gần xong học kỳ rồi em tính bỏ luôn mà mới đóng tiền xong mới học được cái mấy buổi sót tiền quá em xin cảm ơn mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nộp tiền học trên ap mà ap lỗi thì làm sao vậy mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tìm bạn nữ đeo kính áo trắng quần trắng được mình nhường phần mì omachi",
+                "sentiment": "positive"
+            },
+            {
+                "text": "năm number hknumber xem môn học ở đâu vậy mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "phòng thực hành cần được chuyển qua một phòng lớn hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thực hành là hình thức giúp sinh viên học tập chủ yếu cần có sự hướng dẫn cụ thể cho sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô dạy vui vẻ nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy rất thoải mải trò chuyện để giải quyết thắc mắc cho sinh viên chỉ dẫn những cách làm bài dễ hiểu để cho sinh viên không bị vướng mắc",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy rất thẳng thắng trong các cuộc nói chuyện giảng bài điểm thi",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cập nhật những quà tặng độc lạ cho sinh viên trường Hutech ngày tốt nghiệp lưu lại mốt có ý tưởng tặng cho bạn bè nhé anh em",
+                "sentiment": "positive"
+            },
+            {
+                "text": "hữu duyên cần tìm anh top để cùng nhau tâm sự khóc",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên nhiệt tình vui vẻ rất hiểu tâm lý sinh viên luôn có các thông tin mới được cập nhật mỗi buổi học cho sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mình muốn xin innumber bạn nguyễn lê nhật anh học kế toán tabp ạa",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có bạn nào học môn phương pháp nghiên cứu trong kinh doanh hiểu cách làm bài tiểu luận không vậy ạ giảng viên dạy lớp mình không ai hiểu dì luôn khóc",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giáo viên nhiệt huyết",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mấy anh chị ơi em tính bán sữa bắp nhà mẹ em nấu bên number âu cơ ấy mấy anh chị thấy như thế nào ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy hay và vui",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô dạy rất tốt nhiều bài tập",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người mình ăn trưa ở tầng number toà bnumber ngày thứ number number number và có đánh rơi em bo như hình cô lao công có bảo là thấy ẻm bị rơi ở đó và cô để trên bàn nhưng lúc sau quay lại thì mất tiêu òi bạn nào có nhặt được thì cho mình xin nhận lại với ạ mình cảm ơn nhiều",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô cho hơi nhiều bài tập",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em xuống ký túc xá lấy thẻ cử tri mà mấy anh chị bảo không thấy số của em là sao ạ em hoang mang quá",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho mình hỏi nay ai học lớp này cơ sở n không ạ mình hỏi xí ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy cần giải những ví dụ ra trên bảng để sinh viên dễ hiểu hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em nghĩ là dục tốc bất đạt",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy giảng bài hay dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy cũng tâm lý với sinh viên tụi em nữa ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy dạy rất nhiệt tình và tận tâm quan tâm nhiều đến học sinh",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nhiệt tình năng nổ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "trường mình có hỗ trợ vay sinh viên không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy vui và dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô dạy hay rất nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cần cho nhiều thời gian để sinh viên có đủ thời gian hoàn thành đồ án môn học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tăng cường kỹ năng nói nhiều hơn nữa",
+                "sentiment": "negative"
+            },
+            {
+                "text": "còn khoảng number number phút cuối giờ mới mở slide / trình chiếu lên và đọc slide / trình chiếu lướt rất nhanh nên sinh viên không thể hiểu bài được",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ em xin tìm tài liệu môn nhập môn quan hệ quốc tế ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên không có kỹ năng sư phạm cao",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nên tăng thêm nhiều tiết thực hành number tuần",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em là sinh viên năm nhất đang học nhập môn qtsk em đang khá mông lung về cách làm event brief có anh nào đi trước có kinh nghiệm hay có bài mẫu cho em xin để tham khảo được không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ anh chị bạn nào học môn xã hội học được của cô minh anh gồi cho em hỏi cuối kì của cô thì ôn tập như nào ạ em xin cảm ơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ cho hỏi mấy anh chị tốt nghiệp mình được học online không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên luôn cập nhập bài giảng và bài tập trên website môn học",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ có ai đã đăng ký học lái xe anumber qua trung tâm hay được gửi về email trường chưa ạ em tính đăng ký mà bắt nộp học phí trước trong biểu mẫu luôn nên cũng hơi hơi lo ai có kinh nghiệm đi trước cho em xin đánh giá với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mấy anh chị đi trước cho em xin đánh giá các thầy cô này được không ạ number giao tiếp kinh doanh nguyễn ngọc hải phạm văn đạt number marketing căn bản nguyễn ngọc huân trần tấn hoàng hậu number kinh tế vĩ mô đặng hoàng sơn huỳnh bảo thạch",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có cách nào rèn tư duy vẽ kỹ thuật không ạ em nhìn đề mà vẽ sai bét không à",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em xin đề kiểm tra / kinh tế giữa kì thống kê ứng dụng của thầy nguyễn văn trãi với ạ thầy cho đề khó không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạy kỹ các phần quan trọng",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ anh chị ơi em lỡ đóng tiền kỹ năng trước ngày number number có sao không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "sản phẩm mình làm ra đem người khác báo cáo thì không được hợp lý",
+                "sentiment": "negative"
+            },
+            {
+                "text": "kím đối bắn bắn solo f number",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cố chấp",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nghe nói các môn thi đề mở mà bắt phải mang tài liệu viết tay thay vì tài liệu in hả môn t nó dài lắm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô nói hơi dài dòng đôi chỗ hơi khó hiểu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cung cấp bài tập đa dạng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy rất nhiệt tình và tận tâm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nhưng đa số các bạn trong lớp thì không hiểu cô cần có phương pháp dạy tốt hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người cho mình hỏi thông báo đăng kí mấy cái kn mềm ngoài portal trg còn thông báo ở đâu không",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên vui tính nhiệt tình và tận tâm với công việc",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ anh chị ơi em dự định học ngành báo chí của trường tuy nhiên em nghe nói ngành này ra trường tỉ lệ làm trái ngành cao và lương cũng không nhiều gia đình em chỉ có mỗi em thôi ạ em nên chọn ngành khác hay vẫn tiếp tục theo báo chí ạ em cảm ơn và em cũng đang phân vân ngành quan hệ quốc tế ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạy cứng nhắc không liên hệ thực tế nhiều",
+                "sentiment": "negative"
+            },
+            {
+                "text": "không biết",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy rất tận tình nhưng hay vắng",
+                "sentiment": "negative"
+            },
+            {
+                "text": "các bạn nào có hình ảnh bạn / bao nhiêu bè hay bản thân làm bài mà nhìn mặt căng thẳng mệt mỏi không cho mình xin ảnh với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy hiền và nhiệt tình với sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người ai có đề ôn cơ tĩnh nhiệt động vẽ kiểm tra / kinh tế không ạ nếu được cho em xin tham khảo với em cảm ơn nhiều ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "hehe nhẹ fixes our tasks thoroughly",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giáo viên nên giảng bài cho học sinh không nên ngồi để học sinh tự nghiên cứu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy dạy nghiêm túc nhưng lại rất dễ chịu hay pha trò làm sôi nổi không khí trong lớp đáp ứng đầy đủ kiến thức của môn học",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cách nhận canva pro miễn phí",
+                "sentiment": "positive"
+            },
+            {
+                "text": "chương trình dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi cái cược numberxnumber cả trận là sao để ăn ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "không hiểu gì",
+                "sentiment": "negative"
+            },
+            {
+                "text": "phòng máy chất lượng còn thấp cấu hình yếu và bị nhiễm virus một số kit không nhận driver hoặc bị hư thiếu kit và phòng thực hành còn nhỏ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "anh chị ơi dạo gần đây em có nghe nhiều nguồn tin là muốn thi vào các trường top đầu ở Hồ Chí Minh thì phải thi đánh giá năng lực không biết là trường mình có bắt buộc thi đánh giá năng lực cho phương thức xét tuyển kết hợp không (không dấu) ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ cho em hỏi em ở khu vực number khu vực đặc biệt khó khăn thì ở trường mình có các chế độ ưu tiên gì cho sinh viên thuộc khu vực này không ạ và nếu có thì làm sao để được hưởng các chế độ này ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tìm bạn đi tân huê viên",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "biết ứng dụng kiến thức đã học vào thực tiễn tạo hứng thú cho sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy tuy nghiêm khắc nhưng đi với thầy cả một học kỳ mới biết thầy rất thương sinh viên và muốn tốt cho tôi em",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ có anh chị học ngôn ngữ anh chất lượng cao cho em hỏi có gì khác với đại trà ạ với có lợi gì khi học và tín chỉ có nhiều hơn ngôn ngữ anh đại trà không ạ em cảm ơn anh chị ạ em đang học lớp number nên xin góp ý ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ cho mình hỏi môn kĩ năng làm việc nhóm thi giữa kỳ học phần nào vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chả lẽ cả đời này độc thân sao",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tôi cảm thấy giảng viên dạy rất tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "rất thực tế không dài dòng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giáo viên nhiệt tình và vui tính",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cuối cùng ngày này cũng tới với sinh viên trường Hutech",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tâm huyết nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy nói lan man khá nhiều khiến sinh viên không biết đâu là phần nội dung chính",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nhận chở các bạn / bao nhiêu về quê trong tháng number nhé numberkm đổ lại do mình đi xe điện xa hơn thì đợi sạc thôi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "lớp sỉ số nên ít hơn tầm number sinh viên là ok",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ cho em hỏi phòng đào tạo ở đâu vậy ạ em không biết đường đi ở trường mình tại em tstd",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có cách nào để trg cho nghỉ luôn number number number không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "trường mình có ai bán đồ ăn không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "sân khấu văn phòng đoàn thanh niên là ở đâu vậy mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có vài buổi thầy tận dụng tụi em để khiêng bàn ghế cho trường cũng vui nhưng hơi mệt",
+                "sentiment": "negative"
+            },
+            {
+                "text": "đứng lớp đúng giờ giải đáp mọi thắc mắc của sinh viên nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên dạy lôi cuốn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "phòng học nóng",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho sinh viên thực hành một đề bài quản lý thông tin trên nhiều ngôn ngữ do sinh viên tự chọn để sinh viên thấy được mối liên quan của môn học với những môn khác cũng như với thực tế",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người có ai thi mỹ học đại cương chưa ạ cho em hỏi đề dễ không ạ chứ dài quá không biết học sao cho hết",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô vui vẻ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mỗi buổi thực hành giảng viên chỉ đưa sinh viên một file bài tập rồi bắt sinh viên làm nhưng không có hướng dẫn và đưa ra yêu cầu cụ thể",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên truyền đạt kiến thức tốt dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy giảng bài cực kỳ thu hút dễ hiểu không gây buồn ngủ nhàm chán",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nhiệt tình vui vẻ nói chung ra rất tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "trường đại học tôn đức thắng có khoa khoa học thể thao kinh doanh thể thao tổ chức sự kiện ngành này học chuyên về sự kiện không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tương tác với sinh viên cực kỳ tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người ơi em chưa có bằng tiếng anh thì có lấy được bằng tốt nghiệp tạm thời không ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy tâm lý vui tính",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy có hơi đi trễ chút xíu",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chưa đảm bảo giờ lên lớp",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng hay và rất vui",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy nên có biện pháp để gây hứng thú trong giờ học do môn này rất dễ gây buồn ngủ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nên bỏ phần thi lý thuyết",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy giáo dạy nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên cần phối hợp ăn ý với giảng viên lý thuyết hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "phân bổ thời gian hoàn thành môn học hợp lý hơn nữa",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cóa bạn nữ nào bít đánh cầu không chìu đi đánh với mình ik mình bao thông báo thì càng tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nhưng kiến thức cơ bản còn chưa nắm thì làm sao mà làm được",
+                "sentiment": "negative"
+            },
+            {
+                "text": "bài tập theo sát đề cương",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người ơi cho em xin tài liệu thống kê ứng dụng với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng dạy tốt chỉ bảo tận tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy dạy rất dễ hiểu đúng trọng tâm bài học",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy giao đồ án cho sinh viên tự bơi",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô giáo rất nhiệt tình tận tâm và dễ gần tạo hứng thú trong học tập",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi ngành kiến trúc bên trường mình dạy ổn không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mong thầy có thể hướng dẫn thêm khi làm project",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên vui vẻ giảng dạy tận tâm đến lớp đầy đủ đúng giờ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nhà trường cần có giáo trình dùng chung cho tất cả các lớp và có một chương trình dạy cụ thể vì mỗi lớp có một kế hoạch học tập riêng mà lại thi chung nên rất khó cho sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mình muốn tìm bạn đi học tiếng anh cùng cho đỡ lười bạn nào học chung không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thực sự thì khả năng truyền đạt không hấp dẫn dễ buồn ngủ và khó hiểu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tadb bị cấm thi thì lên tanumber có nộp bằng được không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em muốn xin ý kiến mọi người một chút hè này em tính học number trong number lựa chọn sau tư tưởng hồ chí minh lịch sử đảng kinh tế chính trị tin học em không biết nên học môn nào cho phù hợp ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng kỹ lấy ví dụ rõ ràng tận tâm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "môn học không hữu ích đối với ngành học của em",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho mình hỏi là môn thực tập tốt nghiệp với học kỳ doanh nghiệp có giống nhau không mọi người tại mình thấy number môn đó môn thì number tín môn thì number tín lận",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "không cho innumber là giận thoát group liền luôn áh",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tiếng hàn number có lớp không mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có nhóm nào định nghiên cứu khoa học cho mình xin vào với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tận tâm muốn làm việc tốt nhất cho sinh viên nhưng cách giảng bài trên lớp chắc thầy nên thay đổi chút xíu để tất cả mọi người cùng yêu thương thầy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người ơi cho em hỏi bắt đầu vô năm number thì tháng mấy đóng tiền học phí ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ cho em hỏi là em định ôn và toiec mọi người recommend / gợi ý giúp em trung tâm nào ôn oke được không ạ em sợ scam quá",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên tận tâm nhiệt tình đới với sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mình có quần học quân sự cỡ / kích cỡ mình mặc chật quá mọi người mọi người có ai muốn đổi cỡ / kích cỡ quần bự hơn với mình không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần tìm bạn ở cùng mình tomb ạ hiện tại đã có number người cần tìm thêm number người nữa cho rẻ các chi phí mỗi tháng tầm numbertrnumber number",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần làm nhiều bài tập trên lớp",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thời gian học không đúng so với lịch học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tìm lắc ngày number number mình có đi học từ sân đạt đức rồi qua cơ sở chính học mình có đánh rơi chiếc lắc này ai nhặt được cho mình xin innumber để nhận lại ạ chiếc lắc đó là quà mình được nhận nó rất ý nghĩa với mình",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "trường mình có đăng ký thi lái xe chưa ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng cần nhiệt tình hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "điểm trung bình tích lũy hiện tại của mình đang là number number vậy bây giờ còn kéo lên number number để được bằng giỏi không mọi người",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thường xuyên đi trễ và áp đặt sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy dạy rất dễ hiểu và nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô quá khó tính giảng bài chưa thật sự thu hút",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có bạn nào đang học hàn number mà thầy cô giới hạn đề thi không ạ lớp mình không giới hạn học hết học không nổi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô wzjwznumber dạy rất nhiệt tình và dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên chuẩn bị bài giảng tốt công minh trong giảng dạy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ anh chị cho em hỏi ạ hiện tại gia đình em khá kẹt nên chưa thể đóng học phần mẹ em nói tầm giữa tháng number sẽ viết đơn gia hạn học phần và lên đóng lúc đấy thì có được không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nếu xét về mặt ý nghĩa thì đúng nhưng heapsort là một phương pháp khó và hoàn toàn mới trong khi tất cả các lớp khác giảng viên hướng dẫn nhiệt tình mà còn có nhiều sinh viên không hiểu ở đây thầy lạ khẳng định không thi mà nói câu đó nữa thì sinh viên sau phục được",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ em không đăng kí được môn trong học kì hè khi nsof sẽ có đăng kí bổ sung kht hknumber năm sau vậy ạ em cảm ơn anh chị",
+                "sentiment": "positive"
+            },
+            {
+                "text": "khi được học với thầy wzjwznumber em cảm thấy hài lòng hơn hẳn những giảng viên trước",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em muốn tìm công việc part time ca chiều hoặc ca tối",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ai có lịch học ful tnumber tuần sau không cho em xin ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ anh chị ơi cho em hỏi là thái độ sống học trực tuyến từ numberhnumber numberh là mình dô giờ nào cũng được hay phải học từ numberhnumber numberh luôn ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "ai học cô nguyệt bích môn kinh tế vi mô cho mình hỏi cô cho kiểm tra tự luận đề dễ không ạ có ai thi rồi không cho mình xin tài liệu tham khảo với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng dạy nhiệt tình cô phát âm rất tốt và ngữ pháp rất chuẩn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô không nói bằng micro nên nghe rất khó",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tìm personal trainer nữ hướng dẫn tập thứ number number number từ numberhnumber numberh tập phòng phòng tập trên lầu number ạ phí Học sinh sinh viên giúp em với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên cho bài tập để làm",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "hết",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ cho em hỏi pas đầu ra tiếng anh trường mình bài thi TOEIC mấy kỹ năng và mức bao nhiêu ạ có anh chị nào đã học bài thi TOEIC ở đâu cho xin innumber luôn ạ lớp of ở bình thạnh không anh chị ơi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có bạn nào đổi nơi đăng ký kcb ban đầu được chưa mình đăng nhập vneid xong nó ra cái bảng thông tin của mình mà đỏ chói lộn xộn á nhưng trạng thái thì vẫn là chưa đăng nhập vào nên không đăng ký đổi được gì hết",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "sinh viên có nhiều môn học nên khó mà chỉ đầu tư quá nhiều cho một môn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô cũng không cung cấp hay giải thích gì đáp án của bài thi",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy hay đi vắng thường quên đăng / upload slide / trình chiếu lên modle quên cho bài tập",
+                "sentiment": "negative"
+            },
+            {
+                "text": "ngoài thời gian cố định như trong thời khóa biểu của nhà trường em đều cố gắng sắp xếp đi đủ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy rất tận tình quan tâm đến sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "kỳ sau em có học một môn của chị nữa đó nhớ giúp em qua môn nhé chị",
+                "sentiment": "positive"
+            },
+            {
+                "text": "trong các tiết sửa bài tập giảng viên nên nhiệt tình và tâm huyết hơn với sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "ai rớt trước cổng number này",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng dạy tích cực vui vẻ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi có thể thay chứng chỉ tiếng anh để không học tiếng anh ở trường được không ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "đôi chỗ khó hiểu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "môn học cần xác định rõ ràng tính ứng dụng tránh để sinh viên mơ hồ về cái mình đang học như vậy rất khó để tiếp cận với vấn đề cần nghiên cứu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "ai có file môn lịch sử đảng cộng sản việt nam không cho em xin với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng sinh động hơn giao tiếp với sinh viên bằng tiếng anh thay vì đa phần là tiếng việt",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ mọi người ơi đăng ký học hè ghi danh rồi mình p đăng tiếp ở mục đăng ký học phần đúng không ạ tại em vô mục đó chưa thấy mở gì hết ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ cho em hỏi tiếng trung thương mại là ngành kết hợp của ngành nào bên ush và uel vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nên muốn nhà trường tăng thêm thời gian học lý thuyết của môn này",
+                "sentiment": "negative"
+            },
+            {
+                "text": "khả năng sư phạm của thầy rất tốt rất dễ hiểu rất tận tâm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "đề nghị cho nhiều bài kiểm tra hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "lễ không biết trường mình được nghỉ nhiêu ngày thế mọi người",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy nói ngoài lề hơi nhiều",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy hay vắng tiết nhờ thầy khác dạy do thầy bận đi họp",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ mọi người cho em hỏi là trường duyệt đơn gia hạn học phí của em trên hocvudientu rồi mà chưa gửi gmail về thì em có được đóng number không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "môn học này có định hướng thiên về lý thuyết logic nên em nghĩ nên học theo hình thức trao đổi và tham khảo không nên đặt nặng đồ án và bài tập",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nâng cao chất lượng phòng học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "một buổi trưa học thể chất của sinh viên trường Hutech dưới cái nắng number độ rớt nước mắt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy vui vẻ dễ gần kiến thức rộng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi có bạn nào học kỳ numbera học môn econumber nguyên lý thống kê không ạ cho em xin nhóm lớp em xin học được không ạ em năm cuối rồi còn vướng number môn đó mà học kỳ numberb em đi thực tập em không được đăng kí thêm sợ ra trường sau các bạn quá em cảm ơn nhiều ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "bạn nữ nào muốn đánh giải lq nữ không lập đội nhóm đánh nè",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên luôn bận họp cả khóa học chỉ học được vài buổi",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho em hỏi em tốt nghiệp đợt tnumber này thì cần những giấy tờ gì ạ vì em nghe nói phải lấy cả chứng chỉ quốc phòng không biết còn giấy tờ gì nữa không",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tiếng anh nâng cao number nghỉ number buổi có sao không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "sự thân thiện giúp giảm căng thẳng trong buổi học",
+                "sentiment": "positive"
+            },
+            {
+                "text": "anh chị cho em hỏi những môn này thi hình thức như nào ạ numberhành vi tổ chức number number p nghiên cứu khoa học number number ngôn ngữ học đại cương number number hội nhập châu á thái bình dương number number ngoại giao văn hoá number",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chỉ điểm danh number buổi cuối rồi lấy điểm quá trình",
+                "sentiment": "negative"
+            },
+            {
+                "text": "sự tận tình",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô nên đăng / upload một lần hết các file bài học để tụi em tiện đi in ạ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên giảng dạy tận tình vui vẻ giúp học viên nhận thức được nhiều kiến thức",
+                "sentiment": "positive"
+            },
+            {
+                "text": "vào chiều thứ number number number number em học ở cơ sở number toà x xnumber number em có làm rớt một cái bóp màu đen bên trong bao gồm thẻ căn cước như hình cà vẹt xe thẻ ngân hàng mb và chỉ một ít tiền lẻ gửi xe ai có nhặt được thì cho em liên lạc nhận lại ạ em xin hậu tạ ạ em cảm ơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người ơi có ai pas cuốn nguyên lý kinh tế vi mô không ạ cho em xin với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mình nhận học hộ bên khu em điểm danh lắng nghe những gì thầy cô dặn để các bạn không bỏ lỡ ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chưa sâu rõ hoàn toàn kiến thức",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em không hiểu và thầy giải thích em cũng không hiểu thầy đang nói gì",
+                "sentiment": "negative"
+            },
+            {
+                "text": "hôm qua hạn cuối em có đóng tiền nhưng lỗi do bản thân không để ý bấm thiếu số sáng nay khi phát hiện ra em đã đóng bù và gửi email trình bày cho ban điều hành và ban kế toán không biết có được đi thi không ạ vì em vẫn thấy hiện lịch thi và hồi đợt vẫn có điểm quá trình các môn bth ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "truyền đạt tốt dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giải thích được các vấn đề mà sinh viên chưa hiểu ở lý thuyết",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạy ở giảng đường mà không ngồi trên thì khó thấy bảng colonbigsmile",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thực hành không liên quan gì lý thuyết",
+                "sentiment": "negative"
+            },
+            {
+                "text": "number máy học và trí tuệ nhân tạo trong tài chính number thuế number phân tích dữ liệu tài chính quy mô lớn number luật kinh doanh number quản trị sự kiện number quản trị rủi ro tài chính number thanh toán quốc tế number đầu tư tài chính number hành vi tổ chức number công nghệ blockchain và cryptocurency number lập trình chị cho em hỏi những môn này môn nào thi tiểu luận vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người ơi cho mình hỏi website của khoa ngoại ngữ là gì ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy rất vui vẻ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên cần nhiệt tình hơn trong giảng dạy",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cần phải có phương pháp giảng dạy linh hoạt và sáng tạo hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy giảng bài dễ hiểu và tận tâm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "muốn xin thực tập sớm thì làm sao mọi người ơi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy nhiệt tình vui vẻ thương sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nếu muốn học em sẽ lên lớp nhưng nếu như có việc bận hay vì nhiều lý do như buồn ngủ chẳng hạn thì em cũng nghĩ cô không muốn thấy rằng sinh viên của mình vẫn điểm danh đều mặc dù lên lớp chỉ ngủ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "môn mạng máy tính nên tăng cường thêm thời gian thực hành thay vì dạy nội dung môn học dạy quá nhiều lý thuyết dẫn đến gây khó hiểu cho sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em làm mất thẻ sinh viên làm đơn online đăng ký ạ có cần chụp ảnh lại không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "file chủ nghĩa xã hội khoa học nên ôn cái nào ạ nhìu qá khóc",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô sửa nhiều bài tập giúp sinh viên dễ tiếp thu phần lý thuyết",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có hướng dẫn đầy đủ dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi anh chị khoa toán thống kê mấy năm rồi có tổ chức giải trường Tôn Đức Thắng game không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người ơi cho mình hỏi mình cần hỏi number số vấn đề thì mình gửi email cho qldt của trường đúng không mọi người mọi người bíc email tên gì không ạ giúp mình với mình cảm ơn nhìu ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nên giảng hết chương trình rồi cho sinh viên tìm hiểu nghiên cứu vì có như thế sinh viên sẽ không mất thời gian và mức độ hiểu và ứng dụng được cao hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ cho em hỏi để quên thẻ sinh viên rồi ký sổ ở phòng bệnh viện thì có bị trừ điểm rèn luyện không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy giảng quá khó hiểu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "trình bày chi tiết",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mấy anh chị học ngành logistics cho em hỏi là mình nên mua máy tính bảng numbergb hay numbergb để học tập ghi chép lưu tài liệu cho thoải mái ạ em cảm ơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giọng thầy hơi khó nghe dễ gây buồn ngủ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em chỉ có góp ý nho nhỏ đó thôi ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em xin đề ncnumber speaking với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người biết chổ nào bán xốp chống sốc gần trường mình không ạ em cảm ơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giáo viên vui vẻ nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên hòa đồng nhiệt tình có nhiều phương pháp dạy học thú vị",
+                "sentiment": "positive"
+            },
+            {
+                "text": "tận tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "môn gdct number tín được nghỉ tối đa mấy buổi vậy mọi người",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em xin đề ôn lập và trình bày báo cáo tài chính với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho mình hỏi khoa dược mình có đội bóng không ạ mình có giải cho sinh viên dược ấy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nhắc nhở sinh viên là ý tốt của thầy nhưng thật sự tụi em thấy rất áp lực với môn học này",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em định thi lấy chứng chỉ tiếng anh trong kì này ạ cho em hỏi nên có bằng trước thời gian nào để không bị giới hạn tín chỉ ạ em hiện đang là sinh viên năm nhất",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mong giảng viên có thể liên hệ bài học với thực tế cho ví dụ nhiều hơn sinh viên có thể hiểu được bài",
+                "sentiment": "negative"
+            },
+            {
+                "text": "xin innumber mấy chị chọc trong thang máy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giờ học chưa đảm bảo",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nhiệt tình và có tinh thần trách nhiệm cao",
+                "sentiment": "positive"
+            },
+            {
+                "text": "trang bị phòng thí nghiệm để hiểu rõ hơn về thực tế",
+                "sentiment": "negative"
+            },
+            {
+                "text": "đề thi nằm ngoài mục tiêu giảng dạy quá nhiều đề trắc nghiệm khách quan mà cho tới number đáp án là không hợp lý",
+                "sentiment": "negative"
+            },
+            {
+                "text": "sau ngày number thì còn đợt nào bổ sung học kỳ hè không mọi người ơi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em cần tìm thông tin anh cao cao mang quần trắng đi moto trong hầm number chiều nay ạ em là bạn nữ được anh dắt xe giúp khi em đang loay hoay không biết làm sao em rất cảm ơn anh và mong sớm tìm được anh để conect ạ em cảm ơn mọi người ảnh vừa đẹp trai vừa ga lăng mà lại còn quá Ngầu nữa",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tìm innumber nam kỹ thuật cấp thoát nước hội trại mình muốn xin thông tin bạn nam hội trại mặc áo tay dài màu trắng cờ mỹ lớp kỹ thuật cấp thoát nước khoa môi trường và tntn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em bị rớt một môn học tháng number có lớp học môn đó giờ em muốn đăng ký học lại ghép vào lớp đó thì đăng ký như nào ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nội dung",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tôi xin góp ý phần mềm DoubledDot đổi giờ học anh văn vào buổi sáng để chất lượng của buổi học được nâng cao",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nên có thêm trợ giảng để giảm bớt áp lực cho giảng viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "chúng em không theo kịp",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ cho em hỏi có ai có tài liệu ôn hay biết cấu trúc đề thi vấn đáp các năm trước môn ngoại giao đa phương tiện không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "anh chị cho em hỏi em có đạo khi đi quân sự có được về mỗi chủ nhật để đi lễ không ạ em cảm ơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mỹ với xứ wales xứ wales number number ft tài number number hỗ trợ tài number ft tài góc number hỗ trợ tài góc number number ft dự number number number number number number",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hỏi là có ai pas lại áo trường UEF td đỏ cỡ / kích cỡ xin lỗi không ạa",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy kêu soạn number từ trong number number number numberd mà nguyên lớp không hiểu ạ ai từng học thầy giúp mình với ạ tuần này thi rồi pls",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng bài nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thân thiện cởi mở nhiệt tâm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô dạy dễ hiểu nhiệt tình vui vẻ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "rất bổ ích và thú vị",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nào mới cập nhật tiền đóng học vậy mọi người em vô cứ thấy đang cập nhật th",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em tạo mục lục và gạch màu cuốn sách triết nhưng em thử làm trực tuyến em lật mãi không ra anh chị còn cách nào để ghi chú lật là thấy không",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ anh chị cho em hỏi điểm học bổng của em khoảng number number thì em cần thì đánh giá năng lực và trung học phổ thông khoảng bao nhiêu để đậu ngành quản trị du lịch và lữ hành ạ em cảm ơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "đi muộn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "truyền đạt dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người thầy đỗ thành quang thể chất dễ qua môn không ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy rất tận tình và đi dạy rất đúng giờ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên giảng dạy tận tình dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy hay vắng",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ anh chị em hỏi thi môn quản trị nguồn nhân lực là dự án nhóm hay cá nhân ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "của em bị lem ùi mà em không Bình thường ngày mấy hết ai cứu em với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nếu như number tiết đó để cho sinh viên làm các dạng bài tập khác nhau do thầy chiếu trên slide / trình chiếu thì hay hơn là dùng number tiết để ghi tràn lan lý thuyết và số lượng lớn bài tập trùng dạng trên bảng",
+                "sentiment": "negative"
+            },
+            {
+                "text": "và vui tính",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô giáo trẻ trung hòa nhã với sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "hy vọng lần sau thầy dạy sẽ mang đến thêm một số bài tập kèm hướng dẫn để bọn em dễ dàng vận dụng kiến thức mình học hơn khi thầy giảng xong có thể bọn em nói bọn em hiểu nhưng bọn em không nhớ lâu được do không có chỗ để bọn em vận dụng nên cuối cùng đến khi thi bọn em vẫn trả lời rằng bọn em không hiểu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cần cho sinh viên thảo luận nhiều hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "đơn giản hóa kiến thức giúp học sinh tiếp cận một cách trực quan môn học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "học được nhiều kỹ năng mới và hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "trường Hutech ngày đầu tiên của năm học mới vui quá đi thang bộ thôi sinh viên trường Hutech",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cảm giác của em là hơi chán",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có bạn nào đi học quân sự mà tự chạy xe xuống chưa ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "không nên bắt sinh viên phải lên ngồi đủ number giờ học trở lên vì có những đề tài sinh viên đã nắm được cách làm lên ngồi điểm danh mất thời gian vô ích",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thực sự em cảm thấy number phút thi giấy với đề thi đó là quá sức dường như không một ai có thể hoàn thành dù rất nỗ lực",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy dạy hay quan tâm học sinh nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nhiệt tình giảng bài",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy nhiệt tình dễ hiểu vui tính",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mình xin innumber bạn quãng và mấy bạn nam chơi chung với bạn học kế toán number với ạ hỏi mãi mới biết tên mình bên bách khoa muốn làm quen",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "quên làm e-learning lab là cấm thi khỏi nộp bằng luôn đăng ký mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thấy giảng dạy nói môn này muốn học thì phải có phòng thí nghiệm",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thông báo bài tập rất muộn và nhiều thay vì chia nhỏ và giao bài tập sớm khiến sinh viên bị quá tải và chịu áp lực trong việc giải quyết bài tập",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng dạy hay thầy rất nhiệt tình slide / trình chiếu bài giảng thầy chuẩn bị tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mình tìm bạn chung lớp chiều nay ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "anh chị ơi cho em hỏi học phần thực hành numbertc nghĩ number buổi có bị sao không vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "anh chị nào có file list đồ dùng đi học quân sự (viết tắt) cho em xin với lúc trước em có nhặt được mà mất tiu òi tiếng nấc / buồn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tạo được môi trường thảo luận sôi nổi",
+                "sentiment": "positive"
+            },
+            {
+                "text": "động lực cho sinh viên trường Hutech đi học đều",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "lên lớp thầy không có hướng dẫn giải thích một vài thứ mình sẽ làm các môn khác thì có hướng dẫn sơ lược",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em bị rơi mất thẻ sinh viên tích hợp vào khoảng numberhnumber thứ năm number number khi đi bộ từ phố xinh đến ký túc xá tòa i ạ chỉ thẻ bên trong bị rơi thôi ạ anh chị bạn nào nhặt được cho em xin lại với ạ em cảm ơn rất nhiều",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nhắc nhẹ mấy bạn đang học toán cao cấp phần ma trận thường là phần đầu của học kỳ và cũng là phần có nhiều kiến thức nhất vì vậy đa số thầy cô sẽ ra đề giữa kỳ tập trung vào ma trận nên đừng lơ là chương này nhé học chắc các dạng như tính định thức tìm ma trận nghịch đảo giải hệ phương trình bằng gaus tìm hạng ma trận nắm vững phần ma trận là đã chiếm lợi thế lớn trong bài thi giữa kỳ rồi tín chỉ othk",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "các bạn ơi có ai cần học lớp tài chính quốc tế không vô group mình nhé",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạy không đủ bài giảng có thi không giúp sinh viên mở rộng các bài tập liên quan đến bài giảng chỉ dạy y chang theo slide / trình chiếu mà không rõ sinh viên đã hiểu chưa",
+                "sentiment": "negative"
+            },
+            {
+                "text": "không đảm bảo thời gian lên lớp",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người ơi tham gia câu lạc bộ là sẽ được numberdrl đúng không à / ạ mình tham gia kì vừa rồi nhưng cột thành viên câu lạc bộ thì không được cộng mình phản ánh với trường thì có cần ấn xác nhận điểm rèn luyện không á",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nếu có phần mềm minh họa cho các thuật toán thì sẽ tốt hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "toạ độ mờ lem kem bờ sầu riêng siêu ngon tại bình thạnh còn thêm cái view đẹp miễn chê vào đâu căn nhà gỗ numberb chu văn an p number bình thạnh numberhnumberam numberhnumberpm number xu number xu quán không gian phải nói cực xinh xắn decor theo kiểu vintage cô ba sài gòn pha trộn gỗ đà lạt nhiều góc dễ thương lắm có number gian ngoài trời trong nhà và trên lầu gian nào cũng đón được ánh nắng nhẹ nếu mọi người đi tầm number numberhpm là chụp ảnh siêu đẹp tuy là quán cà phê nhưng number món nổi danh xưa nay của quán là chè khúc bạch trái cây kem bơ và mi lô dầm trân châu bánh flan món nào cũng đỉnh của đỉnh",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người ơi hiện tại mình chuẩn bị sắp xuất ngũ cần đăng kí học lại number môn mà nay giao diện cũng hơi lạ mình tìm không ra cách dang kí môn học cụ thể là võ number với tin học ạ mọi người chỉ mình đăng ký với mình cảm ơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần tìm bạn làm báo cáo phân tích tài chính",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô doang kinh tế vĩ mô coi kiểm tra dễ không mọi người ơi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giải đáp thắc mắc của sinh viên chưa tới nơi tới chốn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cách dạy hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em là sinh viên knumber hiện tại em đang muốn học thêm ngôn ngữ mới là tiếng trung thì em nên bắt đầu từ đâu ạ với em muốn xin chỗ học tiếng trung uy tín ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giáo viên thân thiện",
+                "sentiment": "positive"
+            },
+            {
+                "text": "vật lý đại cương có được mang giấy nháp không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giờ kiếm number bạn nữ học kế toán năm number cũng khó hả / ừ ha",
+                "sentiment": "negative"
+            },
+            {
+                "text": "chúc thầy thành công",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ cho em hỏi nếu sinh viên trg mình muốn chuyển trường sang trg khác thì như nào ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "gửi đến anh photo khóa knumber trường IUH ảnh không những chụp đẹp mà ảnh còn khỏe nữa",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "không nhiệt tình với sinh viên phương pháp giảng dạy không thu hút sinh viên cách dạy làm sinh viên chán nản",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạ nào trường nào có lịch tình nguyện hiến máu đợt number nữa ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hỏi em học truyền thông đa phương tiện em học hệ việt nhật với hệ thường của trường Hutech thì nên học cái nào ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tận tâm nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy không đến lớp mà khôg thông báo",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên dạy dễ hiểu sát nội dung",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy vui tính nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em mới phát hiện mình có thai thì có thể hoãn học mấy môn thể chất được không ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ chào mọi người em là sinh viên khoá number ngành thương mại điện tử do thay đổi chương trình đào tạo nên em không học lại môn này được nên phải đăng kí mở lớp theo yêu cầu number number sinh viên dạ hiện tại thì mới chỉ có number mình em thôi thì không mở lớp được ạ dạ ai chưa học môn này hoặc bị rớt thì nhắn tin em học chung ạ mong Admin duyệt bài sớm để em hoàn thành môn sớm ạ dạ em cảm ơn ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ mai có bạn nào thi bnumber ngày number number cho mình hỏi chút được không ạ mình hơi gấp ạ cảm ơn mọi người nhiều ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người ơi ai có tài liệu ôn thi giữa kỳ môn plnckh không ạ cho em xin với ạa",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy vui tính dạy dễ hiểu lấy ví dụ thực tiễn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mình nhận ôn tin học ứng dụng word với excel tin học nâng cao mnumber tin học cơ bản nhận ôn kèm number number và nhóm sl ít number number bạn hỗ trợ máy tính ôn mất gốc thời gian linh động",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "đề cương đầy đủ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ anh chị nào lúc sáng tham gia phỏng vấn ở vt cho em hỏi không cần Công việc có được vô không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tự nhiên cái nôn đi học ghê",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "vinh danh học viên đạt kết quả xuất sắc kỳ thi aptis tháng number anh chúc mừng các bạn đã đạt kết quả xuất sắc trong kỳ thi aptis tháng number vừa qua thành tích này là sự ghi nhận cho quá trình học tập nghiêm túc và nỗ lực bền bỉ của các bạn anh thật sự tự hào về các bạn chúc các bạn tiếp tục giữ vững phong độ tự tin chinh phục những mục tiêu cao hơn trong học tập và công việc sắp tới cảm ơn các bạn đã tin tưởng và lựa chọn học lớp của anh",
+                "sentiment": "positive"
+            },
+            {
+                "text": "đôi khi hơi nhàm chán",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có anh nào đẹp trai độc thân học ở qnumber không ạ bạn em đang muốn có người yêu mọi người giúp bạn em nhé",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên đảm bảo giờ lên lớp",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi gần nghiệp vụ đạo đức có quán nào có chỗ ngoài học bài được không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mình và mật khẩu email trường thì báo lên đâu ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ cho em hỏi ai từng học chính môn nhập môn khoa học dữ liệu của thầy hưng cho em xin tài liêụ thi giữa kì ạ em cảm ơn ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy hay hát vu vơ nghe cũng hay nhưng cũng rất buồn cười",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi em muốn hủy number môn đã đăng ký thì phải như nào ạ bữa em có hủy rồi mà hệ thống không nhận tới lúc chuẩn bị đóng học phí mới biết",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mình bên ctut tìm ng chạy bộ cùng có gì hướng dẫn dí tại chưa chơi bộ môn này bây giờ cảm ơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên đảm bảo giờ lên lớp tích cực trong quá trình giảng dạy và trả lời câu hỏi giảng viên khá vui tinh",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mình cần mua sách tancnumber có phần mềm Spark ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tài liệu dùng cho học tập và tài liệu tham khảo đầy đủ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "khảo sát mở lớp hàn number",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "hơi khó khăn với sinh viên về vấn đề bài tập cũng như thi cử",
+                "sentiment": "negative"
+            },
+            {
+                "text": "truyền đạt dễ hiểu phương pháp giảng dạy hứng thú",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ cho em hỏi em có đăng ký kht rồi mà em chỉ đăng kí được có number môn thôi tại mấy môn khác hết chỗ / suất rồi em không đăng kí môn đó luôn có được không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tận tình vui tính",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nhiệt tình tốt bụng vui tính hòa nhã",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho bài tập nhiều giúp học sinh có bài tập về nhà làm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "lịch học trùng với lịch học môn khác có điểm danh từng buổi nên hầu như nhóm học của em không bạn nào học được number buổi nào",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người ơi nguyên lí thống kê kiểm tra giữa kì đề thi có giống file thầy cô đưa không ạ em toàn học file hoi khóc",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "trong lúc đóng tiền học phí em có quên không ghi msv lên báo phòng tài chính thì cô có nói là đã giải quyết vậy thì khoảng bao lâu học phí trên website sẽ được cập nhật ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần tạo cảm hứng học hơn cho sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô wzjwznumber giảng bài rất hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy dạy nhiêt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "kéo dài thời gian của buổi học number number phút nhưng không làm buổi học thêm hiệu quả",
+                "sentiment": "negative"
+            },
+            {
+                "text": "góc ngành logistic của hitc em chào anh chị ạ cho em hỏi là anh chị năm number hoặc năm number em chưa chắc có năm number hay chưa là đến hiện nay anh chị cảm thấy học như thế nào ạ có góc khuất gì về học hành không ạ một đứa như em học để cho có cái bằng thì em sợ ra trường không đủ kiến thức mà va chạm phản ứng chậm với thực tế",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "vui vẻ hài hước",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thiên an đăng ảnh tốt nghiệp đại học sau number năm bảo lưu tại trường Hutech nữ diễn viên đưa con gái đến tham dự buổi lễ nhận bằng cử nhân",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy hòa đồng và thân thiện",
+                "sentiment": "positive"
+            },
+            {
+                "text": "ôn kiến thức bằng cách chơi trò chơi",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nhiệt tình vui tính",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nhiệt tình giúp đỡ hỗ trợ cho sinh viên hiểu bài tối đa",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thường xuyên nghỉ không thông báo trước và đi trễ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô giảng rất hay dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "rất hài lòng cô dạy rất vui vẻ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "đóng học phí trễ có nhận được học bổng khuyến khích học tập không ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có bạn dư gọng mún pas gọng kính biểu mẫu như vậy không ạ chìu nagng kính bé number tí cơ sở nb ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người ơi nay hạn cuối gia hạn học phí vậy chuyển khoản trước numberh đêm là được đúng không ạ hay phải trước numberh vậy mọi người reply / trả lời gấp dùm mh với tiếng nấc / buồn có hỏi tcsgh mà chưa được reply / trả lời",
+                "sentiment": "positive"
+            },
+            {
+                "text": "để sinh viên tự nghiên cứu quá nhiều",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cần chuẩn bị bài giảng một cách thật chính xác và không làm việc riêng khi lên lớp",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng dạy và cho làm bài tập đúng với chương trình và thực lực của sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nhiệt tình truyền đạt tốt hiệu quả",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên giảng hay dễ tiếp thu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên gần gũi và tận tình với sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thường xuyên cho làm bài tập",
+                "sentiment": "negative"
+            },
+            {
+                "text": "pas kỹ năng mềm bìa cứng numberk",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ có anh chị nào có tài liệu kinh tế vĩ mô và cobnumber không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em xin lịch nghỉ năm nay với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "khá nhiều bài tập trên wecode quá khó và không thực tế hy vọng kỳ thi sắp tới thầy cho đề dễ thở hơn và không đánh đố quá nhiều em sắp rớt môn đến nơi rồi ạ hu hu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cách dạy dễ hiểu và dễ tiếp thu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy giảng hời hợt ít ví dụ minh hoạ không giải thích nhiều về lý thuyết",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cho sinh viên làm nhiều bài tập từ dễ đến khó để hiểu bài",
+                "sentiment": "negative"
+            },
+            {
+                "text": "sinh viên trường Hutech chuẩn bị thi học kỳ kiểu",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em xin được của môn được truyền thông và đại chúng của thầy vũ với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hỏi trường mình có lịch nghỉ lễ number number number number chưa ạ em đặt xe về quê",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mình cần tìm người làm canva",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên cho nhiều ví dụ bài tập minh họa cho sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên nhiệt tình phương pháp giảng dạy hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy giảng khó hiểu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "number number góc chưa ửi trường học hơn number number tuần rồi vẫn chưa nhận được đồng phục trường trường Hutech đi nhận đồ thì không có còn bị chưa ửi không biết trường làm ă n kiểu gì mà lúc nào cũng thông báo hết đồ rồi nhé em hết cỡ / kích cỡ rồi nhé em có tiếp thu ý kiến của sinh viên là phát ở khu em thủ đức campus nhưng chỉ để cho vui chứ vẫn phải lên khu ab saigon campus nhận nhé hỏi thì kêu vẫn chưa thông tin phát đồ ở thủ đức campus chắc để dậy cho đỡ bị chưa ửi rồi cũng biết tạo danh sách lên nhận đồ nhưng hay lắm Ví dụ ngày mai nhận thì khuya hôm nay mới gửi danh sách chán từ cái trường tới ban tổ chức sinh viên lên nhận đồ number number lần không nói thì thôi lên còn bị nói n ặng nói nh ẹ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nếu cho được điểm number thì em cũng cho luôn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mình muốn xin giới hạn ôn thi bnumber number tuần vào tháng number tới được không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ôi xăng tăng lên numberk numberl rồi mọi người ơi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người ơi có ai có đáp án thi cuối kì qp number không ạ cho em xin với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng dạy không tập trung vào chuyên môn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "không hiểu bài cho lắm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tìm gấp bạn khoa báo chí hệ chuẩn quốc tế năm number mình cần tìm bạn khoa báo chí hệ chuẩn quốc tế xin vô nhóm môn nghiên cứu khoa học của thầy châu văn ninh học hôm chiều thứ number bạn xin vô group mà không đưa thông tin mà cũng chả thấy bạn đi học luôn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em mong mình sẽ lại được học thầy ở các môn quan trọng khác",
+                "sentiment": "positive"
+            },
+            {
+                "text": "đăng ký bảo hiểm y tế ở đâu vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "kiến thức đầy đủ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "phương pháp đánh giá kết quả không hợp lý với nội dung đề ra của môn học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thái độ phong cách làm việc của thầy",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "làm tốn thời gian truyền đạt dẫn đến hứng thú lên lớp nghe giảng bị hạn chế",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em rất hài lòng với cô",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mình là nam cần tìm number bạn ở ghép hiện tại đang ở number mình",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ai mệt mỏi với việc giữ xe trường hãy dơ tay khóc",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nội dung cơ bản đầy đủ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cách dạy chậm rãi dễ hiểu giảng viên thân thiện với sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "trường tiếng Anh cần những giáo viên nhiệt huyết và tài năng như vầy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho mình hỏi cơ sở n có cho vào chụp hình chiều cn không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy tóm ý chính giúp em nắm bài dễ hơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô dạy rất hay và dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "kiến thức học được còn mơ màng",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy truyền đạt chưa được tốt lắm khó hình dung",
+                "sentiment": "negative"
+            },
+            {
+                "text": "sao trường không mở lớp tin học cơ bản vậy ạ với cho em hỏi em học kịp number number không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tài liệu cung cấp cho sinh viên trên website của trường còn ít",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô dạy môn wzjwznumber học kỳ này không phải cô wzjwznumber dạy hay",
+                "sentiment": "negative"
+            },
+            {
+                "text": "chụp hình kỹ yếu cụ thể là làm gì vậy ạ em xin mẹo / tips xin kinh nghiệm chụp hình kỹ yếu với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "đặt hiệu suất học tập lên hàng đầu chứ không phải điểm số",
+                "sentiment": "negative"
+            },
+            {
+                "text": "slide / trình chiếu thầy chiếu lên màn chiếu phần mềm DoubledDot dày đặc chữ nhìn không rõ ràng",
+                "sentiment": "negative"
+            },
+            {
+                "text": "sự nhiệt tình trả lời các câu hỏi của sinh viên tài liệu được cung cấp đầy đủ rõ ràng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mình cần hai người học và ghi bài dùm chiều thứ number ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho mình hỏi sách này ai còn pas mình với nhé hay chỉ chỗ mua cũng được please",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ cho em hỏi anh chị nào có tài liệu môn phân tích dữ liệu cho em xin với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "không liên quan lắm mà mọi người ơi cú em em muốn hủy học phần mà không biết hủy sao mọi người chỉ em với em lỡ đăng ký hknumber nhiều quá giờ em nhắm không xong ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "anh chị cho em hỏi lấy gốc môn lý thuyết mạch ở đâu dễ hiểu bây giờ vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hỏi là mình học môn không có trong danh sách bạn của học kỳ đó thì khi đăng kí mình chọn ngoài kế hoạch ạ anh chị",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ngày number number khu anh phòng number number phòng máy dãy máy đầu mình có để qên number cái airpod có bạn nào nhặt lại cho mình xin lại được không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "phần kiểm tra thi cử đối với môn này nên đề cao tính tư duy logic của người học cũng như khả năng áp dụng kiến thức đã học vào thực tế thực nghiệm bằng cách chủ yếu đánh giá cao phần thực hành viết mã / lập trình làm project",
+                "sentiment": "positive"
+            },
+            {
+                "text": "ai chưa học môn quy trình sx sản phẩm t mdcnumber không tôi còn numberslot để đủ điều kiện mở lớp nè ai chưa học chấm cái em để tôi Admin group / nhóm nhé",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mọi người ơi cho em xin số email của bên phụ trách phần ebok của trường với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "người thích đăng sì to ri đi biển với bạn thì chủ động s ạ cứu elm vứi em là nữ cr em cũm hướng nội lâu lâu mới đăng được numberc story mạng xã hội",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có thể do thầy bận việc nên việc dạy học trên lớp không được ổn định dẫn tới việc học bù nhiều mong thầy sắp xếp ổn thỏa hơn nữa do không phải khi nào em cũng học được nhiều buổi học bù như vậy",
+                "sentiment": "negative"
+            },
+            {
+                "text": "học thể chất môn bóng chuyền lúc thi có khó không ạ và thi những gì vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "csthnumber giữa kỳ thi tới phần nào vậy anh chị",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thang điểm đưa ra đầu khóa học không rõ ràng nhất quán so với thang điểm cuối khóa",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em không hiểu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cần đảm bảo thời lượng của môn học lịch học thông báo nghĩ quá nhiều trong khi sắp xếp lịch học bù không hợp lý ảnh hưởng lớn đến kiến thức của sinh viên công việc của sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "kiểm tra var ngay đầu ra khoá nói viết ở agena có đỉnh như lời đồn chỉ có thể là đỉnh nhất",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em numberknumber mà nay qua trường UEH gặp một chị gái đứng both xinh quá mê luôn khóc hứa number sẽ vô trường UEH tìm chị ấy",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho bài tập từ dễ tới khó",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có ai biêt pas wifi phòng tin trường mình không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô rất có tâm tận tình nghiêm túc",
+                "sentiment": "positive"
+            },
+            {
+                "text": "lý thuyết và thực hành nên đi đôi với nhau",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có mom nào chuyển ngành xong không được học môn cơ sở ngành rồi bị thiếu tín không ạ cho mình xin ít kinh nghiệm với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "uyfnumber btc có thể xả suộc hình được không ạ chứ em nôn đăng / upload hình quá trời rồi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy rất tốt rất nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "lịch thực hành ban ra quá trễ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên dạy hay giảng kỹ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người ơi có ai xin mở lớp thiết lập và thẩm định không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có ai biết chỗ cho thuê vợt tenis không ạa",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giáo viên gửi tài liệu hơi chậm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tầng number quốc tế của mình mấy giờ làm việc ạ em lên sớm được không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em sẽ nợ môn này nhưng em sẽ học lại ở các học kỳ kế tiếp",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ mọi người ơi cho em hỏi với ạ em lên website để thanh toán học phí thì thấy nó hiện như này cho em hỏi là nếu chọn đóng number trước thì number còn lại sẽ đóng vào lúc nào ạ em cảm ơn ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hỏi em không thấy thông báo kiểm tra trên learning management system có cách nào kiểm tra lại không mọi người ơi không biết tiết sau thầy có hỗ trợ kiểm tra lại không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ảnh hướng tới kết quả chung của em",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy dạy dễ hiểu siêng chép vui tính",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em xin đề nghị nhà trường nên bổ sung tài liệu về môn học và cập nhật nội dung",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giảng viên tận tình dạy hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em quí thầy nhưng em phải nói với thầy một cách hài hước và chân thành rằng là việc điểm danh trên lớp không hiệu quả",
+                "sentiment": "negative"
+            },
+            {
+                "text": "phòng học được sắp xếp gần nơi thi công wzjwznumber ồn ào không học được",
+                "sentiment": "negative"
+            },
+            {
+                "text": "̆ ̣̂ vị trí điện biên phủ bình thạnh sát đh trường Hutech đh ngoại thương trường UEF hồng bàng nội thất kệ bếp tủ đồ điều hoà nóng lạnh tủ lạnh máy giặt bàn ghế ăn cửa sổ thoáng mát ánh sáng tự nhiên tốt phòng có gác lửng tiện nghi an ninh tốt có camera number number thang máy thang bộ đầy đủ nhà xe number bé thư để được tư vấn và hỗ trợ xem phòng nè",
+                "sentiment": "positive"
+            },
+            {
+                "text": "chào đón ngày đầu tiên tân sinh viên trường Hutech đi học là trời mưa tầm tả khỏi về luôn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giảng viên không đảm bảo giờ lên lớp và không cung cấp tài liệu trên modle",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giáo viên sử dụng ngôn ngữ anh rất tốt dễ hiểu gây cuốn hút người nghe",
+                "sentiment": "positive"
+            },
+            {
+                "text": "ai đã học đồ án cô minh nguyên cho em xin vài tài liệu tham khảo được không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ cho em hỏi cô mai phương dạy chủ nghĩa xã hội không làm bài trên learning management system thì có sao không ạ với cô lấy điểm Tài khoản những cột nào ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần chú trọng kỹ năng nghe nói nhiều sẽ hiệu quả hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "môn học khá khó",
+                "sentiment": "negative"
+            },
+            {
+                "text": "cô giáo thân thiện giảng dạy nhiệt tình dễ hiểu và vui tính",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thực hành xong ít nhất number tuần lý thuyết mới học tới nên em có ý kiến nên phân bổ lại thời gian thực hành hoặc chọn nội dung thực hành cho phù hợp với tiến độ lý thuyết trên lớp",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tìm người hướng dẫn làm bài môn kinh tế vi mô ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy giảng bài rất chi tiết và dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "trộm vía ở ghép với ai cũng bị quef nên chưa bao giờ thấy quét nhà",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy vui vẻ nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy nhiệt tình dạy giỏi cung cấp tài liệu cho sinh viên đầy đủ dễ hiểu",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mọi người cho mình hỏi tài khoản email edu trường mình không đăng ký microsoft ofice được nữa hả mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tiếp cận được phương pháp học tiếng anh hoàn toàn mới so với lúc còn học cấp number number",
+                "sentiment": "positive"
+            },
+            {
+                "text": "xin ít review (âm) review (biến thể) mấy anh nhà xe trường mình ở khu d với ạ tại mấy ảnh dễ thương với thân thiện vá trời",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạy hay hiệu quả",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy thân thiện vầ nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "ai có đề cương ôn tập môn vật liệu kỹ thuật cơ khí cho em xin ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mình đăng kí kỳ cuối để xét tốt nghiệp mà có vài môn không thấy mở lớp giờ làm sao ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "lời khuyên cho các bạn sắp đi thực tập hãy chủ động hỏi chủ động xin việc và giữ thái độ cầu tiến không ai trách thực tập sinh vì chưa biết nhưng sẽ không thích người thụ động làm tốt từ việc nhỏ anh chị hướng dẫn sẽ nhớ tới bạn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "phần mềm phục vụ cho phần thực hành không được cài đặt đầy đủ trên tất cả các máy tính",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mình knumber mới đăng ký xong ạ tìm bạn đi chung cho vui",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên chủ động",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cơ sở vật chất ảnh hưởng đến chất lượng môn học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "drama / chuyện lùm xùm trường Hutech đầu năm học gọi tên tân sinh viên",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy truyền đạt kiến thức tốt phương pháp hiệu quả để em tiếp thu được môn học",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô viết trên bảng không những chữ quá nhỏ mà còn quá lộn xộn bảng lúc nào cũng lem nhem thực sự sinh viên ngồi dưới nhìn lên bảng là chóng mặt không thể theo giỏi được gì cả",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạy dễ hiểu sâu rộng",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên dạy rất hay có nhiều bài tập để củng cố kiến thức",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô giảng bài dễ hiểu vui tính quan tâm sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ mọi người ơi cho em xin hỏi nếu điểm học bạ em cỡ number number và điểm thi đại học là number và có điểm cộng trường chuyên thì có đậu nổi các ngành về thương mại marketing và kinh doanh không ạ mong các anh chị giải đáp giúp em với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em cần tìm phòng gần đại học trường Hutech ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "máy tính trường nên nâng cấp",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy đến lớp đúng giờ tận tâm",
+                "sentiment": "positive"
+            },
+            {
+                "text": "slide / trình chiếu bài giảng tốt giảng viên giải đáp vấn đề tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "chuyện làm báo cáo thực tập chuyện không có gì cho đến khi giảng viên hướng dẫn quy định theo ý cô mặc dù khoa đã công bố và cho phép chỉ mỗi việc trích dẫn tài liệu tham khảo giảng viên hướng dẫn quy định trích ít nhất là number cuốn sách có nxb hoặc có chứng chỉ isn cái này cũng không quá đáng lắm tức cái là trích cuốn nào phải in ra cái bìa trang sách đó là ghi lại lấy ở trang nào mang lên giảng viên hướng dẫn coi vậy câu hỏi ở đây tại sao sách lưu hành tại trường Hutech mà chúng em học number năm qua không cho trích dẫn tài liệu do kiến thức không x ác minh hay không có giờ iá trị vậy tụi em đang học gì công văn của khoa có cho trích dẫn luận văn ths Tâm sự tại sao cô lại không cho rồi ban hành công văn làm gì hạn nộp ngày number mà hôm nay nhóm hơn number bạn cô không du yệt bất cứ number bạn nào",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ em muốn hỏi là nếu em không tham gia chụp hình kỷ yếu thì trong lễ tốt nghiệp em có được lên sân khấu nhận bằng không ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cái sinh viên vay vốn ngân hàng là sao vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em rất thích phong cách dạy của thầy",
+                "sentiment": "positive"
+            },
+            {
+                "text": "mấy nay mình từ hn vào Sài Gòn chơi cách trường UEH tầm numberkm tối nay mai có bạn nào thạo đường muốn làm chuyến đi guide cho mình không thả phẫn mình sẽ cdong Nhắn tin mình sẽ lo mọi chi phí liên quan ạ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "dạy dễ hiểu thân thiện",
+                "sentiment": "positive"
+            },
+            {
+                "text": "anh chị đã học quân sự cho bé hỏi là đi quân sự kì hè có gì vui hăm tối có bị thu đth hăm dạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "còn hơi kéo thời gian",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy giảng bài rất hay và nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô cực kỳ nhiệt huyết cô rất dễ thương colonlove cô yêu học trò của mình cô cực kỳ khách quan phong cách làm việc của cô rất giống người nước ngoài em thích cô",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em xin review / đánh giá với anh",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mai chiều mình có nhận ký tên giùm ở cơ sở âu cơ và cơ sở HEC nhé",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "theo bản thân em thấy sinh viên làm đồ án kết thúc môn học đã đủ để đánh giá không cần thi lý thuyết cuối kỳ nó thật sự không mang lại hiệu quả",
+                "sentiment": "negative"
+            },
+            {
+                "text": "gửi đơn hoãn học phần do miền trung xong thì cỡ bao ngày thì được phê duyệt vậy mọi người",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em cảm thấy sự tương quan giữa tiết học thực hành và lý thuyết chưa hợp lý lắm",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy nhiệt tình giọng dễ nghe làm việc đúng giờ cái này em rất thích tác phong làm việc gọn gàng nhanh nhẹn dứt khoát",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô dạy rất có tâm và quan tâm đến sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy dịch slide / trình chiếu và giảng khó hiểu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mình cần number nữ học hộ khu bạn chiều nay ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "slide / trình chiếu của thầy đưa cho sinh viên có nhiều chỗ sai",
+                "sentiment": "negative"
+            },
+            {
+                "text": "ai để quên cái này thì coment nhé csb",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hỏi thi xong thì bao lâu có điểm ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "giáo viên tận tình dạy truyền đạt tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho mình hỏi là môn thực tập nghề nghiệp với thực tập tốt nghiệp đi trong bao lâu vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có anh chị nào có file của đáp án của môn quốc phòng an ninh number không cho em xin với ạ em cảm ơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy đủ buổi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy luôn giới thiệu những công nghệ mới cho chúng em",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thầy dạy rất tận tình chỉ dạy kỹ càng từng học sinh",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dù cô rất nhiệt tình muốn truyền đạt nhiều hơn nữa cho sinh viên nhưng cô nên phân bố thời gian dạy hợp lý hơn và giảng những điều quan trọng còn những điều bên lề để bổ sung kiến thức cho sinh viên thì cô nên để thời gian còn nhiều thì mới nói thêm không nên lặp đi lặp lại quá nhiều một câu nói gây tốn thời gian colonsmile",
+                "sentiment": "negative"
+            },
+            {
+                "text": "nhiệt tình phương pháp giảng dạy rất hiệu quả cách truyền đạt rất dễ hiểu và dễ tiếp thu biết cách truyền cảm hứng và tạo động lực học tập cho sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi là em quá ngày đóng học phí và huỷ học phần numbera muốn học tiếp tục numberb vậy em đóng tiền còn kịp không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tận tâm dễ hiểu nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi những thông tin trong đơn cần gì vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người ơi number tài khoản phần mềm Spark mà dùng cùng lúc cho number number cấp tiếng anh được không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "bị hạ bằng thì có cách nào nâng bằng lên lại được không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thường xuyên lên lớp trễ chấm điểm trên modle không có ghi chú cụ thể dẫn đến nhầm lẫn trong sinh viên",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy giảng nhanh trong khi slide / trình chiếu ít mã / lập trình",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mong được làm việc với thầy nhiều hơn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "hay bỏ lớp hơn cả tiếng đồng hồ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "chúc mừng sinh nhật bạn tôi một đoàn viên gương mẫu của trường",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "ai có tài liệu ôn môn tư pháp quốc tế ngành luật không an cho em xin với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "em muốn đăng ký nghiệp vụ sư phạm của trường mà không thấy trường đăng bài tuyển ai biết (không dấu) chỉ em với ạ em cảm ơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "đề nghị nhà trường dạy kiến thức xác với thực tế hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có anh chị nào có tài liệu giải bài tập môn luật kinh doanh nhập môn tâm lý học với kinh tế vĩ mô không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người ơi hôm nay có ai đăng ký môn quản trị nhân sự mà trúng vào lớp có đánh x vào ô song ngữ không mọi người không biết vậy rồi có học bth không hay có nói tiếng anh đồ vô học sao mà hiểu hay mọi người ai biết x như vậy là sao giải đáp giúp mình với",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tự hào sinh viên trường Hutech đồng bào ơi tôi tới đây",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "khi ra đề thi thầy nên kiểm tra kỹ nội dung đề tránh để sót lỗi điển hình như phần mềm DoubledDot tên cột của bảng trùng từ khóa của oracle",
+                "sentiment": "negative"
+            },
+            {
+                "text": "giáo viên nhiệt tình đảm bảo giờ lên lớp",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô giảng có hơi khó hiểu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em xin review / đánh giá cô đỗ anh thư môn giao tiep trong kinh doanh với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô thường xuyên lên lớp muộn khiến học sinh phải đợi cô",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em đã gia hạn đóng học phí trên học vụ điện tử vậy em có thể gia hạn thêm number lần qua tết không ạ do hiện tại gia đình em chưa xoay kịp tiền để hoàn thành number",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có chuẩn bị slide / trình chiếu bài giảng chi tiết với nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên có tương tác với giáo viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạ cho em hỏi tầm trưa hôm nay cỡ number number em có đánh rơi number cái ví tiền màu nâu dạ anh chi nào có nhặt được giúp em em xin cảm ơn ạ trong đó có số tiền và number cái cd tên nguyễn thanh sang ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em xin hết",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "có bạn nào hoặc anh chị nào đã từng kiểm tra qua thầy này chưa ạ kiểu thầy không phải cho number topic nói mà kiểu làm number bảng chú giải rồi phải dùng number cụm từ mà em làm thầy bảo sai liên tục có ai thi rồi thì chỉ em với tuần sau em thi rồi",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mình đang muốn mở lớp tổng quan về lĩnh vực sự kiện và giải trí mannumber ai có nhu cầu học bình luận ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em hỏi là áo trường UEF có mua lại mới được không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "thầy dạy hay nhiệt tình phương pháp tiếp cận kiến thức tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạy tốt khả năng truyền đạt tốt giúp sinh viên dễ tiếp thu phương pháp giảng dạy hiệu quả nhiệt tình",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên thân thiện hoà đồng khả năng truyền đạt tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi với em đăng ký bảo hiểm y tế của trường năm ngoái vậy khi nào em được nhận vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "tăng hiệu suất máy tính",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "rất hài lòng ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "khi phản ánh kết quả bài tập không đúng thì cô lại lơ cười rồi bỏ đi không có một đáp án cụ thể",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy giảng nhiệt tình rất hay",
+                "sentiment": "positive"
+            },
+            {
+                "text": "kiến thức giáo viên tốt",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên dạy đầy đủ kiến thức cung cấp cho sinh viên những kỹ năng và tài liệu bên ngoài phong phú",
+                "sentiment": "positive"
+            },
+            {
+                "text": "phòng thực hành có nhiều máy không sử dụng được",
+                "sentiment": "negative"
+            },
+            {
+                "text": "anh chị nào có file ôn tâm lí học với kinh tế chính trị mác cho em xin với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "không giao bài tập",
+                "sentiment": "negative"
+            },
+            {
+                "text": "mai mốt thi rồi mà chưa có gì trong đầu đúng hôn",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "lỡ number môn mà nghĩ quá numberb thì có cấm thi không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "những kiến thức truyền đạt của thầy cô giảng viên đầy đủ và cần thiết cho sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "trường có ai number đu tws với mình không",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "đặc biệt khả năng truyền đạt của cô không tốt tiếng anh nói không tốt dễ gây buồn ngủ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "môn học cần làm nhiều bài tập vận dụng những kiến thức vào bài tập cụ thể",
+                "sentiment": "negative"
+            },
+            {
+                "text": "môn học cần vận dụng tối đa giữa lý thuyết và thực hành",
+                "sentiment": "negative"
+            },
+            {
+                "text": "thầy giảng dễ hiểu nhưng chưa có sự liên kết giữa các bài với nhau",
+                "sentiment": "negative"
+            },
+            {
+                "text": "có anh chị nào pas sách với tài liệu của môn luật kinh doanh không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nên tạo động lực để sinh viên tham gia năng nổ đóng góp buổi học",
+                "sentiment": "negative"
+            },
+            {
+                "text": "tìm bạn cùng phòng nữ gần khu em bạn nào cần thì biết rõ hơn nhanha",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "các bạn cho mình hỏi mình tính để gần thi rồi nộp học phí các môn sắp thi thì có bị sao không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "chương trình dạy rời rạc và khó hiểu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em nghĩ nếu môn học dạy kiến thức nền tảng áp dụng lập trình trên nhiều nền tảng khác nhau không đơn thuần chỉ là jnumbere thì tốt quá",
+                "sentiment": "negative"
+            },
+            {
+                "text": "rớt bao nhiêu tín là bị hạ bằng vậy ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "anh chị cho em hỏi em đăng ký nguyện vọng mà môn đó đang có lớp số lượng dk nhân viên là number thì có được mở không á em không Bình thường mình có được học không nx",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần tìm bạn quánh cầu trình newbie chiều nay quánh luôn ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cho em xin vài lời fedback của ngành quản trị bệnh viện từ các anh chị đang học và đã ra làm rồi với ạa năm number number mình có được tuyển đi làm thực tập hay du học hay học sinh trao đổi gì được không ạ em cảm ơn",
+                "sentiment": "positive"
+            },
+            {
+                "text": "dạy học nhiệt tình giải nhiều bài tập khó mà bọn em làm không ra",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em xin ý kiến về việc chọn giảng viên kinh tế chính trị mác với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạ em chào ạ mọi người cho em hỏi nếu em bị cấm thi ở tiếng anh nâng cao number thì em vẫn được học tiếp nâng cao number và thi nâng cao number hay sao ạ hay là em phải học lại nâng cao number thì mới được học và thi nâng cao number ạ dạ em cảm ơn nhiều ạ",
+                "sentiment": "positive"
+            },
+            {
+                "text": "có khả năng truyền đạt chú trọng đến kiến thức hơn điểm số",
+                "sentiment": "positive"
+            },
+            {
+                "text": "nghỉ sương sương đừng như năm ngoái là được",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cho em hỏi ạ là kiểu mình không đăng ký tự chọn của kì đó luôn mà đăng ký tự chọn các kì khác không trùng nhóm bù lại được không miễn đủ số tín tự chọn là được phải không anh chị ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cần có thời gian hợp lý hơn khi học thực hành sau lý thuyết",
+                "sentiment": "negative"
+            },
+            {
+                "text": "em cần đề giữa kỳ cobnumber cô bùi thị thu trang ạ anh chị nào có pas cho em với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "đây là một môn học khó nhưng mà chất lượng slide / trình chiếu bài giảng khá kém",
+                "sentiment": "negative"
+            },
+            {
+                "text": "luôn hướng dẫn tận tình sinh viên đi đúng lộ trình tuy thời gian đầu hơi khó hiểu vì toàn bộ bài giảng của thầy được viết bằng tiếng anh",
+                "sentiment": "positive"
+            },
+            {
+                "text": "sau number quá trình tự học tiếng anh không hiệu quả thì em ngoi lên đây xin đánh giá chỗ học bài thi TOEIC uy tín ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "mọi người ơi cho em hỏi em mún tham gia vào câu lạc bộ taekwondo trường mình thì làm cách nào ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "dạy không hiệu quả khó hiểu",
+                "sentiment": "negative"
+            },
+            {
+                "text": "vào trường Hutech là có người yêu xinh như này",
+                "sentiment": "positive"
+            },
+            {
+                "text": "cô dạy nhiệt tình nhưng hơi nhanh",
+                "sentiment": "negative"
+            },
+            {
+                "text": "điểm rèn luyện thấp có sao không ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "cô giáo nhiệt tình khi giảng bài cho sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "thêm nhiều bài tập về nhà hơn",
+                "sentiment": "negative"
+            },
+            {
+                "text": "lúc đầu có sai sót kỹ thuật ở mã môn học itnumberdotenumber có hai dấu chấm nên sinh viên không được Admin vào môn học trong hệ thống modle nên thầy phải cung cấp tài liệu cho sinh viên qua gogle site",
+                "sentiment": "negative"
+            },
+            {
+                "text": "trời ơi ăn cả trận ba lan xỉu xong giờ sang ăn cả pháp tài đẳng cấp hay quá đẳng cấp ạ tặng ít tương tác đi thì numberhnumber lên trận argentina tại bình luận nhé",
+                "sentiment": "positive"
+            },
+            {
+                "text": "giảng viên dạy dễ hiểu dễ hình dung",
+                "sentiment": "positive"
+            },
+            {
+                "text": "bài tập giảng viên cho tại lớp đáp ứng nhu cầu của sinh viên",
+                "sentiment": "positive"
+            },
+            {
+                "text": "em đang cần tìm việc làm thêm mọi người biết ở đâu tuyển chỉ em với ạ",
+                "sentiment": "neutral"
+            },
+            {
+                "text": "nhóm number người đông không ổn thầy ạ",
+                "sentiment": "negative"
+            },
+            {
+                "text": "hoàn toàn không có ý kiến",
+                "sentiment": "neutral"
+            }
+        ]
+    }
+};
+
+// Khởi chạy ngay khi load trang
+document.addEventListener("DOMContentLoaded", () => {
+    // Ẩn state empty, hiển thị dashboard
+    document.getElementById("state-empty").classList.remove("active");
+    document.getElementById("dashboard-content").classList.remove("hidden");
+    
+    // Render Chart
+    renderChart(mockData.total.positive, mockData.total.neutral, mockData.total.negative);
+    
+    // Render Aspects
+    renderAspects(mockData.aspects);
+    
+    // Mặc định chọn aspect đầu tiên
+    if (mockData.aspects.length > 0) {
+        selectAspect(mockData.aspects[0].id, mockData.aspects[0].name);
+        document.querySelector(`.aspect-item[data-id="${mockData.aspects[0].id}"]`).classList.add("active");
+    }
+});
+
+// Modal Sơ đồ Model
+const modelModal = document.getElementById("model-modal");
+document.getElementById("view-model-btn").addEventListener("click", () => {
+    modelModal.classList.add("open");
+});
+document.getElementById("close-model-modal").addEventListener("click", () => {
+    modelModal.classList.remove("open");
+});
+document.getElementById("close-model-btn-footer").addEventListener("click", () => {
+    modelModal.classList.remove("open");
+});
+
+function renderChart(positive, neutral, negative) {
+    const ctx = document.getElementById("barCanvas");
+    if (window.myChart) { window.myChart.destroy(); }
+    window.myChart = new Chart(ctx, {
+        type: "bar",
+        data: {
+            labels: ["Tích cực", "Trung tính", "Tiêu cực"],
+            datasets: [{
+                label: "Số lượng đánh giá",
+                data: [positive, neutral, negative],
+                backgroundColor: ["#4ade80", "#94a3b8", "#f87171"],
+                borderRadius: 4
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: { beginAtZero: true }
+            }
+        }
+    });
+}
+
+function renderAspects(aspects) {
+    const list = document.getElementById("aspect-list");
+    list.innerHTML = "";
+    
+    aspects.forEach(item => {
+        const total = item.sentiment.pos + item.sentiment.neu + item.sentiment.neg;
+        const posPct = (item.sentiment.pos / total) * 100;
+        const neuPct = (item.sentiment.neu / total) * 100;
+        const negPct = (item.sentiment.neg / total) * 100;
+        
+        const div = document.createElement("div");
+        div.className = "aspect-item";
+        div.dataset.id = item.id;
+        div.onclick = () => {
+            document.querySelectorAll(".aspect-item").forEach(el => el.classList.remove("active"));
+            div.classList.add("active");
+            selectAspect(item.id, item.name);
+        };
+        
+        div.innerHTML = `
+            <div class="aspect-header">
+                <span class="aspect-name">${item.name}</span>
+                <span class="aspect-count">${item.count}</span>
+            </div>
+            <div class="aspect-bar">
+                <div class="bar-seg pos" style="width: ${posPct}%"></div>
+                <div class="bar-seg neu" style="width: ${neuPct}%"></div>
+                <div class="bar-seg neg" style="width: ${negPct}%"></div>
+            </div>
+            <div class="aspect-stats">
+                <span class="stat-pos"><i class="fa-solid fa-face-smile"></i> ${item.sentiment.pos}</span>
+                <span class="stat-neu"><i class="fa-solid fa-face-meh"></i> ${item.sentiment.neu}</span>
+                <span class="stat-neg"><i class="fa-solid fa-face-frown"></i> ${item.sentiment.neg}</span>
+            </div>
+        `;
+        list.appendChild(div);
+    });
+}
+
+function selectAspect(aspectId, aspectName) {
+    document.getElementById("detail-empty").classList.add("hidden");
+    document.getElementById("detail-content").classList.remove("hidden");
+    document.getElementById("selected-aspect-title").innerText = aspectName;
+    
+    // Render Tags
+    const tags = mockData.tags[aspectId] || [];
+    const tagList = document.getElementById("tag-list");
+    tagList.innerHTML = tags.map(t => `<span class="tag-chip">${t}</span>`).join("");
+    
+    // Render Sentences
+    const sentences = mockData.sentences[aspectId] || [];
+    const sentList = document.getElementById("sentence-list");
+    document.getElementById("sentence-count").innerText = sentences.length;
+    
+    sentList.innerHTML = sentences.map(s => {
+        let sentClass = s.sentiment === "positive" ? "pos" : (s.sentiment === "negative" ? "neg" : "neu");
+        let badgeText = s.sentiment === "positive" ? "Tích cực" : (s.sentiment === "negative" ? "Tiêu cực" : "Trung tính");
+        
+        return `
+            <div class="sentence-item ${sentClass}" style="display: flex; flex-direction: column; gap: 4px; padding: 12px; margin-bottom: 10px;">
+                <div>
+                    <span class="sent-badge ${sentClass}">${badgeText}</span>
+                </div>
+                <p class="sent-text" style="font-size: 0.85rem;">${s.text}</p>
+            </div>
+        `;
+    }).join("");
+}
+
+// Chức năng theme
+document.getElementById("theme-toggle").addEventListener("click", () => {
+    const html = document.documentElement;
+    const current = html.getAttribute("data-theme");
+    html.setAttribute("data-theme", current === "dark" ? "light" : "dark");
+});
